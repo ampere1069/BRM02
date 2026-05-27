@@ -1,0 +1,2747 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>桃園都會區大眾捷運系統棕線 BRM01標 機電系統統包工程 ── 招標文件差異比較表｜互動版</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #101828;
+      --muted: #475467;
+      --line: #d0d5dd;
+      --soft: #f6f8fb;
+      --panel: #ffffff;
+      --blue: #0b5cab;
+      --blue2: #063f7a;
+      --red: #d92d20;
+      --red-bg: #fff1f0;
+      --shadow: 0 18px 48px rgba(16, 24, 40, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, rgba(237, 246, 255, .95), rgba(255,255,255,1) 360px),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Microsoft JhengHei", "Noto Sans TC", Arial, sans-serif;
+      letter-spacing: 0;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.65;
+    }
+    .wrap {
+      width: min(1440px, calc(100% - 44px));
+      margin: 0 auto;
+      padding: 34px 0 80px;
+    }
+    header {
+      padding: 30px 0 22px;
+      border-bottom: 2px solid var(--line);
+    }
+    h1 {
+      margin: 0 0 14px;
+      color: #062b55;
+      font-size: clamp(34px, 4.4vw, 58px);
+      line-height: 1.18;
+      font-weight: 900;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: clamp(22px, 2vw, 30px);
+      margin: 0;
+      font-weight: 800;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin: 28px 0;
+    }
+    .stat {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 22px 24px;
+      min-height: 118px;
+    }
+    .stat b {
+      display: block;
+      color: var(--blue2);
+      font-size: 42px;
+      line-height: 1;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .stat span {
+      color: var(--muted);
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 14px;
+      background: rgba(255,255,255,.94);
+      border: 2px solid var(--line);
+      box-shadow: 0 10px 30px rgba(16, 24, 40, .1);
+      padding: 14px;
+      margin: 26px 0;
+      backdrop-filter: blur(10px);
+    }
+    input[type="search"] {
+      width: 100%;
+      min-height: 62px;
+      padding: 0 18px;
+      border: 2px solid #98a2b3;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+      font-size: 24px;
+      font-weight: 900;
+      outline: none;
+    }
+    input[type="search"]:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 4px rgba(11,92,171,.16);
+    }
+    button {
+      min-height: 62px;
+      border: 0;
+      background: var(--blue);
+      color: white;
+      padding: 0 22px;
+      font: inherit;
+      font-size: 22px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    button.secondary { background: #344054; }
+    .group {
+      margin: 22px 0;
+      border: 2px solid var(--line);
+      background: var(--panel);
+      box-shadow: 0 12px 30px rgba(16, 24, 40, .08);
+    }
+    summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 82px;
+      padding: 20px 24px;
+      background: linear-gradient(90deg, #eef6ff, #ffffff);
+      border-bottom: 2px solid var(--line);
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "+";
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 44px;
+      width: 44px;
+      height: 44px;
+      color: white;
+      background: var(--blue);
+      font-size: 34px;
+      font-weight: 900;
+      margin-right: 10px;
+    }
+    details[open] summary::before { content: "-"; }
+    .group-title {
+      flex: 1;
+      color: #062b55;
+      font-size: clamp(26px, 2.4vw, 38px);
+      font-weight: 900;
+    }
+    .count {
+      color: var(--blue2);
+      background: #e6f0fb;
+      border: 2px solid #b5d4f2;
+      padding: 6px 14px;
+      white-space: nowrap;
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .cards {
+      display: grid;
+      gap: 16px;
+      padding: 18px;
+      background: var(--soft);
+    }
+    .card {
+      background: white;
+      border: 2px solid #d7e0ea;
+      padding: 22px;
+      box-shadow: 0 8px 20px rgba(16, 24, 40, .06);
+    }
+    .card-top {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: start;
+      padding-bottom: 14px;
+      border-bottom: 2px solid #e4e7ec;
+      margin-bottom: 16px;
+    }
+    .serial {
+      min-width: 82px;
+      text-align: center;
+      color: white;
+      background: #062b55;
+      padding: 8px 12px;
+      font-size: 24px;
+      font-weight: 900;
+    }
+    h3 {
+      margin: 0 0 8px;
+      color: #101828;
+      font-size: clamp(25px, 2vw, 34px);
+      line-height: 1.3;
+      font-weight: 900;
+    }
+    .clause {
+      margin: 0;
+      color: var(--blue2);
+      font-size: 24px;
+      font-weight: 900;
+    }
+    .diff {
+      color: #1d2939;
+      font-size: clamp(23px, 1.8vw, 30px);
+      font-weight: 850;
+      line-height: 1.75;
+    }
+    .hot {
+      color: var(--red);
+      background: var(--red-bg);
+      border-bottom: 3px solid rgba(217,45,32,.35);
+      padding: 0 3px;
+      font-weight: 950;
+    }
+    .no-results {
+      display: none;
+      border: 2px solid var(--line);
+      padding: 24px;
+      background: white;
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--red);
+    }
+    .hidden { display: none !important; }
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 800;
+      border-top: 2px solid var(--line);
+      padding-top: 20px;
+    }
+    @media (max-width: 900px) {
+      body { font-size: 20px; }
+      .wrap { width: min(100% - 24px, 1440px); padding-top: 18px; }
+      .stats { grid-template-columns: 1fr; }
+      .toolbar { grid-template-columns: 1fr; position: static; }
+      .card-top { grid-template-columns: 1fr; }
+      .serial { width: max-content; }
+      summary { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>桃園都會區大眾捷運系統棕線 BRM01標 機電系統統包工程 ── 招標文件差異比較表</h1>
+      <p class="subtitle">比較對象：【舊版】更正招標資料 20260323  vs  【新版】桃園市政府工務局 1150520-AA4-01</p>
+    </header>
+
+    <section class="stats" aria-label="統計摘要">
+      <div class="stat"><b>180</b><span>差異明細</span></div>
+      <div class="stat"><b>12</b><span>文件區塊</span></div>
+      <div class="stat"><b>V6</b><span>來源工作簿版本</span></div>
+    </section>
+
+    <section class="toolbar" aria-label="操作列">
+      <input id="search" type="search" placeholder="搜尋文件名稱、章節、關鍵差異..." autocomplete="off">
+      <button id="expandAll" type="button">全部展開</button>
+      <button id="collapseAll" class="secondary" type="button">全部收合</button>
+    </section>
+
+    <main id="content">
+      
+            <details class="group" open data-group>
+              <summary>
+                <span class="group-title">00 — 招標文件清單</span>
+                <span class="count">13 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="1 00-招標文件清單 項次清單整體 【舊版 20260323】
+共24個項次，包含「03-1採購契約範本附記條款特別聲明」及「24公開閱覽廠商意見答覆表」
+
+【新版 1150520】
+移除「03-1採購契約範本附記條款特別聲明」及「24公開閱覽廠商意見答覆表」兩個項次，總項次減少">
+                  <div class="card-top">
+                    <div class="serial">#1</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">項次清單整體</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>共24個項次，包含「03-1採購契約範本附記條款特別聲明」及「24公開閱覽廠商意見答覆表」<br><br>【新版 1150520】<br><mark class="hot">移除</mark>「03-1採購契約範本附記條款特別聲明」及「24公開閱覽廠商意見答覆表」兩個項次，總項次減少</div>
+                </article>
+                
+                <article class="card" data-search="2 00-招標文件清單 格式與備註 【舊版 20260323】
+部分備註說明分散於各項次欄位，如「檔案請至行政院公共工程委員會網站下載」、「檔案請至桃園市政府地方稅務局網站下載」等備註說明各自獨立
+
+【新版 1150520】
+格式重整，備註文字整合，欄位對齊更一致">
+                  <div class="card-top">
+                    <div class="serial">#2</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">格式與備註</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>部分備註說明分散於各項次欄位，如「檔案請至行政院公共工程委員會網站下載」、「檔案請至桃園市政府地方稅務局網站下載」等備註說明各自獨立<br><br>【新版 1150520】<br>格式重整，備註文字整合，欄位對齊更一致</div>
+                </article>
+                
+                <article class="card" data-search="3 00-招標文件清單 文件基本資訊 舊版為2頁，檔案大小156766 bytes，建立/修改時間為115/02/09；新版為1頁，檔案大小124019 bytes，建立/修改時間為115/05/20。新版刪除空白頁並重新排版。">
+                  <div class="card-top">
+                    <div class="serial">#3</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">文件基本資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版為2頁，檔案大小156766 bytes，建立/修改時間為115/02/09；新版為1頁，檔案大小124019 bytes，建立/修改時間為115/05/20。新版<mark class="hot">刪除</mark>空白頁並重新排版。</div>
+                </article>
+                
+                <article class="card" data-search="4 00-招標文件清單 項次03 契約文件 舊版項次03列「契約(稿)」並包含「(3-1)採購契約範本附記條款特別聲明」；新版項次03僅列「契約(稿)」，刪除(3-1)附記條款特別聲明之列示。">
+                  <div class="card-top">
+                    <div class="serial">#4</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">項次03 契約文件</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版項次03列「契約(稿)」並包含「(3-1)採購契約範本附記條款特別聲明」；新版項次03僅列「契約(稿)」，<mark class="hot">刪除</mark>(3-1)附記條款特別聲明之列示。</div>
+                </article>
+                
+                <article class="card" data-search="5 00-招標文件清單 項次24 公開閱覽廠商意見答覆表 舊版列有項次24「公開閱覽廠商意見答覆表」，備註為檔案至於項次1投標須知內；新版清單止於項次23，未再列項次24。">
+                  <div class="card-top">
+                    <div class="serial">#5</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">項次24 公開閱覽廠商意見答覆表</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版列有項次24「公開閱覽廠商意見答覆表」，備註為檔案至於項次1投標<mark class="hot">須</mark>知內；新版清單止於項次23，未再列項次24。</div>
+                </article>
+                
+                <article class="card" data-search="6 00-招標文件清單 項次07 權責分工表備註 舊版備註為「檔案至於項次3契約內」；新版改為「檔案至於契約附錄內」。">
+                  <div class="card-top">
+                    <div class="serial">#6</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">項次07 權責分工表備註</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版備註為「檔案至於項次3契約內」；新版<mark class="hot">改為</mark>「檔案至於契約附錄內」。</div>
+                </article>
+                
+                <article class="card" data-search="7 00-招標文件清單 項次17-19 保證書格式備註 舊版項次17「押標金連帶保證書格式」備註說明檔案請至行政院公共工程委員會主管法規查詢系統下載；新版項次17至19備註欄均空白，刪除下載來源說明。">
+                  <div class="card-top">
+                    <div class="serial">#7</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">項次17-19 保證書格式備註</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版項次17「押標金連帶保證書格式」備註說明檔案請至行政院公共工程委員會主管法規查詢系統下載；新版項次17至19備註欄均空白，<mark class="hot">刪除</mark>下載來源說明。</div>
+                </article>
+                
+                <article class="card" data-search="8 00-招標文件清單 項次20 印花稅填寫範例備註 舊版項次20「印花稅大額憑證繳款書開立申請填寫範例」備註為檔案請至桃園市政府地方稅務局網站下載；新版備註欄空白，刪除下載來源說明。">
+                  <div class="card-top">
+                    <div class="serial">#8</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">項次20 印花稅填寫範例備註</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版項次20「印花稅大額憑證繳款書開立申請填寫範例」備註為檔案請至桃園市政府地方稅務局網站下載；新版備註欄空白，<mark class="hot">刪除</mark>下載來源說明。</div>
+                </article>
+                
+                <article class="card" data-search="9 00-招標文件清單 項次22 利益衝突揭露表備註 舊版項次22備註為檔案請至法務部廉政署網站下載；新版備註欄空白，刪除下載來源說明。">
+                  <div class="card-top">
+                    <div class="serial">#9</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">項次22 利益衝突揭露表備註</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版項次22備註為檔案請至法務部廉政署網站下載；新版備註欄空白，<mark class="hot">刪除</mark>下載來源說明。</div>
+                </article>
+                
+                <article class="card" data-search="10 00-招標文件清單 項次23 公共工程相關須知/要點備註 舊版項次23備註為檔案請至桃園市政府主管法規查詢系統內下載；新版備註欄空白，刪除下載來源說明。">
+                  <div class="card-top">
+                    <div class="serial">#10</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">項次23 公共工程相關<mark class="hot">須</mark>知/要點備註</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版項次23備註為檔案請至桃園市政府主管法規查詢系統內下載；新版備註欄空白，<mark class="hot">刪除</mark>下載來源說明。</div>
+                </article>
+                
+                <article class="card" data-search="11 00-招標文件清單 項次14 文件名稱換行 舊版項次14為單行「廠商參與政府採購可能涉及之法律責任」；新版拆為「廠商參與政府採購 / 可能涉及之法律責任」。內容未變，為版面換行調整。">
+                  <div class="card-top">
+                    <div class="serial">#11</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">項次14 文件名稱換行</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版項次14為單行「廠商參與政府採購可能涉及之法律責任」；新版拆為「廠商參與政府採購 / 可能涉及之法律責任」。內容未變，為版面換行<mark class="hot">調整</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="12 00-招標文件清單 整體格式 新版將清單壓縮為1頁，調整欄寬與換行；項次08、21、22、23等長文字重新換行，並使備註欄較舊版簡化。">
+                  <div class="card-top">
+                    <div class="serial">#12</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">整體格式</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版將清單壓縮為1頁，<mark class="hot">調整</mark>欄寬與換行；項次08、21、22、23等長文字重新換行，並使備註欄較舊版簡化。</div>
+                </article>
+                
+                <article class="card" data-search="13 00-招標文件清單 文字比對統計 pdf文字抽取後，舊版約860字元，新版約682字元；差異片段10個。主要差異為項目刪除、備註刪除及格式重排。">
+                  <div class="card-top">
+                    <div class="serial">#13</div>
+                    <div>
+                      <h3>00-招標文件清單</h3>
+                      <p class="clause">文字比對統計</p>
+                    </div>
+                  </div>
+                  <div class="diff">PDF文字抽取後，舊版約860字元，新版約682字元；差異片段10個。主要差異為項目<mark class="hot">刪除</mark>、備註<mark class="hot">刪除</mark>及格式重排。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">01 — 投標<mark class="hot">須</mark>知</span>
+                <span class="count">24 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="14 01-投標須知 預算金額 【舊版 20260323】
+新臺幣 25,158,763,175 元
+
+【新版 1150520】
+新臺幣 29,753,637,811 元（提高約 18.3%）">
+                  <div class="card-top">
+                    <div class="serial">#14</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause"><mark class="hot">預算</mark><mark class="hot">金額</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>新臺幣 25,158,763,175 元<br><br>【新版 1150520】<br>新臺幣 29,753,637,811 元（<mark class="hot">提高</mark>約 18.3%）</div>
+                </article>
+                
+                <article class="card" data-search="15 01-投標須知 共同投標資格條款 【舊版 20260323】
+若共同投標時，下列「第1至第4之規定」，均須至少有一家成員符合
+
+【新版 1150520】
+改為「第1至第3之規定」，均須至少有一家成員符合（刪除第4項資格要求）">
+                  <div class="card-top">
+                    <div class="serial">#15</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">共同投標資格條款</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>若共同投標時，下列「第1至第4之規定」，均<mark class="hot">須</mark>至少有一家成員符合<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「第1至第3之規定」，均<mark class="hot">須</mark>至少有一家成員符合（<mark class="hot">刪除</mark>第4項資格要求）</div>
+                </article>
+                
+                <article class="card" data-search="16 01-投標須知 工程實績文件要求 【舊版 20260323】
+「需檢附共同投標協議書，以證明上述工程經驗為其實際參與），以及採購機關(構)核發之驗收證明（影本）」；民營實績：「合格驗收證明及契約等影本」；外國工程實績：「採用之契約及採購機關核發之驗收證明」
+
+【新版 1150520】
+「以及」全部改為「或」：改為「或採購機關(構)核發之驗收證明（影本）」；民營實績：「合格驗收證明或契約等影本」；外國工程實績：「採用之契約或採購機關核發之驗收證明」（放寬文件要求，提交其一即可）">
+                  <div class="card-top">
+                    <div class="serial">#16</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">工程實績文件要求</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「需檢附共同投標協議書，以證明上述工程經驗為其實際參與），以及採購機關(構)核發之驗收證明（影本）」；民營實績：「合格驗收證明及契約等影本」；外國工程實績：「採用之契約及採購機關核發之驗收證明」<br><br>【新版 1150520】<br>「以及」全部<mark class="hot">改為</mark>「或」：<mark class="hot">改為</mark>「或採購機關(構)核發之驗收證明（影本）」；民營實績：「合格驗收證明或契約等影本」；外國工程實績：「採用之契約或採購機關核發之驗收證明」（<mark class="hot">放寬</mark>文件要求，提交其一即可）</div>
+                </article>
+                
+                <article class="card" data-search="17 01-投標須知 財務資格－單獨廠商 【舊版 20260323】
+實收資本額不低於新臺幣 25.15 億元；權益不低於新臺幣 20.96 億元
+
+【新版 1150520】
+實收資本額不低於新臺幣 29.75 億元；權益不低於新臺幣 24.79 億元">
+                  <div class="card-top">
+                    <div class="serial">#17</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">財務資格－單獨廠商</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>實收資本額不低於新臺幣 25.15 億元；權益不低於新臺幣 20.96 億元<br><br>【新版 1150520】<br>實收資本額不低於新臺幣 29.75 億元；權益不低於新臺幣 24.79 億元</div>
+                </article>
+                
+                <article class="card" data-search="18 01-投標須知 財務資格－車輛廠商 【舊版 20260323】
+車輛廠商合計實收資本額不低於新臺幣 2.86 億元；合計權益不低於新臺幣 2.38 億元
+
+【新版 1150520】
+車輛廠商合計實收資本額不低於新臺幣 3.48 億元；合計權益不低於新臺幣 2.90 億元">
+                  <div class="card-top">
+                    <div class="serial">#18</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">財務資格－車輛廠商</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>車輛廠商合計實收資本額不低於新臺幣 2.86 億元；合計權益不低於新臺幣 2.38 億元<br><br>【新版 1150520】<br>車輛廠商合計實收資本額不低於新臺幣 3.48 億元；合計權益不低於新臺幣 2.90 億元</div>
+                </article>
+                
+                <article class="card" data-search="19 01-投標須知 財務資格－系統整合/主承包商 【舊版 20260323】
+實收資本額不低於新臺幣 4.33 億元；權益不低於新臺幣 3.60 億元
+
+【新版 1150520】
+實收資本額不低於新臺幣 4.36 億元；權益不低於新臺幣 3.63 億元">
+                  <div class="card-top">
+                    <div class="serial">#19</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">財務資格－系統整合/主承包商</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>實收資本額不低於新臺幣 4.33 億元；權益不低於新臺幣 3.60 億元<br><br>【新版 1150520】<br>實收資本額不低於新臺幣 4.36 億元；權益不低於新臺幣 3.63 億元</div>
+                </article>
+                
+                <article class="card" data-search="20 01-投標須知 財務資格－土建廠商 【舊版 20260323】
+實收資本額不低於新臺幣 6.10 億元；權益不低於新臺幣 5.08 億元
+
+【新版 1150520】
+實收資本額不低於新臺幣 6.38 億元；權益不低於新臺幣 5.32 億元">
+                  <div class="card-top">
+                    <div class="serial">#20</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">財務資格－土建廠商</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>實收資本額不低於新臺幣 6.10 億元；權益不低於新臺幣 5.08 億元<br><br>【新版 1150520】<br>實收資本額不低於新臺幣 6.38 億元；權益不低於新臺幣 5.32 億元</div>
+                </article>
+                
+                <article class="card" data-search="21 01-投標須知 軌道工程實績金額 【舊版 20260323】
+單次契約金額不低於新臺幣軌道 7.13 億元，或累計不低於 17.82 億元
+
+【新版 1150520】
+單次契約金額不低於新臺幣軌道 12.19 億元，或累計不低於 30.48 億元（大幅提高）">
+                  <div class="card-top">
+                    <div class="serial">#21</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">軌道工程實績<mark class="hot">金額</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>單次契約<mark class="hot">金額</mark>不低於新臺幣軌道 7.13 億元，或累計不低於 17.82 億元<br><br>【新版 1150520】<br>單次契約<mark class="hot">金額</mark>不低於新臺幣軌道 12.19 億元，或累計不低於 30.48 億元（大幅<mark class="hot">提高</mark>）</div>
+                </article>
+                
+                <article class="card" data-search="22 01-投標須知 系統實績金額（車輛） 【舊版 20260323】
+單次契約金額不低於新臺幣 11.45 億元，或累計不低於 28.62 億元
+
+【新版 1150520】
+單次契約金額不低於新臺幣 13.92 億元，或累計不低於 34.80 億元">
+                  <div class="card-top">
+                    <div class="serial">#22</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">系統實績<mark class="hot">金額</mark>（車輛）</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>單次契約<mark class="hot">金額</mark>不低於新臺幣 11.45 億元，或累計不低於 28.62 億元<br><br>【新版 1150520】<br>單次契約<mark class="hot">金額</mark>不低於新臺幣 13.92 億元，或累計不低於 34.80 億元</div>
+                </article>
+                
+                <article class="card" data-search="23 01-投標須知 系統實績金額（其他機電） 【舊版 20260323】
+單次契約金額不低於新臺幣 17.32 億元，或累計不低於 43.31 億元
+
+【新版 1150520】
+單次契約金額不低於新臺幣 17.46 億元，或累計不低於 43.65 億元">
+                  <div class="card-top">
+                    <div class="serial">#23</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">系統實績<mark class="hot">金額</mark>（其他機電）</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>單次契約<mark class="hot">金額</mark>不低於新臺幣 17.32 億元，或累計不低於 43.31 億元<br><br>【新版 1150520】<br>單次契約<mark class="hot">金額</mark>不低於新臺幣 17.46 億元，或累計不低於 43.65 億元</div>
+                </article>
+                
+                <article class="card" data-search="24 01-投標須知 詳細價目表計價基準 【舊版 20260323】
+（三）本採購案簽訂契約時，其總表、詳細價目表(一)及詳細價目表(二)所列各項目單價，皆依本採購案投標廠商提出標價組成之內容為基準
+
+【新版 1150520】
+改為「其總表及詳細價目表(一)所列各項目單價……」（刪除詳細價目表(二)計價基準提及）">
+                  <div class="card-top">
+                    <div class="serial">#24</div>
+                    <div>
+                      <h3>01-投標<mark class="hot">須</mark>知</h3>
+                      <p class="clause">詳細價目表計價基準</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（三）本採購案簽訂契約時，其總表、詳細價目表(一)及詳細價目表(二)所列各項目單價，皆依本採購案投標廠商提出標價組成之內容為基準<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「其總表及詳細價目表(一)所列各項目單價……」（<mark class="hot">刪除</mark>詳細價目表(二)計價基準提及）</div>
+                </article>
+                
+                <article class="card" data-search="25 01-brm01標投標須知及編號7至編號16相關文件 文件基本資訊 兩版皆為71頁；舊版檔案大小1080909 bytes，建立/修改時間為115/03/17；新版檔案大小1075040 bytes，建立/修改時間為115/05/20。">
+                  <div class="card-top">
+                    <div class="serial">#25</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">文件基本資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版皆為71頁；舊版檔案大小1080909 bytes，建立/修改時間為115/03/17；新版檔案大小1075040 bytes，建立/修改時間為115/05/20。</div>
+                </article>
+                
+                <article class="card" data-search="26 01-brm01標投標須知及編號7至編號16相關文件 預算金額 舊版預算金額為新臺幣25,158,763,175元；新版改為新臺幣29,753,637,811元。新版增加4,594,874,636元，約增加18.3%。">
+                  <div class="card-top">
+                    <div class="serial">#26</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause"><mark class="hot">預算</mark><mark class="hot">金額</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版<mark class="hot">預算</mark><mark class="hot">金額</mark>為新臺幣25,158,763,175元；新版<mark class="hot">改為</mark>新臺幣29,753,637,811元。新版增加4,594,874,636元，約增加18.3%。</div>
+                </article>
+                
+                <article class="card" data-search="27 01-brm01標投標須知及編號7至編號16相關文件 共同投標資格條款 舊版共同投標時要求下列「第1至第4之規定」均須至少有一家成員符合；新版改為「第1至第3之規定」均須至少有一家成員符合，刪除第4項納入共同投標成員符合範圍之要求。">
+                  <div class="card-top">
+                    <div class="serial">#27</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">共同投標資格條款</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版共同投標時要求下列「第1至第4之規定」均<mark class="hot">須</mark>至少有一家成員符合；新版<mark class="hot">改為</mark>「第1至第3之規定」均<mark class="hot">須</mark>至少有一家成員符合，<mark class="hot">刪除</mark>第4項納入共同投標成員符合範圍之要求。</div>
+                </article>
+                
+                <article class="card" data-search="28 01-brm01標投標須知及編號7至編號16相關文件 工程實績證明文件 舊版多處使用「以及」或「及」表示需併附共同投標協議書、驗收證明、契約等文件；新版改為「或」，如採購機關核發之驗收證明、合格驗收證明或契約等影本、採用之契約或驗收證明等，整體上放寬為提交其一即可。">
+                  <div class="card-top">
+                    <div class="serial">#28</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">工程實績證明文件</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版多處使用「以及」或「及」表示需併附共同投標協議書、驗收證明、契約等文件；新版<mark class="hot">改為</mark>「或」，如採購機關核發之驗收證明、合格驗收證明或契約等影本、採用之契約或驗收證明等，整體上<mark class="hot">放寬</mark>為提交其一即可。</div>
+                </article>
+                
+                <article class="card" data-search="29 01-brm01標投標須知及編號7至編號16相關文件 財務資格－單獨廠商 舊版單獨廠商實收資本額不低於新臺幣25.15億元、權益不低於新臺幣20.96億元；新版提高為實收資本額不低於新臺幣29.75億元、權益不低於新臺幣24.79億元。">
+                  <div class="card-top">
+                    <div class="serial">#29</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">財務資格－單獨廠商</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版單獨廠商實收資本額不低於新臺幣25.15億元、權益不低於新臺幣20.96億元；新版<mark class="hot">提高</mark>為實收資本額不低於新臺幣29.75億元、權益不低於新臺幣24.79億元。</div>
+                </article>
+                
+                <article class="card" data-search="30 01-brm01標投標須知及編號7至編號16相關文件 財務資格－車輛廠商 舊版車輛廠商合計實收資本額不低於新臺幣2.86億元、合計權益不低於新臺幣2.38億元；新版提高為合計實收資本額不低於新臺幣3.48億元、合計權益不低於新臺幣2.90億元。">
+                  <div class="card-top">
+                    <div class="serial">#30</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">財務資格－車輛廠商</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版車輛廠商合計實收資本額不低於新臺幣2.86億元、合計權益不低於新臺幣2.38億元；新版<mark class="hot">提高</mark>為合計實收資本額不低於新臺幣3.48億元、合計權益不低於新臺幣2.90億元。</div>
+                </article>
+                
+                <article class="card" data-search="31 01-brm01標投標須知及編號7至編號16相關文件 財務資格－系統整合/主承包商 舊版系統整合/主承包商實收資本額不低於新臺幣4.33億元、權益不低於新臺幣3.60億元；新版提高為實收資本額不低於新臺幣4.36億元、權益不低於新臺幣3.63億元。">
+                  <div class="card-top">
+                    <div class="serial">#31</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">財務資格－系統整合/主承包商</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版系統整合/主承包商實收資本額不低於新臺幣4.33億元、權益不低於新臺幣3.60億元；新版<mark class="hot">提高</mark>為實收資本額不低於新臺幣4.36億元、權益不低於新臺幣3.63億元。</div>
+                </article>
+                
+                <article class="card" data-search="32 01-brm01標投標須知及編號7至編號16相關文件 財務資格－土建廠商 舊版土建廠商實收資本額不低於新臺幣6.10億元、權益不低於新臺幣5.08億元；新版提高為實收資本額不低於新臺幣6.38億元、權益不低於新臺幣5.32億元。">
+                  <div class="card-top">
+                    <div class="serial">#32</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">財務資格－土建廠商</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版土建廠商實收資本額不低於新臺幣6.10億元、權益不低於新臺幣5.08億元；新版<mark class="hot">提高</mark>為實收資本額不低於新臺幣6.38億元、權益不低於新臺幣5.32億元。</div>
+                </article>
+                
+                <article class="card" data-search="33 01-brm01標投標須知及編號7至編號16相關文件 軌道工程實績金額 舊版軌道工程實績門檻為單次契約金額不低於新臺幣7.13億元，或累計不低於17.82億元；新版提高為單次契約金額不低於新臺幣12.19億元，或累計不低於30.48億元。">
+                  <div class="card-top">
+                    <div class="serial">#33</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">軌道工程實績<mark class="hot">金額</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版軌道工程實績門檻為單次契約<mark class="hot">金額</mark>不低於新臺幣7.13億元，或累計不低於17.82億元；新版<mark class="hot">提高</mark>為單次契約<mark class="hot">金額</mark>不低於新臺幣12.19億元，或累計不低於30.48億元。</div>
+                </article>
+                
+                <article class="card" data-search="34 01-brm01標投標須知及編號7至編號16相關文件 系統實績金額－車輛 舊版車輛系統實績門檻為單次契約金額不低於新臺幣11.45億元，或累計不低於28.62億元；新版提高為單次契約金額不低於新臺幣13.92億元，或累計不低於34.80億元。">
+                  <div class="card-top">
+                    <div class="serial">#34</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">系統實績<mark class="hot">金額</mark>－車輛</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版車輛系統實績門檻為單次契約<mark class="hot">金額</mark>不低於新臺幣11.45億元，或累計不低於28.62億元；新版<mark class="hot">提高</mark>為單次契約<mark class="hot">金額</mark>不低於新臺幣13.92億元，或累計不低於34.80億元。</div>
+                </article>
+                
+                <article class="card" data-search="35 01-brm01標投標須知及編號7至編號16相關文件 系統實績金額－其他機電 舊版其他機電系統實績門檻為單次契約金額不低於新臺幣17.32億元，或累計不低於43.31億元；新版提高為單次契約金額不低於新臺幣17.46億元，或累計不低於43.65億元。">
+                  <div class="card-top">
+                    <div class="serial">#35</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">系統實績<mark class="hot">金額</mark>－其他機電</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版其他機電系統實績門檻為單次契約<mark class="hot">金額</mark>不低於新臺幣17.32億元，或累計不低於43.31億元；新版<mark class="hot">提高</mark>為單次契約<mark class="hot">金額</mark>不低於新臺幣17.46億元，或累計不低於43.65億元。</div>
+                </article>
+                
+                <article class="card" data-search="36 01-brm01標投標須知及編號7至編號16相關文件 詳細價目表計價基準 舊版規定簽訂契約時，總表、詳細價目表(一)及詳細價目表(二)所列各項目單價，皆依投標廠商提出標價組成為基準；新版改為總表及詳細價目表(一)所列各項目單價，刪除詳細價目表(二)作為計價基準之文字。">
+                  <div class="card-top">
+                    <div class="serial">#36</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">詳細價目表計價基準</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版規定簽訂契約時，總表、詳細價目表(一)及詳細價目表(二)所列各項目單價，皆依投標廠商提出標價組成為基準；新版<mark class="hot">改為</mark>總表及詳細價目表(一)所列各項目單價，<mark class="hot">刪除</mark>詳細價目表(二)作為計價基準之文字。</div>
+                </article>
+                
+                <article class="card" data-search="37 01-brm01標投標須知及編號7至編號16相關文件 文字比對統計 pdf文字抽取後，舊版約64676字元，新版約64646字元；差異片段137個。主要差異集中於預算、資格門檻、實績金額與詳細價目表(二)定位。">
+                  <div class="card-top">
+                    <div class="serial">#37</div>
+                    <div>
+                      <h3>01-BRM01標投標<mark class="hot">須</mark>知及編號7至編號16相關文件</h3>
+                      <p class="clause">文字比對統計</p>
+                    </div>
+                  </div>
+                  <div class="diff">PDF文字抽取後，舊版約64676字元，新版約64646字元；差異片段137個。主要差異集中於<mark class="hot">預算</mark>、資格門檻、實績<mark class="hot">金額</mark>與詳細價目表(二)定位。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">02 — 附錄A 評選<mark class="hot">須</mark>知</span>
+                <span class="count">7 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="38 02-附錄a評選須知 整體 【舊版 20260323】
+評選表格採直式排列，評分項次順序與配分欄位依特定格式呈現
+
+【新版 1150520】
+主要為版面格式重整（表格欄位順序局部調整），無實質評選標準或配分異動">
+                  <div class="card-top">
+                    <div class="serial">#38</div>
+                    <div>
+                      <h3>02-附錄A評選<mark class="hot">須</mark>知</h3>
+                      <p class="clause">整體</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>評選表格採直式排列，評分項次順序與配分欄位依特定格式呈現<br><br>【新版 1150520】<br>主要為版面格式重整（表格欄位順序局部<mark class="hot">調整</mark>），無實質評選標準或配分異動</div>
+                </article>
+                
+                <article class="card" data-search="39 02-brm01標附錄a評選須知 文件基本資訊 兩版皆為37頁；舊版檔案大小757941 bytes，建立/修改時間為115/03/19；新版檔案大小785678 bytes，建立/修改時間為115/05/07。">
+                  <div class="card-top">
+                    <div class="serial">#39</div>
+                    <div>
+                      <h3>02-BRM01標附錄A評選<mark class="hot">須</mark>知</h3>
+                      <p class="clause">文件基本資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版皆為37頁；舊版檔案大小757941 bytes，建立/修改時間為115/03/19；新版檔案大小785678 bytes，建立/修改時間為115/05/07。</div>
+                </article>
+                
+                <article class="card" data-search="40 02-brm01標附錄a評選須知 整體差異判斷 兩版文字比對顯示主要為表格欄位、換行、頁首頁尾及版面格式調整；未見評選項目、配分、評分標準或決標/評選門檻之明顯實質變更。">
+                  <div class="card-top">
+                    <div class="serial">#40</div>
+                    <div>
+                      <h3>02-BRM01標附錄A評選<mark class="hot">須</mark>知</h3>
+                      <p class="clause">整體差異判斷</p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版文字比對顯示主要為表格欄位、換行、頁首頁尾及版面格式<mark class="hot">調整</mark>；未見評選項目、配分、評分標準或決標/評選門檻之明顯實質變更。</div>
+                </article>
+                
+                <article class="card" data-search="41 02-brm01標附錄a評選須知 評選表格格式 舊版與新版評選表格內容大致一致，但新版表格欄位排列、換行與段落間距有局部調整；此項屬閱讀版面與表格呈現差異。">
+                  <div class="card-top">
+                    <div class="serial">#41</div>
+                    <div>
+                      <h3>02-BRM01標附錄A評選<mark class="hot">須</mark>知</h3>
+                      <p class="clause">評選表格格式</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版與新版評選表格內容大致一致，但新版表格欄位排列、換行與段落間距有局部<mark class="hot">調整</mark>；此項屬閱讀版面與表格呈現差異。</div>
+                </article>
+                
+                <article class="card" data-search="42 02-brm01標附錄a評選須知 評選項目與配分 經抽取文字比對，評選項目名稱及配分未見明顯異動；新版仍沿用舊版評選架構。">
+                  <div class="card-top">
+                    <div class="serial">#42</div>
+                    <div>
+                      <h3>02-BRM01標附錄A評選<mark class="hot">須</mark>知</h3>
+                      <p class="clause">評選項目與配分</p>
+                    </div>
+                  </div>
+                  <div class="diff">經抽取文字比對，評選項目名稱及配分未見明顯異動；新版仍沿用舊版評選架構。</div>
+                </article>
+                
+                <article class="card" data-search="43 02-brm01標附錄a評選須知 頁碼/頁首資訊 兩版頁數相同，但pdf產製日期不同；部分頁首、頁尾或頁碼附近文字抽取位置不同，造成差異片段。">
+                  <div class="card-top">
+                    <div class="serial">#43</div>
+                    <div>
+                      <h3>02-BRM01標附錄A評選<mark class="hot">須</mark>知</h3>
+                      <p class="clause">頁碼/頁首資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版頁數相同，但PDF產製日期不同；部分頁首、頁尾或頁碼附近文字抽取位置不同，造成差異片段。</div>
+                </article>
+                
+                <article class="card" data-search="44 02-brm01標附錄a評選須知 文字比對統計 pdf文字抽取後，舊版約20208字元，新版約20208字元；差異片段2個。差異主要集中於格式與表格呈現。">
+                  <div class="card-top">
+                    <div class="serial">#44</div>
+                    <div>
+                      <h3>02-BRM01標附錄A評選<mark class="hot">須</mark>知</h3>
+                      <p class="clause">文字比對統計</p>
+                    </div>
+                  </div>
+                  <div class="diff">PDF文字抽取後，舊版約20208字元，新版約20208字元；差異片段2個。差異主要集中於格式與表格呈現。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">03 — 契約(稿)</span>
+                <span class="count">14 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="45 03-契約(稿) 第3條 詳細價目表提送期限 【舊版 20260323】
+廠商應於開工通知日起 90 日內，提出初步「詳細價目表(一)」及初步「詳細價目表(二)」送機關核定
+
+【新版 1150520】
+改為開工通知日起 180 日內（倍增），機電系統細部設計核定後 45 日內提送單價分析表">
+                  <div class="card-top">
+                    <div class="serial">#45</div>
+                    <div>
+                      <h3>03-契約(稿)</h3>
+                      <p class="clause">第3條 詳細價目表提送<mark class="hot">期限</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>廠商<mark class="hot">應</mark>於開工通知日起 90 日內，提出初步「詳細價目表(一)」及初步「詳細價目表(二)」送機關核定<br><br>【新版 1150520】<br><mark class="hot">改為</mark>開工通知日起 180 日內（倍增），機電系統細部設計核定後 45 日內提送單價分析表</div>
+                </article>
+                
+                <article class="card" data-search="46 03-契約(稿) 第3條 詳細價目表(二)調整限制 【舊版 20260323】
+（未有明文規定詳細價目表(二)不得調整）
+
+【新版 1150520】
+新增：「詳細價目表(二) 除經機關同意，其項目及內容不得調整」">
+                  <div class="card-top">
+                    <div class="serial">#46</div>
+                    <div>
+                      <h3>03-契約(稿)</h3>
+                      <p class="clause">第3條 詳細價目表(二)<mark class="hot">調整</mark>限制</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（未有明文規定詳細價目表(二)<mark class="hot">不得</mark><mark class="hot">調整</mark>）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>：「詳細價目表(二) 除經機關同意，其項目及內容<mark class="hot">不得</mark><mark class="hot">調整</mark>」</div>
+                </article>
+                
+                <article class="card" data-search="47 03-契約(稿) 第7條 天然因素定義 【舊版 20260323】
+「颱風等天然因素所導致之展延天數不得再請求外」
+
+【新版 1150520】
+改為「山崩、地震、海嘯等天然因素所導致之展延天數不得再請求外」（颱風不再列為不可抗力天然因素）">
+                  <div class="card-top">
+                    <div class="serial">#47</div>
+                    <div>
+                      <h3>03-契約(稿)</h3>
+                      <p class="clause">第7條 天然因素定義</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「颱風等天然因素所導致之展延天數<mark class="hot">不得</mark>再請求外」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「山崩、地震、海嘯等天然因素所導致之展延天數<mark class="hot">不得</mark>再請求外」（颱風不再列為不可抗力天然因素）</div>
+                </article>
+                
+                <article class="card" data-search="48 03-契約(稿) 第7條 文字錯誤修正 【舊版 20260323】
+「經機關目試檢驗後，支付廠商工程價款」
+
+【新版 1150520】
+更正為「經機關目視檢驗後，支付廠商工程價款」">
+                  <div class="card-top">
+                    <div class="serial">#48</div>
+                    <div>
+                      <h3>03-契約(稿)</h3>
+                      <p class="clause">第7條 文字<mark class="hot">錯誤</mark><mark class="hot">修正</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「經機關目試檢驗後，支付廠商工程價款」<br><br>【新版 1150520】<br>更正為「經機關目視檢驗後，支付廠商工程價款」</div>
+                </article>
+                
+                <article class="card" data-search="49 03-契約(稿) 第5條 竣工驗收條件 【舊版 20260323】
+「工程驗收合格及繳納保固保證金後，付清本項工程費尾款10%」；「完成驗收合格後且無待解決事項」
+
+【新版 1150520】
+新增竣工圖審定要求：「工程驗收合格(含竣工圖審定)及繳納保固保證金後」；「完成驗收合格(含竣工圖審定)後且無待解決事項」">
+                  <div class="card-top">
+                    <div class="serial">#49</div>
+                    <div>
+                      <h3>03-契約(稿)</h3>
+                      <p class="clause">第5條 竣工驗收條件</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「工程驗收合格及繳納保固保證金後，付清本項工程費尾款10%」；「完成驗收合格後且無待解決事項」<br><br>【新版 1150520】<br><mark class="hot">新增</mark>竣工圖審定要求：「工程驗收合格(含竣工圖審定)及繳納保固保證金後」；「完成驗收合格(含竣工圖審定)後且無待解決事項」</div>
+                </article>
+                
+                <article class="card" data-search="50 03-契約(稿) 第9條 保險程序 【舊版 20260323】
+「廠商於接獲開工通知日後，應立即向保險公司投保本條規定之保險，並於開工通知日起90日內提送審核」
+
+【新版 1150520】
+改為「廠商於接獲開工通知日後，應立即向保險公司啟動投保契約約定之保險程序，並於開工通知日起90日內提送審核」（強調程序啟動，開工90日期限不變）">
+                  <div class="card-top">
+                    <div class="serial">#50</div>
+                    <div>
+                      <h3>03-契約(稿)</h3>
+                      <p class="clause">第9條 保險程序</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「廠商於接獲開工通知日後，<mark class="hot">應</mark>立即向保險公司投保本條規定之保險，並於開工通知日起<mark class="hot">90日</mark>內提送審核」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「廠商於接獲開工通知日後，<mark class="hot">應</mark>立即向保險公司啟動投保契約約定之保險程序，並於開工通知日起<mark class="hot">90日</mark>內提送審核」（強調程序啟動，開工<mark class="hot">90日</mark><mark class="hot">期限</mark>不變）</div>
+                </article>
+                
+                <article class="card" data-search="51 03-brm01標契約(稿) 第3條　契約價金之給付 【舊版 20260323】
+軌道工程、土建及其他機電設施工程：廠商應於開工通知日起 90 日內提出初步詳細價目表(一)及(二)送機關核定
+
+【新版 1150520】
+期限延長為開工通知日起 180 日內；機電系統工程同樣增訂於開工通知日起 180 日內提出初步詳細價目表(一)及(二)">
+                  <div class="card-top">
+                    <div class="serial">#51</div>
+                    <div>
+                      <h3>03-BRM01標契約(稿)</h3>
+                      <p class="clause">第3條　契約價金之給付</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>軌道工程、土建及其他機電設施工程：廠商<mark class="hot">應</mark>於開工通知日起 90 日內提出初步詳細價目表(一)及(二)送機關核定<br><br>【新版 1150520】<br><mark class="hot">期限</mark>延長為開工通知日起 180 日內；機電系統工程同樣增訂於開工通知日起 180 日內提出初步詳細價目表(一)及(二)</div>
+                </article>
+                
+                <article class="card" data-search="52 03-brm01標契約(稿) 第3條　契約價金之給付 【舊版 20260323】
+（未有相關限制條款）
+
+【新版 1150520】
+新增：「詳細價目表(二) 除經機關同意，其項目及內容不得調整」">
+                  <div class="card-top">
+                    <div class="serial">#52</div>
+                    <div>
+                      <h3>03-BRM01標契約(稿)</h3>
+                      <p class="clause">第3條　契約價金之給付</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（未有相關限制條款）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>：「詳細價目表(二) 除經機關同意，其項目及內容<mark class="hot">不得</mark><mark class="hot">調整</mark>」</div>
+                </article>
+                
+                <article class="card" data-search="53 03-brm01標契約(稿) 第5條　契約價金之給付條件 【舊版 20260323】
+設備抵工地後「經機關目試檢驗後」支付設備費 85%
+
+【新版 1150520】
+修正為「經機關目視檢驗後」（「試」改為「視」，文字勘誤修正）">
+                  <div class="card-top">
+                    <div class="serial">#53</div>
+                    <div>
+                      <h3>03-BRM01標契約(稿)</h3>
+                      <p class="clause">第5條　契約價金之給付條件</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>設備抵工地後「經機關目試檢驗後」支付設備費 85%<br><br>【新版 1150520】<br><mark class="hot">修正</mark>為「經機關目視檢驗後」（「試」<mark class="hot">改為</mark>「視」，文字勘誤<mark class="hot">修正</mark>）</div>
+                </article>
+                
+                <article class="card" data-search="54 03-brm01標契約(稿) 第5條　契約價金之給付條件 【舊版 20260323】
+軌道工程竣工驗收合格及繳納保固保證金後，付清尾款 10%
+
+【新版 1150520】
+新增條件：軌道工程竣工「驗收合格(含竣工圖審定)」及繳納保固保證金後，付清尾款 10%（多處付款條款同步新增竣工圖審定要求）">
+                  <div class="card-top">
+                    <div class="serial">#54</div>
+                    <div>
+                      <h3>03-BRM01標契約(稿)</h3>
+                      <p class="clause">第5條　契約價金之給付條件</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>軌道工程竣工驗收合格及繳納保固保證金後，付清尾款 10%<br><br>【新版 1150520】<br><mark class="hot">新增</mark>條件：軌道工程竣工「驗收合格(含竣工圖審定)」及繳納保固保證金後，付清尾款 10%（多處付款條款同步<mark class="hot">新增</mark>竣工圖審定要求）</div>
+                </article>
+                
+                <article class="card" data-search="55 03-brm01標契約(稿) 第7條　履約期限 【舊版 20260323】
+「颱風等天然因素」所導致之展延天數不得再請求補償
+
+【新版 1150520】
+改為「山崩、地震、海嘯等天然因素」（調整不可歸責天然因素之例示範圍，刪颱風、改列地震類災害）">
+                  <div class="card-top">
+                    <div class="serial">#55</div>
+                    <div>
+                      <h3>03-BRM01標契約(稿)</h3>
+                      <p class="clause">第7條　履約<mark class="hot">期限</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「颱風等天然因素」所導致之展延天數<mark class="hot">不得</mark>再請求補償<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「山崩、地震、海嘯等天然因素」（<mark class="hot">調整</mark>不可歸責天然因素之例示範圍，刪颱風、改列地震類災害）</div>
+                </article>
+                
+                <article class="card" data-search="56 03-brm01標契約(稿) 第9條　履約管理 【舊版 20260323】
+「另應就其分包項目單項超過 2 億元金額部分，提送分包廠商資格，於機關審查同意後，方得進行該部分相關工作。如廠商未依規定提報，機關得按第5條(一)6暫停給付估驗計價款規定處理。」
+
+【新版 1150520】
+整段刪除；分包廠商資格審查程序規定移除">
+                  <div class="card-top">
+                    <div class="serial">#56</div>
+                    <div>
+                      <h3>03-BRM01標契約(稿)</h3>
+                      <p class="clause">第9條　履約管理</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「另<mark class="hot">應</mark>就其分包項目單項超過 2 億元<mark class="hot">金額</mark>部分，提送分包廠商資格，於機關審查同意後，方得進行該部分相關工作。如廠商未依規定提報，機關得按第5條(一)6暫停給付估驗計價款規定處理。」<br><br>【新版 1150520】<br>整段<mark class="hot">刪除</mark>；分包廠商資格審查程序規定<mark class="hot">移除</mark></div>
+                </article>
+                
+                <article class="card" data-search="57 03-brm01標契約(稿) 第13條　保險 【舊版 20260323】
+每一事故之廠商「非天災自負額」不超過新臺幣 200 萬元正；「天災自負額」不超過損失金額之 20%
+
+【新版 1150520】
+改為按損失金額 20% 分級計算：
+・機電安裝及高架工程：最高不超過 800 萬元，最低不少於 30 萬元
+・地面工程及其他工程：最高不超過 200 萬元，最低不少於 20 萬元
+（取消天災/非天災分類，改採工程類別分級）">
+                  <div class="card-top">
+                    <div class="serial">#57</div>
+                    <div>
+                      <h3>03-BRM01標契約(稿)</h3>
+                      <p class="clause">第13條　保險</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>每一事故之廠商「非天災自負額」不超過新臺幣 200 萬元正；「天災自負額」不超過損失<mark class="hot">金額</mark>之 20%<br><br>【新版 1150520】<br><mark class="hot">改為</mark>按損失<mark class="hot">金額</mark> 20% 分級計算：<br>・機電安裝及高架工程：最高不超過 800 萬元，最低不少於 30 萬元<br>・地面工程及其他工程：最高不超過 200 萬元，最低不少於 20 萬元<br>（取消天災/非天災分類，改採工程類別分級）</div>
+                </article>
+                
+                <article class="card" data-search="58 03-brm01標契約(稿) 第13條　保險 【舊版 20260323】
+「廠商於接獲開工通知日後，應立即向保險公司投保本條規定之保險」
+
+【新版 1150520】
+改為「廠商於接獲開工通知日後，應立即向保險公司啟動投保契約約定之保險程序」（「投保本條規定之保險」→「啟動投保契約約定之保險程序」）">
+                  <div class="card-top">
+                    <div class="serial">#58</div>
+                    <div>
+                      <h3>03-BRM01標契約(稿)</h3>
+                      <p class="clause">第13條　保險</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「廠商於接獲開工通知日後，<mark class="hot">應</mark>立即向保險公司投保本條規定之保險」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「廠商於接獲開工通知日後，<mark class="hot">應</mark>立即向保險公司啟動投保契約約定之保險程序」（「投保本條規定之保險」→「啟動投保契約約定之保險程序」）</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">04-1 — 業主需求書(一)  整體服務需求及規定</span>
+                <span class="count">33 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="59 04-1-業主需求書(一) 文件日期 【舊版 20260323】
+中華民國一一五年一月
+
+【新版 1150520】
+中華民國一一五年五月">
+                  <div class="card-top">
+                    <div class="serial">#59</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">文件日期</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>中華民國一一五年一月<br><br>【新版 1150520】<br>中華民國一一五年五月</div>
+                </article>
+                
+                <article class="card" data-search="60 04-1-業主需求書(一) 工程範圍 — 橫渡線/避車軌 【舊版 20260323】
+「br04站與br02車站間里程約4k+500~4k+700處設置之橫渡線位置變更至里程約3k+400~3k+600處」
+
+【新版 1150520】
+改為「側式避車軌位置變更至里程約3k+400~3k+600處」（術語由「橫渡線」改為「側式避車軌」）">
+                  <div class="card-top">
+                    <div class="serial">#60</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">工程範圍 — 橫渡線/避車軌</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「BR04站與BR02車站間里程約4K+500~4K+700處設置之橫渡線位置變更至里程約3K+400~3K+600處」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「側式避車軌位置變更至里程約3K+400~3K+600處」（術語由「橫渡線」<mark class="hot">改為</mark>「側式避車軌」）</div>
+                </article>
+                
+                <article class="card" data-search="61 04-1-業主需求書(一) 工程範圍 — 新增f、g項 【舊版 20260323】
+（無此兩項）
+
+【新版 1150520】
+新增f項：「本工程位於br01站與br02站間之橫渡線，將配合萬大線之變更一併調整位置；後續應俟新北捷運局定案後，再據以辦理後續設計」
+新增g項：「本案須提送施工環境監測計畫書，並經業主核可後始得執行；相關費用均已包含於本工程契約價金內，不另給付」">
+                  <div class="card-top">
+                    <div class="serial">#61</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">工程範圍 — <mark class="hot">新增</mark>F、G項</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（無此兩項）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>F項：「本工程位於BR01站與BR02站間之橫渡線，將配合萬大線之變更一併<mark class="hot">調整</mark>位置；後續<mark class="hot">應</mark>俟新北捷運局定案後，再據以辦理後續設計」<br><mark class="hot">新增</mark>G項：「本案<mark class="hot">須</mark>提送施工環境監測計畫書，並經業主核可後始得執行；相關費用均已包含於本工程契約價金內，不另給付」</div>
+                </article>
+                
+                <article class="card" data-search="62 04-1-業主需求書(一) 第7章 廠商主要人員 【舊版 20260323】
+主要人員包含：計畫經理、施工經理、設計經理、各子系統經理、系統保證經理、系統整合經理、時程經理、界面經理、測試經理、系統安全經理（共10項）；「系統保證經理、系統ram經理及系統安全經理得在業主/機關及專管之同意下由具備足夠資歷人員兼任」
+
+【新版 1150520】
+刪除「系統安全經理」及主要人員列表第(j)項（共縮減至9項）；文字改為「系統保證經理得在業主/機關及專管之同意下由具備足夠資歷及能力之人員兼任」（刪除系統ram經理兼任條款）">
+                  <div class="card-top">
+                    <div class="serial">#62</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">第7章 廠商主要人員</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>主要人員包含：計畫經理、施工經理、設計經理、各子系統經理、系統保證經理、系統整合經理、時程經理、界面經理、測試經理、系統安全經理（共10項）；「系統保證經理、系統RAM經理及系統安全經理得在業主/機關及專管之同意下由具備足夠資歷人員兼任」<br><br>【新版 1150520】<br><mark class="hot">刪除</mark>「系統安全經理」及主要人員列表第(j)項（共縮減至9項）；文字<mark class="hot">改為</mark>「系統保證經理得在業主/機關及專管之同意下由具備足夠資歷及能力之人員兼任」（<mark class="hot">刪除</mark>系統RAM經理兼任條款）</div>
+                </article>
+                
+                <article class="card" data-search="63 04-1-業主需求書(一) 第7章 型態管理計畫提送期限 【舊版 20260323】
+「廠商應於ntp+90日內，提出型態管理計畫送業主審查」；型態管理作業應符合 iso10007、cns14238或業主/機關同意之標準辦理
+
+【新版 1150520】
+改為「ntp+120日內提出」；型態管理作業標準改為「業主同意之標準辦理」（刪除/機關）">
+                  <div class="card-top">
+                    <div class="serial">#63</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">第7章 型態管理計畫提送<mark class="hot">期限</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「廠商<mark class="hot">應</mark>於NTP+<mark class="hot">90日</mark>內，提出型態管理計畫送業主審查」；型態管理作業<mark class="hot">應</mark>符合 ISO10007、CNS14238或業主/機關同意之標準辦理<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「NTP+120日內提出」；型態管理作業標準<mark class="hot">改為</mark>「業主同意之標準辦理」（<mark class="hot">刪除</mark>/機關）</div>
+                </article>
+                
+                <article class="card" data-search="64 04-1-業主需求書(一) 第7章 工程價目單及計價時程表提送 【舊版 20260323】
+「廠商應於ntp+90日內，提送初步詳細價目表(一)」；「廠商應於ntp+120日內，提送計價時程表」
+
+【新版 1150520】
+兩者均延長：「ntp+180日內提送詳細價目表(一)」；「ntp+180日內提送計價時程表」">
+                  <div class="card-top">
+                    <div class="serial">#64</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">第7章 工程價目單及計價時程表提送</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「廠商<mark class="hot">應</mark>於NTP+<mark class="hot">90日</mark>內，提送初步詳細價目表(一)」；「廠商<mark class="hot">應</mark>於NTP+120日內，提送計價時程表」<br><br>【新版 1150520】<br>兩者均延長：「NTP+<mark class="hot">180日</mark>內提送詳細價目表(一)」；「NTP+<mark class="hot">180日</mark>內提送計價時程表」</div>
+                </article>
+                
+                <article class="card" data-search="65 04-1-業主需求書(一) 第1章 晨峰運量數據 【舊版 20260323】
+表列各站進出站旅次（以原始數字）：br08進站1,887、出站1,911、場站進出進站3,122、出站3,110等
+
+【新版 1150520】
+欄位標題由「場站進出」改為「廠站進出」；各站數字調整，如br08進站1,887、出站1,000、廠站進出進站2,000、出站1,900（多站數值有更新）">
+                  <div class="card-top">
+                    <div class="serial">#65</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">第1章 晨峰運量數據</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>表列各站進出站旅次（以原始數字）：BR08進站1,887、出站1,911、場站進出進站3,122、出站3,110等<br><br>【新版 1150520】<br>欄位標題由「場站進出」<mark class="hot">改為</mark>「廠站進出」；各站數字<mark class="hot">調整</mark>，如BR08進站1,887、出站1,000、廠站進出進站2,000、出站1,900（多站數值有更新）</div>
+                </article>
+                
+                <article class="card" data-search="66 04-1-業主需求書(一) 附錄c bim需求 【舊版 20260323】
+bim模型類別包含：(a)房屋建築類、(b)軌道與機電系統類、(c)整合模型、(d)都市景觀模型套疊、(e)虛擬實境模擬；含「房屋建築類模型」章節（含建築模型、結構模型、mep模型等）
+
+【新版 1150520】
+移除「(a)房屋建築類」，模型類別改為：(a)軌道與機電系統類、(b)整合模型、(c)都市景觀模型套疊、(d)虛擬實境模擬；「房屋建築類模型」章節改為「機電系統類模型」，相關建模說明重新撰寫">
+                  <div class="card-top">
+                    <div class="serial">#66</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">附錄C BIM需求</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>BIM模型類別包含：(A)房屋建築類、(B)軌道與機電系統類、(C)整合模型、(D)都市景觀模型套疊、(E)虛擬實境模擬；含「房屋建築類模型」章節（含建築模型、結構模型、MEP模型等）<br><br>【新版 1150520】<br><mark class="hot">移除</mark>「(A)房屋建築類」，模型類別<mark class="hot">改為</mark>：(A)軌道與機電系統類、(B)整合模型、(C)都市景觀模型套疊、(D)虛擬實境模擬；「房屋建築類模型」章節<mark class="hot">改為</mark>「機電系統類模型」，相關建模說明重新撰寫</div>
+                </article>
+                
+                <article class="card" data-search="67 04-1-業主需求書(一) 附錄h 機電系統參數 車輛長度 【舊版 20260323】
+列車全長 35.5m
+
+【新版 1150520】
+列車全長不大於 40m">
+                  <div class="card-top">
+                    <div class="serial">#67</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">附錄H 機電系統參數 車輛長度</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>列車全長 35.5m<br><br>【新版 1150520】<br>列車全長不大於 40m</div>
+                </article>
+                
+                <article class="card" data-search="68 04-1-業主需求書(一) 附錄h 列車停靠月臺間隙 【舊版 20260323】
+「小於等於 75mm」
+
+【新版 1150520】
+改為「不大於 75mm」（表述統一，數值不變）">
+                  <div class="card-top">
+                    <div class="serial">#68</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">附錄H 列車停靠月臺間隙</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「小於等於 75mm」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「不大於 75mm」（表述統一，數值不變）</div>
+                </article>
+                
+                <article class="card" data-search="69 04-1-業主需求書(一) 第14章 軌道投入口尺寸 【舊版 20260323】
+「土建廠商原則上應配合機電廠商所提軌道投入口之需求，辦理結構體預留並提供軌道投入口」（未指定尺寸）
+
+【新版 1150520】
+新增明確尺寸規定：「軌道投入口之需求（尺寸為 26 公尺 x5 公尺），辦理結構體預留並提供軌道投入口」">
+                  <div class="card-top">
+                    <div class="serial">#69</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">第14章 軌道投入口尺寸</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「土建廠商原則上<mark class="hot">應</mark>配合機電廠商所提軌道投入口之需求，辦理結構體預留並提供軌道投入口」（未指定尺寸）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>明確尺寸規定：「軌道投入口之需求（尺寸為 26 公尺 x5 公尺），辦理結構體預留並提供軌道投入口」</div>
+                </article>
+                
+                <article class="card" data-search="70 04-1-業主需求書(一) 第14章 軌道銲接場地 【舊版 20260323】
+「明挖覆蓋隧道開口及高架橋梁之入口等軌道工程搬運鋼軌之施工需求」
+
+【新版 1150520】
+增加「及設置銲接場地及機具進出動線」之施工需求">
+                  <div class="card-top">
+                    <div class="serial">#70</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">第14章 軌道銲接場地</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「明挖覆蓋隧道開口及高架橋梁之入口等軌道工程搬運鋼軌之施工需求」<br><br>【新版 1150520】<br>增加「及設置銲接場地及機具進出動線」之施工需求</div>
+                </article>
+                
+                <article class="card" data-search="71 04-1-業主需求書(一) 附錄c isa資格/獨立查證 【舊版 20260323】
+「並針對評估項目出具特定應用(specific application)廠商(統包層級及子系統層級)聘用之isa須具備iso17020 內 type a 及 iso17065 之資格」；「廠商應配合獨立查證與確證機構依契約權責分工表之審查與監督」
+
+【新版 1150520】
+評估項目增加「（須包含相關功能安全界面）」；新增 en50716 規定：「上述en50716已有明確規定，相容舊版en50128或en50657之條款，廠商依照en50716內之相關規定辦理」；獨立查證改為「廠商應無條件配合接受獨立查證與確證機構之審查與監督」（加強配合義務）">
+                  <div class="card-top">
+                    <div class="serial">#71</div>
+                    <div>
+                      <h3>04-1-業主需求書(一)</h3>
+                      <p class="clause">附錄C <mark class="hot">ISA</mark>資格/獨立查證</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「並針對評估項目出具特定<mark class="hot">應</mark>用(Specific Application)廠商(統包層級及子系統層級)聘用之<mark class="hot">ISA</mark><mark class="hot">須</mark>具備ISO17020 內 Type A 及 ISO17065 之資格」；「廠商<mark class="hot">應</mark>配合獨立查證與確證機構依契約權責分工表之審查與監督」<br><br>【新版 1150520】<br>評估項目增加「（<mark class="hot">須</mark>包含相關功能安全界面）」；<mark class="hot">新增</mark> EN50716 規定：「上述EN50716已有明確規定，相容舊版EN50128或EN50657之條款，廠商依照EN50716內之相關規定辦理」；獨立查證<mark class="hot">改為</mark>「廠商<mark class="hot">應</mark>無條件配合接受獨立查證與確證機構之審查與監督」（加強配合義務）</div>
+                </article>
+                
+                <article class="card" data-search="72 04-1-brm01標業主需求書(一) 第1章附錄c　bim作業項目清單 【舊版 20260323】
+bim作業項目列為5類，第一項為「a. 房屋建築類」，後接軌道與機電系統類、整合模型、都市景觀套疊、vr
+
+【新版 1150520】
+刪除「a. 房屋建築類」，改以「a. 軌道與機電系統類」為起點，共4類（刪除房屋建築類相關bim作業範圍）">
+                  <div class="card-top">
+                    <div class="serial">#72</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第1章附錄C　BIM作業項目清單</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>BIM作業項目列為5類，第一項為「A. 房屋建築類」，後接軌道與機電系統類、整合模型、都市景觀套疊、VR<br><br>【新版 1150520】<br><mark class="hot">刪除</mark>「A. 房屋建築類」，改以「A. 軌道與機電系統類」為起點，共4類（<mark class="hot">刪除</mark>房屋建築類相關BIM作業範圍）</div>
+                </article>
+                
+                <article class="card" data-search="73 04-1-brm01標業主需求書(一) 第1章附錄c　細部設計bim模型內容 【舊版 20260323】
+機電系統類模型區分為：「a. 軌道模型」（含軌道量體道岔等）及「b. 系統機電模型」（含車輛供電通訊等）二類，另有「房屋建築類模型」（建築模型、結構模型、mep模型）
+
+【新版 1150520】
+整合簡化為單一「a. 機電系統模型(含車站與路線段)」，包含車輛、供電、行車監控、通訊、行控中心設備及自動收費等；刪除房屋建築類模型（建築/結構/mep）全部章節">
+                  <div class="card-top">
+                    <div class="serial">#73</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第1章附錄C　細部設計BIM模型內容</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>機電系統類模型區分為：「A. 軌道模型」（含軌道量體道岔等）及「B. 系統機電模型」（含車輛供電通訊等）二類，另有「房屋建築類模型」（建築模型、結構模型、MEP模型）<br><br>【新版 1150520】<br>整合簡化為單一「A. 機電系統模型(含車站與路線段)」，包含車輛、供電、行車監控、通訊、行控中心設備及自動收費等；<mark class="hot">刪除</mark>房屋建築類模型（建築/結構/MEP）全部章節</div>
+                </article>
+                
+                <article class="card" data-search="74 04-1-brm01標業主需求書(一) 第1章附錄c　isa評估範圍 【舊版 20260323】
+isa辦理獨立安全評估（含獨立軟體安全評估），針對評估項目出具特定應用(specific application)證明
+
+【新版 1150520】
+新增評估項目須「包含相關功能安全界面」；並增訂en50716已明確規定相容舊版en50128或en50657，廠商應依en50716辦理">
+                  <div class="card-top">
+                    <div class="serial">#74</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第1章附錄C　<mark class="hot">ISA</mark>評估範圍</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br><mark class="hot">ISA</mark>辦理獨立安全評估（含獨立軟體安全評估），針對評估項目出具特定<mark class="hot">應</mark>用(Specific Application)證明<br><br>【新版 1150520】<br><mark class="hot">新增</mark>評估項目<mark class="hot">須</mark>「包含相關功能安全界面」；並增訂EN50716已明確規定相容舊版EN50128或EN50657，廠商<mark class="hot">應</mark>依EN50716辦理</div>
+                </article>
+                
+                <article class="card" data-search="75 04-1-brm01標業主需求書(一) 第1章附錄c　isa提送期限 【舊版 20260323】
+「廠商須於ntp+60日內提isa單位送業主同意」
+
+【新版 1150520】
+延長為「廠商須於ntp+240日內提isa送業主同意」（60日→240日；並刪除「單位」二字）">
+                  <div class="card-top">
+                    <div class="serial">#75</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第1章附錄C　<mark class="hot">ISA</mark>提送<mark class="hot">期限</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「廠商<mark class="hot">須</mark>於NTP+60日內提<mark class="hot">ISA</mark>單位送業主同意」<br><br>【新版 1150520】<br>延長為「廠商<mark class="hot">須</mark>於NTP+240日內提<mark class="hot">ISA</mark>送業主同意」（60日→240日；並<mark class="hot">刪除</mark>「單位」二字）</div>
+                </article>
+                
+                <article class="card" data-search="76 04-1-brm01標業主需求書(一) 第1章附錄c　isa資歷要求 【舊版 20260323】
+isa資格文件須有執行「鐵道全系統(統包層級的isa)或相關子系統」的能力
+
+【新版 1150520】
+改為「鐵道全系統或相關子系統isa的能力」（刪除括注「統包層級的isa」，語意更簡潔）">
+                  <div class="card-top">
+                    <div class="serial">#76</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第1章附錄C　<mark class="hot">ISA</mark>資歷要求</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br><mark class="hot">ISA</mark>資格文件<mark class="hot">須</mark>有執行「鐵道全系統(統包層級的<mark class="hot">ISA</mark>)或相關子系統」的能力<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「鐵道全系統或相關子系統<mark class="hot">ISA</mark>的能力」（<mark class="hot">刪除</mark>括注「統包層級的<mark class="hot">ISA</mark>」，語意更簡潔）</div>
+                </article>
+                
+                <article class="card" data-search="77 04-1-brm01標業主需求書(一) 第1章附錄c　iv&amp;v配合義務 【舊版 20260323】
+「廠商應配合獨立查證與確證機構依契約權責分工表之審查與監督」
+
+【新版 1150520】
+改為「廠商應無條件配合接受獨立查證與確證機構之審查與監督」（新增「無條件」及「接受」，刪除「依契約權責分工表」限制語）">
+                  <div class="card-top">
+                    <div class="serial">#77</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第1章附錄C　IV&amp;V配合義務</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「廠商<mark class="hot">應</mark>配合獨立查證與確證機構依契約權責分工表之審查與監督」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「廠商<mark class="hot">應</mark>無條件配合接受獨立查證與確證機構之審查與監督」（<mark class="hot">新增</mark>「無條件」及「接受」，<mark class="hot">刪除</mark>「依契約權責分工表」限制語）</div>
+                </article>
+                
+                <article class="card" data-search="78 04-1-brm01標業主需求書(一) 第1章附錄h　機電系統參數表 【舊版 20260323】
+「列車全長35.5m」（固定值）
+
+【新版 1150520】
+改為「列車全長不大於40m」（由固定尺寸改為上限值，給予廠商較大設計彈性）">
+                  <div class="card-top">
+                    <div class="serial">#78</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第1章附錄H　機電系統參數表</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「列車全長35.5m」（固定值）<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「列車全長不大於40m」（由固定尺寸<mark class="hot">改為</mark>上限值，給予廠商較大設計彈性）</div>
+                </article>
+                
+                <article class="card" data-search="79 04-1-brm01標業主需求書(一) 第1章附錄h　月臺停靠間隙 【舊版 20260323】
+「列車停靠月臺之間隙 小於等於75mm」
+
+【新版 1150520】
+改為「不大於75mm」（用語統一，實質意義相同）">
+                  <div class="card-top">
+                    <div class="serial">#79</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第1章附錄H　月臺停靠間隙</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「列車停靠月臺之間隙 小於等於75mm」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「不大於75mm」（用語統一，實質意義相同）</div>
+                </article>
+                
+                <article class="card" data-search="80 04-1-brm01標業主需求書(一) 第4章　電子票證相容性 【舊版 20260323】
+廠商須驗證現存交通電子票證相容（a及b款）
+
+【新版 1150520】
+新增第c款：「廠商應辦理前述相容性之整合與協調工作，得由業主提供必要之資訊，詳參業主需求書(二)或相關規定辦理」">
+                  <div class="card-top">
+                    <div class="serial">#80</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第4章　電子票證相容性</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>廠商<mark class="hot">須</mark>驗證現存交通電子票證相容（A及B款）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>第C款：「廠商<mark class="hot">應</mark>辦理前述相容性之整合與協調工作，得由業主提供必要之資訊，詳參業主需求書(二)或相關規定辦理」</div>
+                </article>
+                
+                <article class="card" data-search="81 04-1-brm01標業主需求書(一) 第7章　計畫關鍵人員清單 【舊版 20260323】
+關鍵人員列10類，包含：a.計畫經理 b.施工經理 c.設計經理 d.各子系統經理 e.系統保證經理 f.系統整合經理 g.時程經理 h.界面經理 i.測試經理 j.系統安全經理
+
+【新版 1150520】
+刪除「j. 系統安全經理」，關鍵人員縮減為9類">
+                  <div class="card-top">
+                    <div class="serial">#81</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第7章　計畫關鍵人員清單</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>關鍵人員列10類，包含：a.計畫經理 b.施工經理 c.設計經理 d.各子系統經理 e.系統保證經理 f.系統整合經理 g.時程經理 h.界面經理 i.測試經理 j.系統安全經理<br><br>【新版 1150520】<br><mark class="hot">刪除</mark>「j. 系統安全經理」，關鍵人員縮減為9類</div>
+                </article>
+                
+                <article class="card" data-search="82 04-1-brm01標業主需求書(一) 第7章　系統保證人員兼任規定 【舊版 20260323】
+「系統保證經理、系統ram經理及系統安全經理得在業主/機關及專管之同意下，由具備足夠資歷及能力之人員兼任」
+
+【新版 1150520】
+縮減為「系統保證經理得在業主/機關及專管之同意下，由具備足夠資歷及能力之人員兼任」（刪除ram經理及系統安全經理的兼任授權）">
+                  <div class="card-top">
+                    <div class="serial">#82</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第7章　系統保證人員兼任規定</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「系統保證經理、系統RAM經理及系統安全經理得在業主/機關及專管之同意下，由具備足夠資歷及能力之人員兼任」<br><br>【新版 1150520】<br>縮減為「系統保證經理得在業主/機關及專管之同意下，由具備足夠資歷及能力之人員兼任」（<mark class="hot">刪除</mark>RAM經理及系統安全經理的兼任授權）</div>
+                </article>
+                
+                <article class="card" data-search="83 04-1-brm01標業主需求書(一) 第7章　詳細價目表提送期限 【舊版 20260323】
+廠商應於ntp+90日內提送初步詳細價目表(一)及(二)
+
+【新版 1150520】
+延長為ntp+180日內提送（90日→180日）">
+                  <div class="card-top">
+                    <div class="serial">#83</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第7章　詳細價目表提送<mark class="hot">期限</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>廠商<mark class="hot">應</mark>於NTP+<mark class="hot">90日</mark>內提送初步詳細價目表(一)及(二)<br><br>【新版 1150520】<br>延長為NTP+<mark class="hot">180日</mark>內提送（<mark class="hot">90日</mark>→<mark class="hot">180日</mark>）</div>
+                </article>
+                
+                <article class="card" data-search="84 04-1-brm01標業主需求書(一) 第7章　計價時程表提送期限 【舊版 20260323】
+廠商應於ntp+120日內提送契約期間內預估計價時程表
+
+【新版 1150520】
+延長為ntp+180日內提送（120日→180日）">
+                  <div class="card-top">
+                    <div class="serial">#84</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第7章　計價時程表提送<mark class="hot">期限</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>廠商<mark class="hot">應</mark>於NTP+120日內提送契約期間內預估計價時程表<br><br>【新版 1150520】<br>延長為NTP+<mark class="hot">180日</mark>內提送（120日→<mark class="hot">180日</mark>）</div>
+                </article>
+                
+                <article class="card" data-search="85 04-1-brm01標業主需求書(一) 第7章　型態管理計畫提送期限 【舊版 20260323】
+廠商應於ntp+90日內提出型態管理計畫送業主審查
+
+【新版 1150520】
+延長為ntp+120日內提出（90日→120日）">
+                  <div class="card-top">
+                    <div class="serial">#85</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第7章　型態管理計畫提送<mark class="hot">期限</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>廠商<mark class="hot">應</mark>於NTP+<mark class="hot">90日</mark>內提出型態管理計畫送業主審查<br><br>【新版 1150520】<br>延長為NTP+120日內提出（<mark class="hot">90日</mark>→120日）</div>
+                </article>
+                
+                <article class="card" data-search="86 04-1-brm01標業主需求書(一) 第7章　型態管理作業標準 【舊版 20260323】
+「應符合iso10007、cns14238或業主/機關同意之標準辦理並執行細項拆分並追蹤，型態管理過程需專注在機關/業主對產品或系統的要求，並必須考量其執行時的環境狀況，型態管理過程須詳細低記載在型態管理計畫...」（含舊版(2)型態管理計畫整段詳細描述）
+
+【新版 1150520】
+精簡為「應依iso10007、cns14238或業主同意之標準辦理」；型態管理計畫改以結構化方式列明三大主要部分（a.文件組織及管控、b.實體型態管理、c.軟體型態管理）；刪除「/機關」，刪除冗長執行描述；條款項次(2)~(9)重新編號為(2)~(8)">
+                  <div class="card-top">
+                    <div class="serial">#86</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第7章　型態管理作業標準</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「<mark class="hot">應</mark>符合ISO10007、CNS14238或業主/機關同意之標準辦理並執行細項拆分並追蹤，型態管理過程需專注在機關/業主對產品或系統的要求，並必<mark class="hot">須</mark>考量其執行時的環境狀況，型態管理過程<mark class="hot">須</mark>詳細低記載在型態管理計畫...」（含舊版(2)型態管理計畫整段詳細描述）<br><br>【新版 1150520】<br>精簡為「<mark class="hot">應</mark>依ISO10007、CNS14238或業主同意之標準辦理」；型態管理計畫改以結構化方式列明三大主要部分（A.文件組織及管控、B.實體型態管理、C.軟體型態管理）；<mark class="hot">刪除</mark>「/機關」，<mark class="hot">刪除</mark>冗長執行描述；條款項次(2)~(9)重新編號為(2)~(8)</div>
+                </article>
+                
+                <article class="card" data-search="87 04-1-brm01標業主需求書(一) 第7章　bim人員角色：新增「專業分包商bim專業協調人」條款 【舊版 20260323】
+（舊版無此條款，直接列bim各作業階段可提交成果）
+
+【新版 1150520】
+新增「專業分包商bim專業協調人」完整章節：規定每一設計及施工專業須指定專人負責bim整合，詳列責任包含：a.協助bim管理經理、b.參與制定執行計畫書、c.指揮監督bim執行、d.跨專業協調資料交換、e.準備衝突報告、f.出席bim界面協調整合會議等">
+                  <div class="card-top">
+                    <div class="serial">#87</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第7章　BIM人員角色：<mark class="hot">新增</mark>「專業分包商BIM專業協調人」條款</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（舊版無此條款，直接列BIM各作業階段可提交成果）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>「專業分包商BIM專業協調人」完整章節：規定每一設計及施工專業<mark class="hot">須</mark>指定專人負責BIM整合，詳列責任包含：a.協助BIM管理經理、b.參與制定執行計畫書、c.指揮監督BIM執行、d.跨專業協調資料交換、e.準備衝突報告、f.出席BIM界面協<mark class="hot">調整</mark>合會議等</div>
+                </article>
+                
+                <article class="card" data-search="88 04-1-brm01標業主需求書(一) 第14章　土建與機電界面條款 【舊版 20260323】
+（舊版無此聲明，直接列界面需求項目）
+
+【新版 1150520】
+新增第(5)款：「有關本案招標文件內圖說所標註之尺寸僅為參考，應於完成界面控制文件（icd）交換後定案」（後續條款順序遞移）">
+                  <div class="card-top">
+                    <div class="serial">#88</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第14章　土建與機電界面條款</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（舊版無此聲明，直接列界面需求項目）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>第(5)款：「有關本案招標文件內圖說所標註之尺寸僅為參考，<mark class="hot">應</mark>於完成界面控制文件（ICD）交換後定案」（後續條款順序遞移）</div>
+                </article>
+                
+                <article class="card" data-search="89 04-1-brm01標業主需求書(一) 第14章　軌道投入口施工需求 【舊版 20260323】
+「軌道投入口包含地下段出土段、明挖覆蓋隧道開口及高架橋梁之入口等軌道工程搬運鋼軌之施工需求」
+
+【新版 1150520】
+擴充為「搬運鋼軌及設置銲接場地及機具進出動線之施工需求」（新增銲接場地及機具進出動線需求）">
+                  <div class="card-top">
+                    <div class="serial">#89</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第14章　軌道投入口施工需求</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「軌道投入口包含地下段出土段、明挖覆蓋隧道開口及高架橋梁之入口等軌道工程搬運鋼軌之施工需求」<br><br>【新版 1150520】<br>擴充為「搬運鋼軌及設置銲接場地及機具進出動線之施工需求」（<mark class="hot">新增</mark>銲接場地及機具進出動線需求）</div>
+                </article>
+                
+                <article class="card" data-search="90 04-1-brm01標業主需求書(一) 第14章　軌道投入口尺寸規格 【舊版 20260323】
+（未明訂投入口尺寸）
+
+【新版 1150520】
+新增具體尺寸規格：「尺寸為 26 公尺 x5 公尺」">
+                  <div class="card-top">
+                    <div class="serial">#90</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第14章　軌道投入口尺寸規格</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（未明訂投入口尺寸）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>具體尺寸規格：「尺寸為 26 公尺 x5 公尺」</div>
+                </article>
+                
+                <article class="card" data-search="91 04-1-brm01標業主需求書(一) 第14章附錄a　晨峰運量表欄位與數據 【舊版 20260323】
+欄位：「場站進出」及「轉乘」；晨峰合計：場站進出進站8,657、出站8,685；轉乘進站5,143、出站5,115
+
+【新版 1150520】
+欄位「轉乘」改為「廠站進出」；數據大幅更新：各站「廠站進出」欄數字全面修正（如br08由3,122/3,110改為2,000/1,900；br01由2,021/2,005改為3,700/1,800；合計廠站進出進站12,000、出站10,400）">
+                  <div class="card-top">
+                    <div class="serial">#91</div>
+                    <div>
+                      <h3>04-1-BRM01標業主需求書(一)</h3>
+                      <p class="clause">第14章附錄A　晨峰運量表欄位與數據</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>欄位：「場站進出」及「轉乘」；晨峰合計：場站進出進站8,657、出站8,685；轉乘進站5,143、出站5,115<br><br>【新版 1150520】<br>欄位「轉乘」<mark class="hot">改為</mark>「廠站進出」；數據大幅更新：各站「廠站進出」欄數字全面<mark class="hot">修正</mark>（如BR08由3,122/3,110<mark class="hot">改為</mark>2,000/1,900；BR01由2,021/2,005<mark class="hot">改為</mark>3,700/1,800；合計廠站進出進站12,000、出站10,400）</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">04-2 — 業主需求書(二)  系統保證及系統安全需求</span>
+                <span class="count">22 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="92 04-2-業主需求書(二) 文件日期 / 整體 【舊版 20260323】
+中華民國一一五年一月；頁數 700 頁
+
+【新版 1150520】
+中華民國一一五年五月；頁數增至 711 頁（增加約11頁）">
+                  <div class="card-top">
+                    <div class="serial">#92</div>
+                    <div>
+                      <h3>04-2-業主需求書(二)</h3>
+                      <p class="clause">文件日期 / 整體</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>中華民國一一五年一月；頁數 700 頁<br><br>【新版 1150520】<br>中華民國一一五年五月；頁數增至 711 頁（增加約11頁）</div>
+                </article>
+                
+                <article class="card" data-search="93 04-2-業主需求書(二) 目次頁碼 【舊版 20260323】
+各章節起始頁碼：機電系統一般規範 1-1~1-18（品質要求）、1-18（安全要求）、1-19（計畫管理要求）、1-20（系統保證）、1-32（機電系統工程管理）等
+
+【新版 1150520】
+各章節頁碼更新：品質要求 1-19、安全要求 1-20、計畫管理要求 1-22、系統保證 1-22、機電系統工程管理 1-34 等（整體後移）">
+                  <div class="card-top">
+                    <div class="serial">#93</div>
+                    <div>
+                      <h3>04-2-業主需求書(二)</h3>
+                      <p class="clause">目次頁碼</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>各章節起始頁碼：機電系統一般規範 1-1~1-18（品質要求）、1-18（安全要求）、1-19（計畫管理要求）、1-20（系統保證）、1-32（機電系統工程管理）等<br><br>【新版 1150520】<br>各章節頁碼更新：品質要求 1-19、安全要求 1-20、計畫管理要求 1-22、系統保證 1-22、機電系統工程管理 1-34 等（整體後移）</div>
+                </article>
+                
+                <article class="card" data-search="94 04-2-業主需求書(二) 格式重整 【舊版 20260323】
+部分清單條文未加編號，以連續文字列出各項目
+
+【新版 1150520】
+清單條文加上(1)(2)(3)...等順序編號；各章節新增更多換行與段落間距（格式更清晰）">
+                  <div class="card-top">
+                    <div class="serial">#94</div>
+                    <div>
+                      <h3>04-2-業主需求書(二)</h3>
+                      <p class="clause">格式重整</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>部分清單條文未加編號，以連續文字列出各項目<br><br>【新版 1150520】<br>清單條文加上(1)(2)(3)...等順序編號；各章節<mark class="hot">新增</mark>更多換行與段落間距（格式更清晰）</div>
+                </article>
+                
+                <article class="card" data-search="95 04-2-brm01標業主需求書(二) 文件基本資訊 舊版為 260319(1150320) 版本、700頁、pdf產生工具 microsoft word 2019；新版為 260522-2 版本、711頁、pdf產生工具 onlyoffice 9.2.1.43。新版頁數增加11頁且檔案體積由約33.7mb降至約9.38mb，除內容修訂外亦有重新轉檔/壓縮。">
+                  <div class="card-top">
+                    <div class="serial">#95</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">文件基本資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版為 260319(1150320) 版本、700頁、PDF產生工具 Microsoft Word 2019；新版為 260522-2 版本、711頁、PDF產生工具 ONLYOFFICE 9.2.1.43。新版頁數增加11頁且檔案體積由約33.7MB降至約9.38MB，除內容修訂外亦有重新轉檔/壓縮。</div>
+                </article>
+                
+                <article class="card" data-search="96 04-2-brm01標業主需求書(二) 封面/版本日期 舊版封面日期為中華民國一一五年一月；新版封面日期改為中華民國一一五年五月。">
+                  <div class="card-top">
+                    <div class="serial">#96</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">封面/版本日期</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版封面日期為中華民國一一五年一月；新版封面日期<mark class="hot">改為</mark>中華民國一一五年五月。</div>
+                </article>
+                
+                <article class="card" data-search="97 04-2-brm01標業主需求書(二) 目次頁碼及章節編號 新版因前段章節增補與排版重整，目次所列各章節起始頁碼整體後移；例如表1.8-1由1-19改為1-20、表1.11-1由1-30改為1-32、表1.20.1-1由1-67改為1-70，行車監控、供電、通訊、自動收費及scada等章節頁碼亦連動調整。">
+                  <div class="card-top">
+                    <div class="serial">#97</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">目次頁碼及章節編號</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版因前段章節增補與排版重整，目次所列各章節起始頁碼整體後移；例如表1.8-1由1-19<mark class="hot">改為</mark>1-20、表1.11-1由1-30<mark class="hot">改為</mark>1-32、表1.20.1-1由1-67<mark class="hot">改為</mark>1-70，行車監控、供電、通訊、自動收費及SCADA等章節頁碼亦連動<mark class="hot">調整</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="98 04-2-brm01標業主需求書(二) 目次異常 新版目次第7章附近出現「7.5 安全管理要求 錯誤! 尚未定義書籤。」；舊版目次未見此未定義書籤訊息，屬新版轉檔/目次欄位更新異常，建議要求招標機關確認。">
+                  <div class="card-top">
+                    <div class="serial">#98</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">目次異常</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版目次第7章附近出現「7.5 安全管理要求 <mark class="hot">錯誤</mark>! 尚<mark class="hot">未定義書籤</mark>。」；舊版目次未見此<mark class="hot">未定義書籤</mark>訊息，屬新版轉檔/目次欄位更新異常，建議要求招標機關確認。</div>
+                </article>
+                
+                <article class="card" data-search="99 04-2-brm01標業主需求書(二) 格式/項次編排 多處清單式條文由連續文字改為(1)(2)(3)等分項編號，段落換行及表格呈現也重整；此類多屬可讀性與版面調整，需與實質文字變更分開看。">
+                  <div class="card-top">
+                    <div class="serial">#99</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">格式/項次編排</p>
+                    </div>
+                  </div>
+                  <div class="diff">多處清單式條文由連續文字<mark class="hot">改為</mark>(1)(2)(3)等分項編號，段落換行及表格呈現也重整；此類多屬可讀性與版面<mark class="hot">調整</mark>，需與實質文字變更分開看。</div>
+                </article>
+                
+                <article class="card" data-search="100 04-2-brm01標業主需求書(二) 第1章 縮寫/名詞勘誤 新版修正多處英文縮寫或名詞空格錯誤，例如 dmsd 由「dead man sys tem device」修正為「dead man system device」、hmi 由「human-machine int erface」修正為「human-machine interface」、igbt 由「bipol ar」修正為「bipolar」、nfpa/pabx等英文名詞亦有空格修正。">
+                  <div class="card-top">
+                    <div class="serial">#100</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第1章 縮寫/名詞勘誤</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版<mark class="hot">修正</mark>多處英文縮寫或名詞空格<mark class="hot">錯誤</mark>，例如 DMSD 由「Dead Man Sys tem Device」<mark class="hot">修正</mark>為「Dead Man System Device」、HMI 由「Human-Machine Int erface」<mark class="hot">修正</mark>為「Human-Machine Interface」、IGBT 由「Bipol ar」<mark class="hot">修正</mark>為「Bipolar」、NFPA/PABX等英文名詞亦有空格<mark class="hot">修正</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="101 04-2-brm01標業主需求書(二) 第1.6節 emi/emc要求 舊版列明所有設備及scada系統之emi防制標準；新版除保留前述要求外，新增c款：「鐵路環境中電氣電子設備所產生的電磁場對於人體暴露應符合iec 62597或en 50500」，增加人體曝露/電磁場標準要求。">
+                  <div class="card-top">
+                    <div class="serial">#101</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第1.6節 EMI/EMC要求</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版列明所有設備及SCADA系統之EMI防制標準；新版除保留前述要求外，<mark class="hot">新增</mark>C款：「鐵路環境中電氣電子設備所產生的電磁場對於人體暴露<mark class="hot">應</mark>符合IEC 62597或EN 50500」，增加人體曝露/電磁場標準要求。</div>
+                </article>
+                
+                <article class="card" data-search="102 04-2-brm01標業主需求書(二) 第1.8節 安全要求：sil配當報告 舊版明定統包廠商應於ntp+90日前依en50126-2辦理sil配當並提送「整體系統安全完整度等級配當報告」，且在機關/業主及專管同意下可單獨提送或併入系統安全管理計畫；新版本段改為「廠商應依照en50126-2」辦理並提送報告，刪除本段之ntp+90日前與「機關/業主及專管同意下」文字。">
+                  <div class="card-top">
+                    <div class="serial">#102</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第1.8節 安全要求：<mark class="hot">SIL</mark>配當報告</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版明定統包廠商<mark class="hot">應</mark>於NTP+<mark class="hot">90日</mark>前依EN50126-2辦理<mark class="hot">SIL</mark>配當並提送「整體系統安全完整度等級配當報告」，且在機關/業主及專管同意下可單獨提送或併入系統安全管理計畫；新版本段<mark class="hot">改為</mark>「廠商<mark class="hot">應</mark>依照EN50126-2」辦理並提送報告，<mark class="hot">刪除</mark>本段之NTP+<mark class="hot">90日</mark>前與「機關/業主及專管同意下」文字。</div>
+                </article>
+                
+                <article class="card" data-search="103 04-2-brm01標業主需求書(二) 第1.8節 安全要求：指定sil項目 舊版列出c款車輛煞車控制系統sil 2(含)以上、d款車門控制系統sil 2(含)以上、e款月臺門與號誌界面安全功能至少sil 2(含)以上；新版文字抽取中此處直接接續為「其餘安全功能」與tcms/scacda等sil等級規定，舊版c/d/e款在新版同段未呈現，需以正式pdf版面複核確認是否刪除或移位。">
+                  <div class="card-top">
+                    <div class="serial">#103</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第1.8節 安全要求：指定<mark class="hot">SIL</mark>項目</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版列出C款車輛煞車控制系統<mark class="hot">SIL</mark> 2(含)以上、D款車門控制系統<mark class="hot">SIL</mark> 2(含)以上、E款月臺門與號誌界面安全功能至少<mark class="hot">SIL</mark> 2(含)以上；新版文字抽取中此處直接接續為「其餘安全功能」與TCMS/SCACDA等<mark class="hot">SIL</mark>等級規定，舊版C/D/E款在新版同段未呈現，需以正式PDF版面複核確認是否<mark class="hot">刪除</mark>或移位。</div>
+                </article>
+                
+                <article class="card" data-search="104 04-2-brm01標業主需求書(二) 第1.8節 isa/iswa聘用責任 舊版規定sil 1(含)以上之子系統/設備/功能由「機電廠商」聘用獨立第三方進行isa/iswa；新版改為「機電子系統廠商（包括但不限於車輛、號誌及月台門）」須聘用，責任主體由統包/機電廠商文字轉向相關子系統廠商，並具體列舉車輛、號誌、月台門。">
+                  <div class="card-top">
+                    <div class="serial">#104</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第1.8節 <mark class="hot">ISA</mark>/<mark class="hot">ISwA</mark>聘用責任</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版規定<mark class="hot">SIL</mark> 1(含)以上之子系統/設備/功能由「機電廠商」聘用獨立第三方進行<mark class="hot">ISA</mark>/<mark class="hot">ISwA</mark>；新版<mark class="hot">改為</mark>「機電子系統廠商（包括但不限於車輛、號誌及月台門）」<mark class="hot">須</mark>聘用，責任主體由統包/機電廠商文字轉向相關子系統廠商，並具體列舉車輛、號誌、月台門。</div>
+                </article>
+                
+                <article class="card" data-search="105 04-2-brm01標業主需求書(二) 第1.8節 isa/iswa審查及評估範圍 舊版為ntp+240前提送isa/iswa計畫供「業主方」審查，且isa報告提交前各階段「機關/業主/專管/iv&amp;v」得要求資料；新版改為供「業主」審查，新增「isa評估工作應包含相關子系統功能安全界面評估」，並將可要求資料者改為「業主/專管/iv&amp;v」。">
+                  <div class="card-top">
+                    <div class="serial">#105</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第1.8節 <mark class="hot">ISA</mark>/<mark class="hot">ISwA</mark>審查及評估範圍</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版為NTP+240前提送<mark class="hot">ISA</mark>/<mark class="hot">ISwA</mark>計畫供「業主方」審查，且<mark class="hot">ISA</mark>報告提交前各階段「機關/業主/專管/IV&amp;V」得要求資料；新版<mark class="hot">改為</mark>供「業主」審查，<mark class="hot">新增</mark>「<mark class="hot">ISA</mark>評估工作<mark class="hot">應</mark>包含相關子系統功能安全界面評估」，並將可要求資料者<mark class="hot">改為</mark>「業主/專管/IV&amp;V」。</div>
+                </article>
+                
+                <article class="card" data-search="106 04-2-brm01標業主需求書(二) 第1.9節 計畫管理/期初設計 新版將計畫管理要求重新編成1.9，並以分項列示期初設計審查內容；供應商名單及實績、未經業主同意不得更換供應商、長前置期設備、界面項目定義等要求大致保留，主要為編排及頁碼重整。">
+                  <div class="card-top">
+                    <div class="serial">#106</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第1.9節 計畫管理/期初設計</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版將計畫管理要求重新編成1.9，並以分項列示期初設計審查內容；供<mark class="hot">應</mark>商名單及實績、未經業主同意<mark class="hot">不得</mark>更換供<mark class="hot">應</mark>商、長前置期設備、界面項目定義等要求大致保留，主要為編排及頁碼重整。</div>
+                </article>
+                
+                <article class="card" data-search="107 04-2-brm01標業主需求書(二) 第1.20節 備品、工具及測試設備 新版將備品、一般工具、特殊工具及特殊測試設備章節由舊版約1-67頁移至新版約1-70頁，主要備品表及月臺門、scada、自動收費等主要備品項目基本沿用；文字改為分項編號呈現。">
+                  <div class="card-top">
+                    <div class="serial">#107</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第1.20節 備品、工具及測試設備</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版將備品、一般工具、特殊工具及特殊測試設備章節由舊版約1-67頁移至新版約1-70頁，主要備品表及月臺門、SCADA、自動收費等主要備品項目基本沿用；文字<mark class="hot">改為</mark>分項編號呈現。</div>
+                </article>
+                
+                <article class="card" data-search="108 04-2-brm01標業主需求書(二) 第2.23節 車輛系統備品/工具 舊版規定廠商於設計時提送各階段通車所需備品清單，經業主審核後於各階段實質完工日30天前提供；新版保留同一義務並改以(1)(2)(3)分項，屬編排重整，未見期限或責任實質放寬。">
+                  <div class="card-top">
+                    <div class="serial">#108</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第2.23節 車輛系統備品/工具</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版規定廠商於設計時提送各階段通車所需備品清單，經業主審核後於各階段實質完工日30天前提供；新版保留同一義務並改以(1)(2)(3)分項，屬編排重整，未見<mark class="hot">期限</mark>或責任實質<mark class="hot">放寬</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="109 04-2-brm01標業主需求書(二) 第6.13.5節 自動收費系統備品 舊版規定消耗性備品、替換性備品及詳細價目表所列主要備品應於實質完工日30天前提供；新版保留同一要求，改以(1)至(5)分項列示，並維持期末設計審查完成後提送清單核可之要求。">
+                  <div class="card-top">
+                    <div class="serial">#109</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第6.13.5節 自動收費系統備品</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版規定消耗性備品、替換性備品及詳細價目表所列主要備品<mark class="hot">應</mark>於實質完工日30天前提供；新版保留同一要求，改以(1)至(5)分項列示，並維持期末設計審查完成後提送清單核可之要求。</div>
+                </article>
+                
+                <article class="card" data-search="110 04-2-brm01標業主需求書(二) 第7章 系統保證：設計安全證明/isa報告 舊版要求細部設計完成前提送設計安全證明及isa/iswa報告，以初步確認「全機電系統及各子系統」安全需求；新版改為確認「各子系統」安全需求，刪除「全機電系統及」字樣。">
+                  <div class="card-top">
+                    <div class="serial">#110</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第7章 系統保證：設計安全證明/<mark class="hot">ISA</mark>報告</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版要求細部設計完成前提送設計安全證明及<mark class="hot">ISA</mark>/<mark class="hot">ISwA</mark>報告，以初步確認「全機電系統及各子系統」安全需求；新版<mark class="hot">改為</mark>確認「各子系統」安全需求，<mark class="hot">刪除</mark>「全機電系統及」字樣。</div>
+                </article>
+                
+                <article class="card" data-search="111 04-2-brm01標業主需求書(二) 第7章 系統保證：isa聘用主體 舊版文字為isa（含iswa）由「統包廠商及相關子系統」聘用；新版改為由「相關子系統」聘用，刪除統包廠商字樣，與第1.8節改由機電子系統廠商負責之方向一致。">
+                  <div class="card-top">
+                    <div class="serial">#111</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第7章 系統保證：<mark class="hot">ISA</mark>聘用主體</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版文字為<mark class="hot">ISA</mark>（含<mark class="hot">ISwA</mark>）由「統包廠商及相關子系統」聘用；新版<mark class="hot">改為</mark>由「相關子系統」聘用，<mark class="hot">刪除</mark>統包廠商字樣，與第1.8節改由機電子系統廠商負責之方向一致。</div>
+                </article>
+                
+                <article class="card" data-search="112 04-2-brm01標業主需求書(二) 第7.5.10節 系統安全文件 舊版列明ssmp：ntp+90天、isa/iswa計畫：ntp+240天，並另敘明須包含全系統及各子系統isa/iswa計畫、isa/iswa報告於設計階段結束前及測試階段提送；新版仍列ssmp ntp+90天、isa/iswa計畫ntp+240天、pha ntp+120天等，但清單文字更精簡，部分「全系統及各子系統」說明未在新版同段呈現。">
+                  <div class="card-top">
+                    <div class="serial">#112</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">第7.5.10節 系統安全文件</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版列明SSMP：NTP+90天、<mark class="hot">ISA</mark>/<mark class="hot">ISwA</mark>計畫：NTP+240天，並另敘明<mark class="hot">須</mark>包含全系統及各子系統<mark class="hot">ISA</mark>/<mark class="hot">ISwA</mark>計畫、<mark class="hot">ISA</mark>/<mark class="hot">ISwA</mark>報告於設計階段結束前及測試階段提送；新版仍列SSMP NTP+90天、<mark class="hot">ISA</mark>/<mark class="hot">ISwA</mark>計畫NTP+240天、PHA NTP+120天等，但清單文字更精簡，部分「全系統及各子系統」說明未在新版同段呈現。</div>
+                </article>
+                
+                <article class="card" data-search="113 04-2-brm01標業主需求書(二) 全文版面及資料抽取限制 本文件含大量表格、頁首頁尾與重新排版內容；文字比對產生1,900個差異片段，其中不少為項次編號、換行、頁碼及字距差異。本表優先歸納明顯影響義務、標準、審查主體或文件品質的差異；完整文字差異片段另輸出於工作區文字報告。">
+                  <div class="card-top">
+                    <div class="serial">#113</div>
+                    <div>
+                      <h3>04-2-BRM01標業主需求書(二)</h3>
+                      <p class="clause">全文版面及資料抽取限制</p>
+                    </div>
+                  </div>
+                  <div class="diff">本文件含大量表格、頁首頁尾與重新排版內容；文字比對產生1,900個差異片段，其中不少為項次編號、換行、頁碼及字距差異。本表優先歸納明顯影響義務、標準、審查主體或文件品質的差異；完整文字差異片段另輸出於工作區文字報告。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">04-3 — 業主需求書(三)  機電系統需求</span>
+                <span class="count">14 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="114 04-3-業主需求書(三) 文件日期 / 整體 【舊版 20260323】
+中華民國一一五年一月；頁數 328 頁
+
+【新版 1150520】
+中華民國一一五年五月（推測）；頁數減至 289 頁（減少39頁，但文字行數增加）">
+                  <div class="card-top">
+                    <div class="serial">#114</div>
+                    <div>
+                      <h3>04-3-業主需求書(三)</h3>
+                      <p class="clause">文件日期 / 整體</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>中華民國一一五年一月；頁數 328 頁<br><br>【新版 1150520】<br>中華民國一一五年五月（推測）；頁數減至 289 頁（減少39頁，但文字行數增加）</div>
+                </article>
+                
+                <article class="card" data-search="115 04-3-業主需求書(三) 浮動式道床(fst) 道岔規定 【舊版 20260323】
+「fst處之道岔可依減振之考量改採可動式岔心」（允許改採）
+
+【新版 1150520】
+規定更嚴格：「fst處之道岔，廠商若擬依減振之考量改採可動式岔心道岔，須先提出相關分析文件證明設置可動式岔心確有其助益，且須與行車監控系統協調確認系統可靠度符合業主需求之要求，並經業主審查核可」">
+                  <div class="card-top">
+                    <div class="serial">#115</div>
+                    <div>
+                      <h3>04-3-業主需求書(三)</h3>
+                      <p class="clause">浮動式道床(FST) 道岔規定</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「FST處之道岔可依減振之考量改採可動式岔心」（允許改採）<br><br>【新版 1150520】<br>規定更嚴格：「FST處之道岔，廠商若擬依減振之考量改採可動式岔心道岔，<mark class="hot">須</mark>先提出相關分析文件證明設置可動式岔心確有其助益，且<mark class="hot">須</mark>與行車監控系統協調確認系統可靠度符合業主需求之要求，並經業主審查核可」</div>
+                </article>
+                
+                <article class="card" data-search="116 04-3-業主需求書(三) 浮動式道床排水設計 【舊版 20260323】
+「配合土建標進行排水路徑檢討。排水路徑依據與土建標排水陰井協調成果於浮動式道床施作排水檢視孔及蓋板」
+
+【新版 1150520】
+改為「施作銜接排水陰井所需之延伸埋管或預埋件。浮動式道床預留排水孔、陰井」（排水方式更新）">
+                  <div class="card-top">
+                    <div class="serial">#116</div>
+                    <div>
+                      <h3>04-3-業主需求書(三)</h3>
+                      <p class="clause">浮動式道床排水設計</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「配合土建標進行排水路徑檢討。排水路徑依據與土建標排水陰井協調成果於浮動式道床施作排水檢視孔及蓋板」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「施作銜接排水陰井所需之延伸埋管或預埋件。浮動式道床預留排水孔、陰井」（排水方式更新）</div>
+                </article>
+                
+                <article class="card" data-search="117 04-3-業主需求書(三) 新增章節/條文 【舊版 20260323】
+（無）
+
+【新版 1150520】
+新增：「負電迴流連軌線」規定（需銲接或以螺栓鎖固於鋼軌腹部）；「護軌固定組件包括混凝土內預埋件、錨碇螺栓、鋼軌墊板或墊片、扣夾」；高隔振無道碴軌道(nbhi)須具備「至少5年服務實證紀錄」等新增規格">
+                  <div class="card-top">
+                    <div class="serial">#117</div>
+                    <div>
+                      <h3>04-3-業主需求書(三)</h3>
+                      <p class="clause"><mark class="hot">新增</mark>章節/條文</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（無）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>：「負電迴流連軌線」規定（需銲接或以螺栓鎖固於鋼軌腹部）；「護軌固定組件包括混凝土內預埋件、錨碇螺栓、鋼軌墊板或墊片、扣夾」；高隔振無道碴軌道(NBHI)<mark class="hot">須</mark>具備「至少5年服務實證紀錄」等<mark class="hot">新增</mark>規格</div>
+                </article>
+                
+                <article class="card" data-search="118 04-3-brm01標業主需求書(三) 文件基本資訊 舊版為260129版、328頁、檔案約27.8mb；新版為合併版、289頁、檔案約16.6mb。新版頁數減少39頁，且pdf產製/合併資訊不同，顯示除文字修訂外亦有版面或附件整併。">
+                  <div class="card-top">
+                    <div class="serial">#118</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">文件基本資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版為260129版、328頁、檔案約27.8MB；新版為合併版、289頁、檔案約16.6MB。新版頁數減少39頁，且PDF產製/合併資訊不同，顯示除文字修訂外亦有版面或附件整併。</div>
+                </article>
+                
+                <article class="card" data-search="119 04-3-brm01標業主需求書(三) 文件整體規模 舊版頁數較多；新版頁數減少但文字比對顯示多處條文重寫或段落重新編排。頁碼、章節位置與舊版不能直接一對一引用，後續引用應以新版頁碼重新確認。">
+                  <div class="card-top">
+                    <div class="serial">#119</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">文件整體規模</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁數較多；新版頁數減少但文字比對顯示多處條文重寫或段落重新編排。頁碼、章節位置與舊版不能直接一對一引用，後續引用<mark class="hot">應</mark>以新版頁碼重新確認。</div>
+                </article>
+                
+                <article class="card" data-search="120 04-3-brm01標業主需求書(三) 浮動式道床(fst)道岔規定 舊版規定fst處之道岔若擬依減振考量改採可動式岔心道岔，須先提出分析文件證明設置確有助益，且須與行車監控系統協調確認系統可靠度符合業主需求，並經業主審查核可；新版改為「fst處之道岔可依減振之考量改採可動式岔心」。新版刪除分析證明、可靠度確認及業主審查核可等前置條件，規定較舊版放寬。">
+                  <div class="card-top">
+                    <div class="serial">#120</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">浮動式道床(FST)道岔規定</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版規定FST處之道岔若擬依減振考量改採可動式岔心道岔，<mark class="hot">須</mark>先提出分析文件證明設置確有助益，且<mark class="hot">須</mark>與行車監控系統協調確認系統可靠度符合業主需求，並經業主審查核可；新版<mark class="hot">改為</mark>「FST處之道岔可依減振之考量改採可動式岔心」。新版<mark class="hot">刪除</mark>分析證明、可靠度確認及業主審查核可等前置條件，規定較舊版<mark class="hot">放寬</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="121 04-3-brm01標業主需求書(三) 浮動式道床排水設計 舊版規定配合土建標檢討排水路徑，並依與土建標排水陰井協調成果於浮動式道床施作排水檢視孔及蓋板；新版改為施作銜接排水陰井所需之延伸埋管或預埋件，並於浮動式道床預留排水孔、陰井等，排水界面作法更具體。">
+                  <div class="card-top">
+                    <div class="serial">#121</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">浮動式道床排水設計</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版規定配合土建標檢討排水路徑，並依與土建標排水陰井協調成果於浮動式道床施作排水檢視孔及蓋板；新版<mark class="hot">改為</mark>施作銜接排水陰井所需之延伸埋管或預埋件，並於浮動式道床預留排水孔、陰井等，排水界面作法更具體。</div>
+                </article>
+                
+                <article class="card" data-search="122 04-3-brm01標業主需求書(三) 高隔振無道碴軌道(nbhi)服務實證 舊版規定高隔振無道碴軌道應具有鐵路或捷運系統（類似或不低於本系統）至少10年服務實證紀錄；新版改為至少5年服務實證紀錄。新版將服務實證年限由10年降為5年，資格門檻降低。">
+                  <div class="card-top">
+                    <div class="serial">#122</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">高隔振無道碴軌道(NBHI)服務實證</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版規定高隔振無道碴軌道<mark class="hot">應</mark>具有鐵路或捷運系統（類似或不低於本系統）至少10年服務實證紀錄；新版<mark class="hot">改為</mark>至少5年服務實證紀錄。新版將服務實證年限由10年降為5年，資格門檻<mark class="hot">降低</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="123 04-3-brm01標業主需求書(三) 高隔振無道碴軌道(nbhi)設計要求 新版保留高隔振無道碴軌道與相連接軌道間應設置適當長度緩衝段、設計應考量各種可能負荷及組合等要求；主要實質差異集中在服務實證年限由10年改為5年，其餘本段多為排版、換行或文字間距差異。">
+                  <div class="card-top">
+                    <div class="serial">#123</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">高隔振無道碴軌道(NBHI)設計要求</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版保留高隔振無道碴軌道與相連接軌道間<mark class="hot">應</mark>設置適當長度緩衝段、設計<mark class="hot">應</mark>考量各種可能負荷及組合等要求；主要實質差異集中在服務實證年限由10年<mark class="hot">改為</mark>5年，其餘本段多為排版、換行或文字間距差異。</div>
+                </article>
+                
+                <article class="card" data-search="124 04-3-brm01標業主需求書(三) 無道碴道床鋼軌扣件：黏著劑材料 舊版第2.1.12規定黏著劑（bonding agent）為環氧樹脂或其它化學膠結材料；新版改為環氧樹脂、無收縮水泥砂漿或其它化學膠結材料，新增「無收縮水泥砂漿」作為可用材料。">
+                  <div class="card-top">
+                    <div class="serial">#124</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">無道碴道床鋼軌扣件：黏著劑材料</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版第2.1.12規定黏著劑（Bonding Agent）為環氧樹脂或其它化學膠結材料；新版<mark class="hot">改為</mark>環氧樹脂、無收縮水泥砂漿或其它化學膠結材料，<mark class="hot">新增</mark>「無收縮水泥砂漿」作為可用材料。</div>
+                </article>
+                
+                <article class="card" data-search="125 04-3-brm01標業主需求書(三) 軌道系統規格強化 新版在軌道系統相關章節有多處施工/材料/界面文字調整，較明確者包括排水界面作法改寫、nbhi服務實證門檻降低、黏著劑材料選項增加，以及fst道岔改採可動式岔心之前置審查條件刪除。">
+                  <div class="card-top">
+                    <div class="serial">#125</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">軌道系統規格強化</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版在軌道系統相關章節有多處施工/材料/界面文字<mark class="hot">調整</mark>，較明確者包括排水界面作法改寫、NBHI服務實證門檻<mark class="hot">降低</mark>、黏著劑材料選項增加，以及FST道岔改採可動式岔心之前置審查條件<mark class="hot">刪除</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="126 04-3-brm01標業主需求書(三) 圖表/附錄重整 新版頁數大幅減少，且檔名為「合併」，文字抽取顯示章節及圖表內容有重新整併；依使用者要求未針對圖檔進行逐圖比對，本項僅記錄pdf文字層級可見之整併差異。">
+                  <div class="card-top">
+                    <div class="serial">#126</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">圖表/附錄重整</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版頁數大幅減少，且檔名為「合併」，文字抽取顯示章節及圖表內容有重新整併；依使用者要求未針對圖檔進行逐圖比對，本項僅記錄PDF文字層級可見之整併差異。</div>
+                </article>
+                
+                <article class="card" data-search="127 04-3-brm01標業主需求書(三) 文字比對限制 本文件含大量圖說、表格及工程規範版面，pdf文字抽取會產生頁首頁尾、換行與欄位順序差異；本表優先歸納具實質規範意義之差異，完整文字差異片段另輸出於工作區文字報告。">
+                  <div class="card-top">
+                    <div class="serial">#127</div>
+                    <div>
+                      <h3>04-3-BRM01標業主需求書(三)</h3>
+                      <p class="clause">文字比對限制</p>
+                    </div>
+                  </div>
+                  <div class="diff">本文件含大量圖說、表格及工程規範版面，PDF文字抽取會產生頁首頁尾、換行與欄位順序差異；本表優先歸納具實質規範意義之差異，完整文字差異片段另輸出於工作區文字報告。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">04-4 — 業主需求書(四)  軌道工程需求</span>
+                <span class="count">13 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="128 04-4-業主需求書(四) 整體 【舊版 20260323】
+頁數 515 頁；檔案大小 26mb
+
+【新版 1150520】
+頁數 515 頁（相同）；檔案大小 22mb（縮小）；推測有圖片壓縮或格式優化，文字內容無明顯實質變更（需進一步逐頁比對確認）">
+                  <div class="card-top">
+                    <div class="serial">#128</div>
+                    <div>
+                      <h3>04-4-業主需求書(四)</h3>
+                      <p class="clause">整體</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>頁數 515 頁；檔案大小 26MB<br><br>【新版 1150520】<br>頁數 515 頁（相同）；檔案大小 22MB（縮小）；推測有圖片壓縮或格式優化，文字內容無明顯實質變更（需進一步逐頁比對確認）</div>
+                </article>
+                
+                <article class="card" data-search="129 04-4-brm01標業主需求書(四) 文件基本資訊 兩版頁數均為515頁；舊版檔案約26.30mb，新版約22.36mb。pdf中繼資料顯示舊版由pdf24產製、修訂時間為115/01/29；新版由gpl ghostscript/pdf24 creator產製，修訂時間為115/05/20。">
+                  <div class="card-top">
+                    <div class="serial">#129</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">文件基本資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版頁數均為515頁；舊版檔案約26.30MB，新版約22.36MB。PDF中繼資料顯示舊版由PDF24產製、修訂時間為115/01/29；新版由GPL Ghostscript/PDF24 Creator產製，修訂時間為115/05/20。</div>
+                </article>
+                
+                <article class="card" data-search="130 04-4-brm01標業主需求書(四) 路線設計條件：最大坡度 舊版頁10文字為「希望選用：最大坡度4.1%」；新版頁10改為「希望選用：最大坡度4%」。同頁另有「最小長度為50m」之空格/標點差異，內容未變。">
+                  <div class="card-top">
+                    <div class="serial">#130</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">路線設計條件：最大坡度</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁10文字為「希望選用：最大坡度4.1%」；新版頁10<mark class="hot">改為</mark>「希望選用：最大坡度4%」。同頁另有「最小長度為50m」之空格/標點差異，內容未變。</div>
+                </article>
+                
+                <article class="card" data-search="131 04-4-brm01標業主需求書(四) 路線設計條件：主線最大坡度表 舊版頁11表列「主線最大坡度 % 4.1 5」；新版頁11改為「主線最大坡度 % 3.5 4.5」。主線坡度控制值下修，屬實質設計條件變更。">
+                  <div class="card-top">
+                    <div class="serial">#131</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">路線設計條件：主線最大坡度表</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁11表列「主線最大坡度 % 4.1 5」；新版頁11<mark class="hot">改為</mark>「主線最大坡度 % 3.5 4.5」。主線坡度控制值下修，屬實質設計條件變更。</div>
+                </article>
+                
+                <article class="card" data-search="132 04-4-brm01標業主需求書(四) 設備/系統清單：通訊與號誌範圍 舊版頁448列示：供電系統為緊急跳脫站(ets)；通訊系統為一般、直線電話、廣播喇叭及安全偵測系統；號誌系統含電驛聯鎖、自動列車保護、自動列車操作、乘客資訊顯示系統及設備故障顯示與維護工作台。新版頁448改列通訊系統為旅客資訊顯示系統、數位無線電、光纖傳輸、閉路電視、時鐘系統、直線電話及廣播喇叭；號誌系統刪除乘客資訊顯示系統，保留電驛聯鎖、自動列車保護、自動列車操作及設備故障顯示與維護工作台。">
+                  <div class="card-top">
+                    <div class="serial">#132</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">設備/系統清單：通訊與號誌範圍</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁448列示：供電系統為緊急跳脫站(ETS)；通訊系統為一般、直線電話、廣播喇叭及安全偵測系統；號誌系統含電驛聯鎖、自動列車保護、自動列車操作、乘客資訊顯示系統及設備故障顯示與維護工作台。新版頁448改列通訊系統為旅客資訊顯示系統、數位無線電、光纖傳輸、閉路電視、時鐘系統、直線電話及廣播喇叭；號誌系統<mark class="hot">刪除</mark>乘客資訊顯示系統，保留電驛聯鎖、自動列車保護、自動列車操作及設備故障顯示與維護工作台。</div>
+                </article>
+                
+                <article class="card" data-search="133 04-4-brm01標業主需求書(四) 供電系統清單：ets位置 舊版頁448列有「供電系統：緊急跳脫站(ets)」；新版該項未在頁448同段出現，但於新版頁470插入「供電系統：緊急跳脫站(ets)」。判斷為內容位置調整，而非刪除。">
+                  <div class="card-top">
+                    <div class="serial">#133</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">供電系統清單：ETS位置</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁448列有「供電系統：緊急跳脫站(ETS)」；新版該項未在頁448同段出現，但於新版頁470插入「供電系統：緊急跳脫站(ETS)」。判斷為內容位置<mark class="hot">調整</mark>，而非<mark class="hot">刪除</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="134 04-4-brm01標業主需求書(四) 供電系統設備名稱 舊版頁470為「22.8kv開關設備ac配電盤、22.8kv/589v整流變壓器、直流開關盤、整流器等」；新版頁470改為「22.8kv開關設備交直流分電盤、22.8kv/589v整流變壓器、直流開關盤、整流器等」。其中配電盤名稱由ac配電盤改為交直流分電盤。">
+                  <div class="card-top">
+                    <div class="serial">#134</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">供電系統設備名稱</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁470為「22.8kV開關設備AC配電盤、22.8kV/589V整流變壓器、直流開關盤、整流器等」；新版頁470<mark class="hot">改為</mark>「22.8kV開關設備交直流分電盤、22.8kV/589V整流變壓器、直流開關盤、整流器等」。其中配電盤名稱由AC配電盤<mark class="hot">改為</mark>交直流分電盤。</div>
+                </article>
+                
+                <article class="card" data-search="135 04-4-brm01標業主需求書(四) 161/22.8kv變壓器場型式 舊版頁471及頁472將b.1a 161/22.8kv變壓器場標示為「室外」；新版改為「半開放室內」。b.1b仍為室內。此為空間/建築型式之實質變更。">
+                  <div class="card-top">
+                    <div class="serial">#135</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">161/22.8kV變壓器場型式</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁471及頁472將B.1A 161/22.8kV變壓器場標示為「室外」；新版<mark class="hot">改為</mark>「半開放室內」。B.1B仍為室內。此為空間/建築型式之實質變更。</div>
+                </article>
+                
+                <article class="card" data-search="136 04-4-brm01標業主需求書(四) 變壓器場排油/漏油處理設施 舊版頁472列有「鵝卵石」及「變壓器四周之補捉漏油槽舖設砂礫」等內容；新版同頁未見該段，並將控制設備文字改為「控制用浮球開關，不銹鋼控制盤，油水分離設施，卸油槽」。新版新增油水分離設施與卸油槽，並調整原漏油槽/鋪面說明。">
+                  <div class="card-top">
+                    <div class="serial">#136</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">變壓器場排油/漏油處理設施</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁472列有「鵝卵石」及「變壓器四周之補捉漏油槽舖設砂礫」等內容；新版同頁未見該段，並將控制設備文字<mark class="hot">改為</mark>「控制用浮球開關，不銹鋼控制盤，油水分離設施，卸油槽」。新版<mark class="hot">新增</mark>油水分離設施與卸油槽，並<mark class="hot">調整</mark>原漏油槽/鋪面說明。</div>
+                </article>
+                
+                <article class="card" data-search="137 04-4-brm01標業主需求書(四) 綠建築標章目標 舊版頁505規定本計畫全線車站以取得「銀級綠建築標章」為目標；新版頁505改為取得「合格級綠建築標章」為目標。綠建築標章等級目標由銀級降為合格級。">
+                  <div class="card-top">
+                    <div class="serial">#137</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">綠建築標章目標</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁505規定本計畫全線車站以取得「<mark class="hot">銀級</mark>綠建築標章」為目標；新版頁505<mark class="hot">改為</mark>取得「<mark class="hot">合格級</mark>綠建築標章」為目標。綠建築標章等級目標由<mark class="hot">銀級</mark>降為<mark class="hot">合格級</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="138 04-4-brm01標業主需求書(四) 智慧建築等級判定表位置 舊版「表4.3-1 各智慧建築等級判定表」出現在頁511；新版移至頁512。此項為表格位置/分頁調整，表名本身未見實質變更。">
+                  <div class="card-top">
+                    <div class="serial">#138</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">智慧建築等級判定表位置</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版「表4.3-1 各智慧建築等級判定表」出現在頁511；新版移至頁512。此項為表格位置/分頁<mark class="hot">調整</mark>，表名本身未見實質變更。</div>
+                </article>
+                
+                <article class="card" data-search="139 04-4-brm01標業主需求書(四) 附表a文字層異常 新版頁514-515抽取文字出現多處疑似字碼/內嵌字型轉換異常，例如「設備」抽為「設造」、「測試」抽為「郱試」、「提」抽為「邚」等；舊版同段可正常抽取為廠測、測試、提送等文字。此項可能是pdf文字層或字型編碼問題，未必代表視覺版面文字改錯，但會影響搜尋、複製及文字比對。">
+                  <div class="card-top">
+                    <div class="serial">#139</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">附表A文字層異常</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版頁514-515抽取文字出現多處疑似字碼/內嵌字型轉換異常，例如「設備」抽為「設造」、「測試」抽為「郱試」、「提」抽為「邚」等；舊版同段可正常抽取為廠測、測試、提送等文字。此項可能是PDF文字層或字型編碼問題，未必代表視覺版面文字改錯，但會影響搜尋、複製及文字比對。</div>
+                </article>
+                
+                <article class="card" data-search="140 04-4-brm01標業主需求書(四) 文字比對統計 以pdf文字抽取後比對，舊版文字字元數約335002，新版約335017；逐頁文字雜湊不同頁數為18頁，差異頁：10-11、448、470-472、480、483、487、501、505-506、509、511-515；篩選後差異片段為28個。除上述實質項目外，其餘多為空格、分頁、表格位置或pdf文字層差異。">
+                  <div class="card-top">
+                    <div class="serial">#140</div>
+                    <div>
+                      <h3>04-4-BRM01標業主需求書(四)</h3>
+                      <p class="clause">文字比對統計</p>
+                    </div>
+                  </div>
+                  <div class="diff">以PDF文字抽取後比對，舊版文字字元數約335002，新版約335017；逐頁文字雜湊不同頁數為18頁，差異頁：10-11、448、470-472、480、483、487、501、505-506、509、511-515；篩選後差異片段為28個。除上述實質項目外，其餘多為空格、分頁、表格位置或PDF文字層差異。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">04-5 — 業主需求書(五)  土建配合需求</span>
+                <span class="count">5 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="141 04-5-業主需求書(五) 整體 【舊版 20260323】
+頁數 2389 頁；檔案大小 33mb
+
+【新版 1150520】
+頁數 2389 頁（相同）；檔案大小 33mb（相同）；兩資料夾版本基本一致，內容無明顯差異">
+                  <div class="card-top">
+                    <div class="serial">#141</div>
+                    <div>
+                      <h3>04-5-業主需求書(五)</h3>
+                      <p class="clause">整體</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>頁數 2389 頁；檔案大小 33MB<br><br>【新版 1150520】<br>頁數 2389 頁（相同）；檔案大小 33MB（相同）；兩資料夾版本基本一致，內容無明顯差異</div>
+                </article>
+                
+                <article class="card" data-search="142 04-5-brm01標業主需求書(五) 檔案本體比對 兩版pdf之sha256雜湊值完全相同：f4ade27d6a0961251c46df43e3470c030cbf5462c80fef1eaf3a02246bc482a4。判定結果：檔案完全一致，未發現差異。">
+                  <div class="card-top">
+                    <div class="serial">#142</div>
+                    <div>
+                      <h3>04-5-BRM01標業主需求書(五)</h3>
+                      <p class="clause">檔案本體比對</p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版PDF之<mark class="hot">SHA256</mark>雜湊值完全相同：f4ade27d6a0961251c46df43e3470c030cbf5462c80fef1eaf3a02246bc482a4。判定結果：檔案完全一致，未發現差異。</div>
+                </article>
+                
+                <article class="card" data-search="143 04-5-brm01標業主需求書(五) 頁數與檔案大小 舊版頁數：2389頁，檔案大小：33915307 bytes；新版頁數：2389頁，檔案大小：33915307 bytes。兩者頁數及檔案大小完全相同。">
+                  <div class="card-top">
+                    <div class="serial">#143</div>
+                    <div>
+                      <h3>04-5-BRM01標業主需求書(五)</h3>
+                      <p class="clause">頁數與檔案大小</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版頁數：2389頁，檔案大小：33915307 bytes；新版頁數：2389頁，檔案大小：33915307 bytes。兩者頁數及檔案大小完全相同。</div>
+                </article>
+                
+                <article class="card" data-search="144 04-5-brm01標業主需求書(五) pdf中繼資料 舊版中繼資料：{&#x27;/producer&#x27;: &#x27;gpl ghostscript 10.04.0&#x27;, &#x27;/creationdate&#x27;: &quot;d:20251219150147+08&#x27;00&#x27;&quot;, &#x27;/moddate&#x27;: &quot;d:20251219150147+08&#x27;00&#x27;&quot;, &#x27;/creator&#x27;: &#x27;pdf24 creator&#x27;}；新版中繼資料：{&#x27;/producer&#x27;: &#x27;gpl ghostscript 10.04.0&#x27;, &#x27;/creationdate&#x27;: &quot;d:20251219150147+08&#x27;00&#x27;&quot;, &#x27;/moddate&#x27;: &quot;d:20251219150147+08&#x27;00&#x27;&quot;, &#x27;/creator&#x27;: &#x27;pdf24 creator&#x27;}。兩者pdf產製資訊一致。">
+                  <div class="card-top">
+                    <div class="serial">#144</div>
+                    <div>
+                      <h3>04-5-BRM01標業主需求書(五)</h3>
+                      <p class="clause">PDF中繼資料</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版中繼資料：{&#x27;/Producer&#x27;: &#x27;GPL Ghostscript 10.04.0&#x27;, &#x27;/CreationDate&#x27;: &quot;D:20251219150147+08&#x27;00&#x27;&quot;, &#x27;/ModDate&#x27;: &quot;D:20251219150147+08&#x27;00&#x27;&quot;, &#x27;/Creator&#x27;: &#x27;PDF24 Creator&#x27;}；新版中繼資料：{&#x27;/Producer&#x27;: &#x27;GPL Ghostscript 10.04.0&#x27;, &#x27;/CreationDate&#x27;: &quot;D:20251219150147+08&#x27;00&#x27;&quot;, &#x27;/ModDate&#x27;: &quot;D:20251219150147+08&#x27;00&#x27;&quot;, &#x27;/Creator&#x27;: &#x27;PDF24 Creator&#x27;}。兩者PDF產製資訊一致。</div>
+                </article>
+                
+                <article class="card" data-search="145 04-5-brm01標業主需求書(五) 綜合判斷 因兩個pdf檔案雜湊值完全一致，代表檔案位元層級相同；故文字、版面、圖像物件及附件內容均為同一檔案，無需再列實質差異。">
+                  <div class="card-top">
+                    <div class="serial">#145</div>
+                    <div>
+                      <h3>04-5-BRM01標業主需求書(五)</h3>
+                      <p class="clause">綜合判斷</p>
+                    </div>
+                  </div>
+                  <div class="diff">因兩個PDF檔案雜湊值完全一致，代表檔案位元層級相同；故文字、版面、圖像物件及附件內容均為同一檔案，無需再列實質差異。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">04-6 — 業主需求書(六)  附件與圖表</span>
+                <span class="count">13 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="146 04-6-業主需求書(六) 整體規模 【舊版 20260323】
+頁數較少；檔案大小 31mb；文字內容提取行數少（約713行前50頁）
+
+【新版 1150520】
+新增標題：「核定0版」；檔案大小增至 46mb（增加約48%）；文字內容大幅增加（前50頁即達9,108行）；工程圖核備章、基本設計顧問標記等資訊齊全；包含詳細里程、方位角等工程設計數據">
+                  <div class="card-top">
+                    <div class="serial">#146</div>
+                    <div>
+                      <h3>04-6-業主需求書(六)</h3>
+                      <p class="clause">整體規模</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>頁數較少；檔案大小 31MB；文字內容提取行數少（約713行前50頁）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>標題：「<mark class="hot">核定0版</mark>」；檔案大小增至 46MB（增加約48%）；文字內容大幅增加（前50頁即達9,108行）；工程圖核備章、基本設計顧問標記等資訊齊全；包含詳細里程、方位角等工程設計數據</div>
+                </article>
+                
+                <article class="card" data-search="147 04-6-業主需求書(六) 站別資訊 【舊版 20260323】
+brh04站（避車線）等站別資訊
+
+【新版 1150520】
+新增br05站相關圖說；工程圖說更完整（含「工程圖核備章」、「基本設計顧問」等正式核定標記）">
+                  <div class="card-top">
+                    <div class="serial">#147</div>
+                    <div>
+                      <h3>04-6-業主需求書(六)</h3>
+                      <p class="clause">站別資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>BRH04站（避車線）等站別資訊<br><br>【新版 1150520】<br><mark class="hot">新增</mark>BR05站相關圖說；工程圖說更完整（含「工程圖核備章」、「基本設計顧問」等正式核定標記）</div>
+                </article>
+                
+                <article class="card" data-search="148 04-6-brm01標業主需求書(六) 文件基本資訊 舊版為260129版，頁數92頁，檔案大小31474253 bytes；新版為核定0版_260519，頁數97頁，檔案大小48037847 bytes。新版增加5頁且檔案體積增加約16.56mb。">
+                  <div class="card-top">
+                    <div class="serial">#148</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">文件基本資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版為260129版，頁數92頁，檔案大小31474253 bytes；新版為<mark class="hot">核定0版</mark>_260519，頁數97頁，檔案大小48037847 bytes。新版增加5頁且檔案體積增加約16.56MB。</div>
+                </article>
+                
+                <article class="card" data-search="149 04-6-brm01標業主需求書(六) pdf中繼資料 舊版中繼資料：{&#x27;/creationdate&#x27;: &quot;d:20230923144522+08&#x27;00&#x27;&quot;, &#x27;/creator&#x27;: &#x27;pdfsam basic v4.1.3&#x27;, &#x27;/moddate&#x27;: &quot;d:20260129171540+08&#x27;00&#x27;&quot;, &#x27;/producer&#x27;: &#x27;sambox 2.1.16&#x27;}；新版中繼資料：{&#x27;/creationdate&#x27;: &quot;d:20230923144522+08&#x27;00&#x27;&quot;, &#x27;/creator&#x27;: &#x27;pdfsam basic v4.1.3&#x27;, &#x27;/moddate&#x27;: &quot;d:20260519153902+08&#x27;00&#x27;&quot;, &#x27;/producer&#x27;: &#x27;sambox 2.1.16&#x27;, &#x27;/author&#x27;: &#x27;tylinuser&#x27;, &#x27;/title&#x27;: &#x27;model&#x27;, &#x27;/keywords&#x27;: &#x27;drawing4.dwg&#x27;}。新版新增author=tylinuser、title=model、keywords=drawing4.dwg，且moddate更新為115/05/19。">
+                  <div class="card-top">
+                    <div class="serial">#149</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">PDF中繼資料</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版中繼資料：{&#x27;/CreationDate&#x27;: &quot;D:20230923144522+08&#x27;00&#x27;&quot;, &#x27;/Creator&#x27;: &#x27;PDFsam Basic v4.1.3&#x27;, &#x27;/ModDate&#x27;: &quot;D:20260129171540+08&#x27;00&#x27;&quot;, &#x27;/Producer&#x27;: &#x27;SAMBox 2.1.16&#x27;}；新版中繼資料：{&#x27;/CreationDate&#x27;: &quot;D:20230923144522+08&#x27;00&#x27;&quot;, &#x27;/Creator&#x27;: &#x27;PDFsam Basic v4.1.3&#x27;, &#x27;/ModDate&#x27;: &quot;D:20260519153902+08&#x27;00&#x27;&quot;, &#x27;/Producer&#x27;: &#x27;SAMBox 2.1.16&#x27;, &#x27;/Author&#x27;: &#x27;tylinuser&#x27;, &#x27;/Title&#x27;: &#x27;Model&#x27;, &#x27;/Keywords&#x27;: &#x27;DRAWING4.DWG&#x27;}。新版<mark class="hot">新增</mark>Author=tylinuser、Title=Model、Keywords=DRAWING4.DWG，且ModDate更新為115/05/19。</div>
+                </article>
+                
+                <article class="card" data-search="150 04-6-brm01標業主需求書(六) 文字可抽取內容規模 舊版可抽取文字頁數8頁、文字約5049字元；新版可抽取文字頁數42頁、文字約75535字元。新版文字層大幅增加，表示新版圖說內嵌可搜尋文字、標題欄或核定資訊更完整。">
+                  <div class="card-top">
+                    <div class="serial">#150</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">文字可抽取內容規模</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版可抽取文字頁數8頁、文字約5049字元；新版可抽取文字頁數42頁、文字約75535字元。新版文字層大幅增加，表示新版圖說內嵌可搜尋文字、標題欄或核定資訊更完整。</div>
+                </article>
+                
+                <article class="card" data-search="151 04-6-brm01標業主需求書(六) 版本狀態 新版檔名明確標示「核定0版」，舊版僅為260129版；新版屬正式核定版本標示，舊版未見同等檔名標記。">
+                  <div class="card-top">
+                    <div class="serial">#151</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">版本狀態</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版檔名明確標示「<mark class="hot">核定0版</mark>」，舊版僅為260129版；新版屬正式核定版本標示，舊版未見同等檔名標記。</div>
+                </article>
+                
+                <article class="card" data-search="152 04-6-brm01標業主需求書(六) 圖說/工程資料完整度 新版文字層顯示更多工程圖說資料與圖框資訊，例如工程圖核備章、基本設計顧問、圖名/圖號、里程、方位角等欄位；舊版文字層較少，部分資訊可能僅為影像或未完整嵌入文字。">
+                  <div class="card-top">
+                    <div class="serial">#152</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">圖說/工程資料完整度</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版文字層顯示更多工程圖說資料與圖框資訊，例如工程圖核備章、基本設計顧問、圖名/圖號、里程、方位角等欄位；舊版文字層較少，部分資訊可能僅為影像或未完整嵌入文字。</div>
+                </article>
+                
+                <article class="card" data-search="153 04-6-brm01標業主需求書(六) 圖框欄位/cad no.可搜尋性 新版有37頁可抽到「cad no.」或「電腦圖號」欄位，頁碼包含7、28-45、76-93；可辨識cad no.共36個，例：24070051, 24070052, 24070053, 24070054, 24070055, 24070056, 24070057, 24070058；可辨識civ圖號共37個，例：civ00-ce1123, civ00-ce2120, civ00-ce2121, civ00-ce2122, civ00-ce2123, civ00-ce2124, civ00-ce2125, civ00-ce2126。舊版文字層未抽到cad no.或civ圖號，顯示新版圖框資料可搜尋性大幅提升。">
+                  <div class="card-top">
+                    <div class="serial">#153</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">圖框欄位/<mark class="hot">CAD No.</mark>可搜尋性</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版有37頁可抽到「<mark class="hot">CAD No.</mark>」或「電腦圖號」欄位，頁碼包含7、28-45、76-93；可辨識<mark class="hot">CAD No.</mark>共36個，例：24070051, 24070052, 24070053, 24070054, 24070055, 24070056, 24070057, 24070058；可辨識CIV圖號共37個，例：CIV00-CE1123, CIV00-CE2120, CIV00-CE2121, CIV00-CE2122, CIV00-CE2123, CIV00-CE2124, CIV00-CE2125, CIV00-CE2126。舊版文字層未抽到<mark class="hot">CAD No.</mark>或CIV圖號，顯示新版圖框資料可搜尋性大幅提升。</div>
+                </article>
+                
+                <article class="card" data-search="154 04-6-brm01標業主需求書(六) 平縱斷面圖資料 新版可抽到上行線平面與縱斷面圖、鋼軌踏面高程、原地面高程、里程chainage、曲率horizontal curvature等欄位，並含pvista、el、lvc、k、mo等縱斷面參數；舊版相同區段多僅抽到零散數值，未形成完整圖框欄位。">
+                  <div class="card-top">
+                    <div class="serial">#154</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">平縱斷面圖資料</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版可抽到上行線平面與縱斷面圖、鋼軌踏面高程、原地面高程、里程CHAINAGE、曲率HORIZONTAL CURVATURE等欄位，並含PVISTA、EL、LVC、K、MO等縱斷面參數；舊版相同區段多僅抽到零散數值，未形成完整圖框欄位。</div>
+                </article>
+                
+                <article class="card" data-search="155 04-6-brm01標業主需求書(六) 車站編碼對照表 兩版首頁均含車站編碼修正對照表，列出brh07→br01、brh04→br05、brh06→br02、brh03→br06、brh02→br07、brh05→br04、brh01→br08等資訊；新版主要是換行與文字層呈現方式不同，未據此判定站名對照實質變更。">
+                  <div class="card-top">
+                    <div class="serial">#155</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">車站編碼對照表</p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版首頁均含車站編碼<mark class="hot">修正</mark>對照表，列出BRH07→BR01、BRH04→BR05、BRH06→BR02、BRH03→BR06、BRH02→BR07、BRH05→BR04、BRH01→BR08等資訊；新版主要是換行與文字層呈現方式不同，未據此判定站名對照實質變更。</div>
+                </article>
+                
+                <article class="card" data-search="156 04-6-brm01標業主需求書(六) 頁數差異 新版較舊版增加5頁。此差異可能包含新增圖說、核定章頁、圖框資訊或合併順序調整；本次以pdf文字層歸納，不對圖檔或線型內容做逐圖比對。">
+                  <div class="card-top">
+                    <div class="serial">#156</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">頁數差異</p>
+                    </div>
+                  </div>
+                  <div class="diff">新版較舊版增加5頁。此差異可能包含<mark class="hot">新增</mark>圖說、核定章頁、圖框資訊或合併順序<mark class="hot">調整</mark>；本次以PDF文字層歸納，不對圖檔或線型內容做逐圖比對。</div>
+                </article>
+                
+                <article class="card" data-search="157 04-6-brm01標業主需求書(六) 綜合判斷 04-6新版不是單純壓縮或重存檔；其頁數、檔案大小、文字層、版本標示與可搜尋圖框欄位均有明顯變動。主要差異為新版升級為核定0版、圖說文字資訊更完整、頁數增加，且新增/改善大量cad no.、civ圖號、里程與縱斷面參數的文字層。">
+                  <div class="card-top">
+                    <div class="serial">#157</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">綜合判斷</p>
+                    </div>
+                  </div>
+                  <div class="diff">04-6新版不是單純壓縮或重存檔；其頁數、檔案大小、文字層、版本標示與可搜尋圖框欄位均有明顯變動。主要差異為新版升級為<mark class="hot">核定0版</mark>、圖說文字資訊更完整、頁數增加，且<mark class="hot">新增</mark>/改善大量<mark class="hot">CAD No.</mark>、CIV圖號、里程與縱斷面參數的文字層。</div>
+                </article>
+                
+                <article class="card" data-search="158 04-6-brm01標業主需求書(六) 比對限制 本文件主要為圖說pdf，許多差異可能存在於圖面、線條、圖框及影像物件；依使用者要求圖檔不比較，本表僅就pdf檔案層級、文字層、頁數、版本與可抽取工程資訊進行歸納。">
+                  <div class="card-top">
+                    <div class="serial">#158</div>
+                    <div>
+                      <h3>04-6-BRM01標業主需求書(六)</h3>
+                      <p class="clause">比對限制</p>
+                    </div>
+                  </div>
+                  <div class="diff">本文件主要為圖說PDF，許多差異可能存在於圖面、線條、圖框及影像物件；依使用者要求圖檔不比較，本表僅就PDF檔案層級、文字層、頁數、版本與可抽取工程資訊進行歸納。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">06 — 標單</span>
+                <span class="count">12 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="159 06-(標單) 管理費用加成比率 【舊版 20260323】
+管理利潤、保險及稅什費加成比率：(壹.三~十二)*約15%
+
+【新版 1150520】
+加成比率改為：(壹.三~十二)*約20.75%（提高約5.75個百分點）">
+                  <div class="card-top">
+                    <div class="serial">#159</div>
+                    <div>
+                      <h3>06-(標單)</h3>
+                      <p class="clause">管理費用加成比率</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>管理利潤、保險及稅什費加成比率：(壹.三~十二)*約<mark class="hot">15%</mark><br><br>【新版 1150520】<br>加成比率<mark class="hot">改為</mark>：(壹.三~十二)*約<mark class="hot">20.75%</mark>（<mark class="hot">提高</mark>約5.75個百分點）</div>
+                </article>
+                
+                <article class="card" data-search="160 06-(標單) 文件頁數 【舊版 20260323】
+共 30 頁
+
+【新版 1150520】
+重組為 28 頁（減少2頁，原30頁內容重新排版整合）">
+                  <div class="card-top">
+                    <div class="serial">#160</div>
+                    <div>
+                      <h3>06-(標單)</h3>
+                      <p class="clause">文件頁數</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>共 30 頁<br><br>【新版 1150520】<br>重組為 28 頁（減少2頁，原30頁內容重新排版整合）</div>
+                </article>
+                
+                <article class="card" data-search="161 06-(標單) 詳細價目表(二)標示 【舊版 20260323】
+「詳細價目表(二)[空白標單]」
+
+【新版 1150520】
+改為「詳細價目表(二)[空白標單](參考用)」（加上「(參考用)」標示，表示非計價依據）">
+                  <div class="card-top">
+                    <div class="serial">#161</div>
+                    <div>
+                      <h3>06-(標單)</h3>
+                      <p class="clause">詳細價目表(二)標示</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「詳細價目表(二)[空白標單]」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「詳細價目表(二)[空白標單](<mark class="hot">參考用</mark>)」（加上「(<mark class="hot">參考用</mark>)」標示，表示非計價依據）</div>
+                </article>
+                
+                <article class="card" data-search="162 06-(標單) 新增項目：主變電站bms 【舊版 20260323】
+（無 壹.十一.2.2.(8) 及 壹.十一.3.2.(8) 項）
+
+【新版 1150520】
+新增「壹.十一.2.2.(8) 主變電站建物管理系統-bms」（設備費）
+新增「壹.十一.3.2.(8) 主變電站建物管理系統-bms」（安裝費）">
+                  <div class="card-top">
+                    <div class="serial">#162</div>
+                    <div>
+                      <h3>06-(標單)</h3>
+                      <p class="clause"><mark class="hot">新增</mark>項目：主變電站<mark class="hot">BMS</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（無 壹.十一.2.2.(8) 及 壹.十一.3.2.(8) 項）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>「壹.十一.2.2.(8) 主變電站建物管理系統-<mark class="hot">BMS</mark>」（設備費）<br><mark class="hot">新增</mark>「壹.十一.3.2.(8) 主變電站建物管理系統-<mark class="hot">BMS</mark>」（安裝費）</div>
+                </article>
+                
+                <article class="card" data-search="163 06-(標單) 附錄 — 場鑄結構混凝土模板 【舊版 20260323】
+（無 壹.十一.1.1.(5)）
+
+【新版 1150520】
+新增：「壹.十一.1.1.(5) 場鑄結構混凝土用模板，f3級，垂直，10,001.00 m2」">
+                  <div class="card-top">
+                    <div class="serial">#163</div>
+                    <div>
+                      <h3>06-(標單)</h3>
+                      <p class="clause">附錄 — 場鑄結構混凝土模板</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>（無 壹.十一.1.1.(5)）<br><br>【新版 1150520】<br><mark class="hot">新增</mark>：「壹.十一.1.1.(5) 場鑄結構混凝土用模板，F3級，垂直，10,001.00 M2」</div>
+                </article>
+                
+                <article class="card" data-search="164 06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程 文件基本資訊 舊版為1150209版，30頁，檔案大小637845 bytes；新版為1150520版，28頁，檔案大小625073 bytes。新版頁數減少2頁，仍為microsoft excel 2019匯出pdf。">
+                  <div class="card-top">
+                    <div class="serial">#164</div>
+                    <div>
+                      <h3>06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程</h3>
+                      <p class="clause">文件基本資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版為1150209版，30頁，檔案大小637845 bytes；新版為1150520版，28頁，檔案大小625073 bytes。新版頁數減少2頁，仍為Microsoft Excel 2019匯出PDF。</div>
+                </article>
+                
+                <article class="card" data-search="165 06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程 標單頁數/版面重組 舊版共30頁，新版共28頁；新版內容重新排版整合，部分詳細價目表頁面與項目位置移動。">
+                  <div class="card-top">
+                    <div class="serial">#165</div>
+                    <div>
+                      <h3>06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程</h3>
+                      <p class="clause">標單頁數/版面重組</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版共30頁，新版共28頁；新版內容重新排版整合，部分詳細價目表頁面與項目位置移動。</div>
+                </article>
+                
+                <article class="card" data-search="166 06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程 管理利潤、保險及稅什費加成比率 舊版管理利潤、保險及稅什費加成比率為「(壹.三~十二)*約15%」；新版改為「(壹.三~十二)*約20.75%」。加成比率提高約5.75個百分點。">
+                  <div class="card-top">
+                    <div class="serial">#166</div>
+                    <div>
+                      <h3>06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程</h3>
+                      <p class="clause">管理利潤、保險及稅什費加成比率</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版管理利潤、保險及稅什費加成比率為「(壹.三~十二)*約<mark class="hot">15%</mark>」；新版<mark class="hot">改為</mark>「(壹.三~十二)*約<mark class="hot">20.75%</mark>」。加成比率<mark class="hot">提高</mark>約5.75個百分點。</div>
+                </article>
+                
+                <article class="card" data-search="167 06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程 詳細價目表(二)標示 舊版標示為「詳細價目表(二)[空白標單]」；新版改為「詳細價目表(二)[空白標單](參考用)」。新版明確將詳細價目表(二)標示為參考用。">
+                  <div class="card-top">
+                    <div class="serial">#167</div>
+                    <div>
+                      <h3>06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程</h3>
+                      <p class="clause">詳細價目表(二)標示</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版標示為「詳細價目表(二)[空白標單]」；新版<mark class="hot">改為</mark>「詳細價目表(二)[空白標單](<mark class="hot">參考用</mark>)」。新版明確將詳細價目表(二)標示為<mark class="hot">參考用</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="168 06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程 主變電站建物管理系統-bms 兩版均列有「壹.十一.3.2.(8) 主變電站建物管理系統-bms 式1.00」；舊版位於第29頁，新版位於第27頁。此項不是新增項目，主要差異為新版頁碼及版面重排。">
+                  <div class="card-top">
+                    <div class="serial">#168</div>
+                    <div>
+                      <h3>06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程</h3>
+                      <p class="clause">主變電站建物管理系統-<mark class="hot">BMS</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版均列有「壹.十一.3.2.(8) 主變電站建物管理系統-<mark class="hot">BMS</mark> 式1.00」；舊版位於第29頁，新版位於第27頁。此項不是<mark class="hot">新增</mark>項目，主要差異為新版頁碼及版面重排。</div>
+                </article>
+                
+                <article class="card" data-search="169 06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程 場鑄結構混凝土用模板 兩版均列有「壹.十一.1.1.(5) 場鑄結構混凝土用模板，f3級，垂直 m2 10,001.00」及「壹.十一.1.1.(6) 場鑄結構混凝土用模板，f3級，水平 m2 5,894.00」。舊版分布於第25至26頁，新版整併於第24頁，屬版面整合與頁碼移動。">
+                  <div class="card-top">
+                    <div class="serial">#169</div>
+                    <div>
+                      <h3>06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程</h3>
+                      <p class="clause">場鑄結構混凝土用模板</p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版均列有「壹.十一.1.1.(5) 場鑄結構混凝土用模板，F3級，垂直 M2 10,001.00」及「壹.十一.1.1.(6) 場鑄結構混凝土用模板，F3級，水平 M2 5,894.00」。舊版分布於第25至26頁，新版整併於第24頁，屬版面整合與頁碼移動。</div>
+                </article>
+                
+                <article class="card" data-search="170 06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程 文字比對統計 pdf文字抽取後，舊版約25179字元，新版約24749字元；篩選後差異片段106個。差異以費率、項目新增、表名標示及排版重組為主。">
+                  <div class="card-top">
+                    <div class="serial">#170</div>
+                    <div>
+                      <h3>06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程</h3>
+                      <p class="clause">文字比對統計</p>
+                    </div>
+                  </div>
+                  <div class="diff">PDF文字抽取後，舊版約25179字元，新版約24749字元；篩選後差異片段106個。差異以費率、項目<mark class="hot">新增</mark>、表名標示及排版重組為主。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+            <details class="group" data-group>
+              <summary>
+                <span class="group-title">06 — 機電標成本建議書填製說明</span>
+                <span class="count">10 筆</span>
+              </summary>
+              <div class="cards">
+                
+                <article class="card" data-search="171 06-機電標成本建議書填製說明 1.3 報價表格說明 【舊版 20260323】
+「本成本建議書之報價表格包含總表、詳細價目表(一)及機電系統工程之詳細價目表(二)」
+
+【新版 1150520】
+改為「報價表格包含「總表」、「詳細價目表(一)」及機電系統工程之「詳細價目表(二)(參考用)」」（加上「(參考用)」標示）">
+                  <div class="card-top">
+                    <div class="serial">#171</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">1.3 報價表格說明</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「本成本建議書之報價表格包含總表、詳細價目表(一)及機電系統工程之詳細價目表(二)」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「報價表格包含「總表」、「詳細價目表(一)」及機電系統工程之「詳細價目表(二)(<mark class="hot">參考用</mark>)」」（加上「(<mark class="hot">參考用</mark>)」標示）</div>
+                </article>
+                
+                <article class="card" data-search="172 06-機電標成本建議書填製說明 1.7.1 詳細價目表(二)調整規定 【舊版 20260323】
+「詳細價目表(一)及「機電系統工程」詳細價目表(二)，除經機關同意，其項目及內容不得調整」
+
+【新版 1150520】
+改為「詳細價目表(一)，除經機關同意，其項目及內容不得調整」（刪除詳細價目表(二)的不得調整限制，與標單「參考用」標示一致）">
+                  <div class="card-top">
+                    <div class="serial">#172</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">1.7.1 詳細價目表(二)<mark class="hot">調整</mark>規定</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「詳細價目表(一)及「機電系統工程」詳細價目表(二)，除經機關同意，其項目及內容<mark class="hot">不得</mark><mark class="hot">調整</mark>」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「詳細價目表(一)，除經機關同意，其項目及內容<mark class="hot">不得</mark><mark class="hot">調整</mark>」（<mark class="hot">刪除</mark>詳細價目表(二)的<mark class="hot">不得</mark><mark class="hot">調整</mark>限制，與標單「<mark class="hot">參考用</mark>」標示一致）</div>
+                </article>
+                
+                <article class="card" data-search="173 06-機電標成本建議書填製說明 1.7.2 初步詳細價目表提送期限 【舊版 20260323】
+「廠商應依據契約書本文第3條(二)規定，應於開工通知日起 90 日內……」
+
+【新版 1150520】
+改為「應於開工通知日起 180 日內」（倍增）">
+                  <div class="card-top">
+                    <div class="serial">#173</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">1.7.2 初步詳細價目表提送<mark class="hot">期限</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「廠商<mark class="hot">應</mark>依據契約書本文第3條(二)規定，<mark class="hot">應</mark>於開工通知日起 90 日內……」<br><br>【新版 1150520】<br><mark class="hot">改為</mark>「<mark class="hot">應</mark>於開工通知日起 180 日內」（倍增）</div>
+                </article>
+                
+                <article class="card" data-search="174 06-機電標成本建議書填製說明 1.7.4 設計製作分階段規定 【舊版 20260323】
+「廠商依上款規定辦理詳細價目表及單價分析表設計製作時，應拆分為第一、二階段」
+
+【新版 1150520】
+刪除此條款（1.7.4 整項移除）">
+                  <div class="card-top">
+                    <div class="serial">#174</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">1.7.4 設計製作分階段規定</p>
+                    </div>
+                  </div>
+                  <div class="diff">【舊版 20260323】<br>「廠商依上款規定辦理詳細價目表及單價分析表設計製作時，<mark class="hot">應</mark>拆分為第一、二階段」<br><br>【新版 1150520】<br><mark class="hot">刪除</mark>此條款（1.7.4 整項<mark class="hot">移除</mark>）</div>
+                </article>
+                
+                <article class="card" data-search="175 06-機電標成本建議書填製說明 文件基本資訊 兩版皆為5頁；舊版檔案大小133809 bytes，建立/修改時間為115/01/29；新版檔案大小134205 bytes，建立/修改時間為115/05/22。">
+                  <div class="card-top">
+                    <div class="serial">#175</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">文件基本資訊</p>
+                    </div>
+                  </div>
+                  <div class="diff">兩版皆為5頁；舊版檔案大小133809 bytes，建立/修改時間為115/01/29；新版檔案大小134205 bytes，建立/修改時間為115/05/22。</div>
+                </article>
+                
+                <article class="card" data-search="176 06-機電標成本建議書填製說明 1.3 報價表格說明 舊版說明報價表格包含總表、詳細價目表(一)及機電系統工程之詳細價目表(二)；新版改為包含「總表」、「詳細價目表(一)」及機電系統工程之「詳細價目表(二)(參考用)」。新版與標單一致，明確將詳細價目表(二)標示為參考用。">
+                  <div class="card-top">
+                    <div class="serial">#176</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">1.3 報價表格說明</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版說明報價表格包含總表、詳細價目表(一)及機電系統工程之詳細價目表(二)；新版<mark class="hot">改為</mark>包含「總表」、「詳細價目表(一)」及機電系統工程之「詳細價目表(二)(<mark class="hot">參考用</mark>)」。新版與標單一致，明確將詳細價目表(二)標示為<mark class="hot">參考用</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="177 06-機電標成本建議書填製說明 1.7.1 詳細價目表調整限制 舊版規定詳細價目表(一)及「機電系統工程」詳細價目表(二)，除經機關同意，其項目及內容不得調整；新版改為僅「詳細價目表(一)」不得調整，刪除詳細價目表(二)不得調整之限制。">
+                  <div class="card-top">
+                    <div class="serial">#177</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">1.7.1 詳細價目表<mark class="hot">調整</mark>限制</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版規定詳細價目表(一)及「機電系統工程」詳細價目表(二)，除經機關同意，其項目及內容<mark class="hot">不得</mark><mark class="hot">調整</mark>；新版<mark class="hot">改為</mark>僅「詳細價目表(一)」<mark class="hot">不得</mark><mark class="hot">調整</mark>，<mark class="hot">刪除</mark>詳細價目表(二)<mark class="hot">不得</mark><mark class="hot">調整</mark>之限制。</div>
+                </article>
+                
+                <article class="card" data-search="178 06-機電標成本建議書填製說明 1.7.2 初步詳細價目表提送期限 舊版規定廠商應於開工通知日起90日內提送初步詳細價目表；新版改為開工通知日起180日內提送。期限由90日延長為180日。">
+                  <div class="card-top">
+                    <div class="serial">#178</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">1.7.2 初步詳細價目表提送<mark class="hot">期限</mark></p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版規定廠商<mark class="hot">應</mark>於開工通知日起<mark class="hot">90日</mark>內提送初步詳細價目表；新版<mark class="hot">改為</mark>開工通知日起<mark class="hot">180日</mark>內提送。<mark class="hot">期限</mark>由<mark class="hot">90日</mark>延長為<mark class="hot">180日</mark>。</div>
+                </article>
+                
+                <article class="card" data-search="179 06-機電標成本建議書填製說明 1.7.4 設計製作分階段規定 舊版有1.7.4條，規定廠商辦理詳細價目表及單價分析表設計製作時應拆分為第一、二階段；新版刪除此條，原1.7.5「不得拒絕提供資料」遞移為新版1.7.4。">
+                  <div class="card-top">
+                    <div class="serial">#179</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">1.7.4 設計製作分階段規定</p>
+                    </div>
+                  </div>
+                  <div class="diff">舊版有1.7.4條，規定廠商辦理詳細價目表及單價分析表設計製作時<mark class="hot">應</mark>拆分為第一、二階段；新版<mark class="hot">刪除</mark>此條，原1.7.5「<mark class="hot">不得</mark>拒絕提供資料」遞移為新版1.7.4。</div>
+                </article>
+                
+                <article class="card" data-search="180 06-機電標成本建議書填製說明 文字比對統計 pdf文字抽取後，舊版約5363字元，新版約5315字元；差異片段5個。主要差異集中於詳細價目表(二)參考用、提送期限與1.7.4刪除。">
+                  <div class="card-top">
+                    <div class="serial">#180</div>
+                    <div>
+                      <h3>06-機電標成本建議書填製說明</h3>
+                      <p class="clause">文字比對統計</p>
+                    </div>
+                  </div>
+                  <div class="diff">PDF文字抽取後，舊版約5363字元，新版約5315字元；差異片段5個。主要差異集中於詳細價目表(二)<mark class="hot">參考用</mark>、提送<mark class="hot">期限</mark>與1.7.4<mark class="hot">刪除</mark>。</div>
+                </article>
+                
+              </div>
+            </details>
+            
+    </main>
+    <div id="noResults" class="no-results">找不到符合搜尋條件的差異項目。</div>
+    <footer>資料來源：BRM01標招標文件差異比較表(V6).xlsx。本頁為本機靜態互動版，可離線開啟。</footer>
+  </div>
+  <script id="rawData" type="application/json">[{&quot;title&quot;: &quot;00 — 招標文件清單&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;1&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;項次清單整體&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n共24個項次，包含「03-1採購契約範本附記條款特別聲明」及「24公開閱覽廠商意見答覆表」\n\n【新版 1150520】\n移除「03-1採購契約範本附記條款特別聲明」及「24公開閱覽廠商意見答覆表」兩個項次，總項次減少&quot;}, {&quot;serial&quot;: &quot;2&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;格式與備註&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n部分備註說明分散於各項次欄位，如「檔案請至行政院公共工程委員會網站下載」、「檔案請至桃園市政府地方稅務局網站下載」等備註說明各自獨立\n\n【新版 1150520】\n格式重整，備註文字整合，欄位對齊更一致&quot;}, {&quot;serial&quot;: &quot;3&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;文件基本資訊&quot;, &quot;diff&quot;: &quot;舊版為2頁，檔案大小156766 bytes，建立/修改時間為115/02/09；新版為1頁，檔案大小124019 bytes，建立/修改時間為115/05/20。新版刪除空白頁並重新排版。&quot;}, {&quot;serial&quot;: &quot;4&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;項次03 契約文件&quot;, &quot;diff&quot;: &quot;舊版項次03列「契約(稿)」並包含「(3-1)採購契約範本附記條款特別聲明」；新版項次03僅列「契約(稿)」，刪除(3-1)附記條款特別聲明之列示。&quot;}, {&quot;serial&quot;: &quot;5&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;項次24 公開閱覽廠商意見答覆表&quot;, &quot;diff&quot;: &quot;舊版列有項次24「公開閱覽廠商意見答覆表」，備註為檔案至於項次1投標須知內；新版清單止於項次23，未再列項次24。&quot;}, {&quot;serial&quot;: &quot;6&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;項次07 權責分工表備註&quot;, &quot;diff&quot;: &quot;舊版備註為「檔案至於項次3契約內」；新版改為「檔案至於契約附錄內」。&quot;}, {&quot;serial&quot;: &quot;7&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;項次17-19 保證書格式備註&quot;, &quot;diff&quot;: &quot;舊版項次17「押標金連帶保證書格式」備註說明檔案請至行政院公共工程委員會主管法規查詢系統下載；新版項次17至19備註欄均空白，刪除下載來源說明。&quot;}, {&quot;serial&quot;: &quot;8&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;項次20 印花稅填寫範例備註&quot;, &quot;diff&quot;: &quot;舊版項次20「印花稅大額憑證繳款書開立申請填寫範例」備註為檔案請至桃園市政府地方稅務局網站下載；新版備註欄空白，刪除下載來源說明。&quot;}, {&quot;serial&quot;: &quot;9&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;項次22 利益衝突揭露表備註&quot;, &quot;diff&quot;: &quot;舊版項次22備註為檔案請至法務部廉政署網站下載；新版備註欄空白，刪除下載來源說明。&quot;}, {&quot;serial&quot;: &quot;10&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;項次23 公共工程相關須知/要點備註&quot;, &quot;diff&quot;: &quot;舊版項次23備註為檔案請至桃園市政府主管法規查詢系統內下載；新版備註欄空白，刪除下載來源說明。&quot;}, {&quot;serial&quot;: &quot;11&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;項次14 文件名稱換行&quot;, &quot;diff&quot;: &quot;舊版項次14為單行「廠商參與政府採購可能涉及之法律責任」；新版拆為「廠商參與政府採購 / 可能涉及之法律責任」。內容未變，為版面換行調整。&quot;}, {&quot;serial&quot;: &quot;12&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;整體格式&quot;, &quot;diff&quot;: &quot;新版將清單壓縮為1頁，調整欄寬與換行；項次08、21、22、23等長文字重新換行，並使備註欄較舊版簡化。&quot;}, {&quot;serial&quot;: &quot;13&quot;, &quot;file&quot;: &quot;00-招標文件清單&quot;, &quot;section&quot;: &quot;文字比對統計&quot;, &quot;diff&quot;: &quot;PDF文字抽取後，舊版約860字元，新版約682字元；差異片段10個。主要差異為項目刪除、備註刪除及格式重排。&quot;}]}, {&quot;title&quot;: &quot;01 — 投標須知&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;14&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;預算金額&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n新臺幣 25,158,763,175 元\n\n【新版 1150520】\n新臺幣 29,753,637,811 元（提高約 18.3%）&quot;}, {&quot;serial&quot;: &quot;15&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;共同投標資格條款&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n若共同投標時，下列「第1至第4之規定」，均須至少有一家成員符合\n\n【新版 1150520】\n改為「第1至第3之規定」，均須至少有一家成員符合（刪除第4項資格要求）&quot;}, {&quot;serial&quot;: &quot;16&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;工程實績文件要求&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「需檢附共同投標協議書，以證明上述工程經驗為其實際參與），以及採購機關(構)核發之驗收證明（影本）」；民營實績：「合格驗收證明及契約等影本」；外國工程實績：「採用之契約及採購機關核發之驗收證明」\n\n【新版 1150520】\n「以及」全部改為「或」：改為「或採購機關(構)核發之驗收證明（影本）」；民營實績：「合格驗收證明或契約等影本」；外國工程實績：「採用之契約或採購機關核發之驗收證明」（放寬文件要求，提交其一即可）&quot;}, {&quot;serial&quot;: &quot;17&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;財務資格－單獨廠商&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n實收資本額不低於新臺幣 25.15 億元；權益不低於新臺幣 20.96 億元\n\n【新版 1150520】\n實收資本額不低於新臺幣 29.75 億元；權益不低於新臺幣 24.79 億元&quot;}, {&quot;serial&quot;: &quot;18&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;財務資格－車輛廠商&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n車輛廠商合計實收資本額不低於新臺幣 2.86 億元；合計權益不低於新臺幣 2.38 億元\n\n【新版 1150520】\n車輛廠商合計實收資本額不低於新臺幣 3.48 億元；合計權益不低於新臺幣 2.90 億元&quot;}, {&quot;serial&quot;: &quot;19&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;財務資格－系統整合/主承包商&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n實收資本額不低於新臺幣 4.33 億元；權益不低於新臺幣 3.60 億元\n\n【新版 1150520】\n實收資本額不低於新臺幣 4.36 億元；權益不低於新臺幣 3.63 億元&quot;}, {&quot;serial&quot;: &quot;20&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;財務資格－土建廠商&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n實收資本額不低於新臺幣 6.10 億元；權益不低於新臺幣 5.08 億元\n\n【新版 1150520】\n實收資本額不低於新臺幣 6.38 億元；權益不低於新臺幣 5.32 億元&quot;}, {&quot;serial&quot;: &quot;21&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;軌道工程實績金額&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n單次契約金額不低於新臺幣軌道 7.13 億元，或累計不低於 17.82 億元\n\n【新版 1150520】\n單次契約金額不低於新臺幣軌道 12.19 億元，或累計不低於 30.48 億元（大幅提高）&quot;}, {&quot;serial&quot;: &quot;22&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;系統實績金額（車輛）&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n單次契約金額不低於新臺幣 11.45 億元，或累計不低於 28.62 億元\n\n【新版 1150520】\n單次契約金額不低於新臺幣 13.92 億元，或累計不低於 34.80 億元&quot;}, {&quot;serial&quot;: &quot;23&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;系統實績金額（其他機電）&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n單次契約金額不低於新臺幣 17.32 億元，或累計不低於 43.31 億元\n\n【新版 1150520】\n單次契約金額不低於新臺幣 17.46 億元，或累計不低於 43.65 億元&quot;}, {&quot;serial&quot;: &quot;24&quot;, &quot;file&quot;: &quot;01-投標須知&quot;, &quot;section&quot;: &quot;詳細價目表計價基準&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（三）本採購案簽訂契約時，其總表、詳細價目表(一)及詳細價目表(二)所列各項目單價，皆依本採購案投標廠商提出標價組成之內容為基準\n\n【新版 1150520】\n改為「其總表及詳細價目表(一)所列各項目單價……」（刪除詳細價目表(二)計價基準提及）&quot;}, {&quot;serial&quot;: &quot;25&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;文件基本資訊&quot;, &quot;diff&quot;: &quot;兩版皆為71頁；舊版檔案大小1080909 bytes，建立/修改時間為115/03/17；新版檔案大小1075040 bytes，建立/修改時間為115/05/20。&quot;}, {&quot;serial&quot;: &quot;26&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;預算金額&quot;, &quot;diff&quot;: &quot;舊版預算金額為新臺幣25,158,763,175元；新版改為新臺幣29,753,637,811元。新版增加4,594,874,636元，約增加18.3%。&quot;}, {&quot;serial&quot;: &quot;27&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;共同投標資格條款&quot;, &quot;diff&quot;: &quot;舊版共同投標時要求下列「第1至第4之規定」均須至少有一家成員符合；新版改為「第1至第3之規定」均須至少有一家成員符合，刪除第4項納入共同投標成員符合範圍之要求。&quot;}, {&quot;serial&quot;: &quot;28&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;工程實績證明文件&quot;, &quot;diff&quot;: &quot;舊版多處使用「以及」或「及」表示需併附共同投標協議書、驗收證明、契約等文件；新版改為「或」，如採購機關核發之驗收證明、合格驗收證明或契約等影本、採用之契約或驗收證明等，整體上放寬為提交其一即可。&quot;}, {&quot;serial&quot;: &quot;29&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;財務資格－單獨廠商&quot;, &quot;diff&quot;: &quot;舊版單獨廠商實收資本額不低於新臺幣25.15億元、權益不低於新臺幣20.96億元；新版提高為實收資本額不低於新臺幣29.75億元、權益不低於新臺幣24.79億元。&quot;}, {&quot;serial&quot;: &quot;30&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;財務資格－車輛廠商&quot;, &quot;diff&quot;: &quot;舊版車輛廠商合計實收資本額不低於新臺幣2.86億元、合計權益不低於新臺幣2.38億元；新版提高為合計實收資本額不低於新臺幣3.48億元、合計權益不低於新臺幣2.90億元。&quot;}, {&quot;serial&quot;: &quot;31&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;財務資格－系統整合/主承包商&quot;, &quot;diff&quot;: &quot;舊版系統整合/主承包商實收資本額不低於新臺幣4.33億元、權益不低於新臺幣3.60億元；新版提高為實收資本額不低於新臺幣4.36億元、權益不低於新臺幣3.63億元。&quot;}, {&quot;serial&quot;: &quot;32&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;財務資格－土建廠商&quot;, &quot;diff&quot;: &quot;舊版土建廠商實收資本額不低於新臺幣6.10億元、權益不低於新臺幣5.08億元；新版提高為實收資本額不低於新臺幣6.38億元、權益不低於新臺幣5.32億元。&quot;}, {&quot;serial&quot;: &quot;33&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;軌道工程實績金額&quot;, &quot;diff&quot;: &quot;舊版軌道工程實績門檻為單次契約金額不低於新臺幣7.13億元，或累計不低於17.82億元；新版提高為單次契約金額不低於新臺幣12.19億元，或累計不低於30.48億元。&quot;}, {&quot;serial&quot;: &quot;34&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;系統實績金額－車輛&quot;, &quot;diff&quot;: &quot;舊版車輛系統實績門檻為單次契約金額不低於新臺幣11.45億元，或累計不低於28.62億元；新版提高為單次契約金額不低於新臺幣13.92億元，或累計不低於34.80億元。&quot;}, {&quot;serial&quot;: &quot;35&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;系統實績金額－其他機電&quot;, &quot;diff&quot;: &quot;舊版其他機電系統實績門檻為單次契約金額不低於新臺幣17.32億元，或累計不低於43.31億元；新版提高為單次契約金額不低於新臺幣17.46億元，或累計不低於43.65億元。&quot;}, {&quot;serial&quot;: &quot;36&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;詳細價目表計價基準&quot;, &quot;diff&quot;: &quot;舊版規定簽訂契約時，總表、詳細價目表(一)及詳細價目表(二)所列各項目單價，皆依投標廠商提出標價組成為基準；新版改為總表及詳細價目表(一)所列各項目單價，刪除詳細價目表(二)作為計價基準之文字。&quot;}, {&quot;serial&quot;: &quot;37&quot;, &quot;file&quot;: &quot;01-BRM01標投標須知及編號7至編號16相關文件&quot;, &quot;section&quot;: &quot;文字比對統計&quot;, &quot;diff&quot;: &quot;PDF文字抽取後，舊版約64676字元，新版約64646字元；差異片段137個。主要差異集中於預算、資格門檻、實績金額與詳細價目表(二)定位。&quot;}]}, {&quot;title&quot;: &quot;02 — 附錄A 評選須知&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;38&quot;, &quot;file&quot;: &quot;02-附錄A評選須知&quot;, &quot;section&quot;: &quot;整體&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n評選表格採直式排列，評分項次順序與配分欄位依特定格式呈現\n\n【新版 1150520】\n主要為版面格式重整（表格欄位順序局部調整），無實質評選標準或配分異動&quot;}, {&quot;serial&quot;: &quot;39&quot;, &quot;file&quot;: &quot;02-BRM01標附錄A評選須知&quot;, &quot;section&quot;: &quot;文件基本資訊&quot;, &quot;diff&quot;: &quot;兩版皆為37頁；舊版檔案大小757941 bytes，建立/修改時間為115/03/19；新版檔案大小785678 bytes，建立/修改時間為115/05/07。&quot;}, {&quot;serial&quot;: &quot;40&quot;, &quot;file&quot;: &quot;02-BRM01標附錄A評選須知&quot;, &quot;section&quot;: &quot;整體差異判斷&quot;, &quot;diff&quot;: &quot;兩版文字比對顯示主要為表格欄位、換行、頁首頁尾及版面格式調整；未見評選項目、配分、評分標準或決標/評選門檻之明顯實質變更。&quot;}, {&quot;serial&quot;: &quot;41&quot;, &quot;file&quot;: &quot;02-BRM01標附錄A評選須知&quot;, &quot;section&quot;: &quot;評選表格格式&quot;, &quot;diff&quot;: &quot;舊版與新版評選表格內容大致一致，但新版表格欄位排列、換行與段落間距有局部調整；此項屬閱讀版面與表格呈現差異。&quot;}, {&quot;serial&quot;: &quot;42&quot;, &quot;file&quot;: &quot;02-BRM01標附錄A評選須知&quot;, &quot;section&quot;: &quot;評選項目與配分&quot;, &quot;diff&quot;: &quot;經抽取文字比對，評選項目名稱及配分未見明顯異動；新版仍沿用舊版評選架構。&quot;}, {&quot;serial&quot;: &quot;43&quot;, &quot;file&quot;: &quot;02-BRM01標附錄A評選須知&quot;, &quot;section&quot;: &quot;頁碼/頁首資訊&quot;, &quot;diff&quot;: &quot;兩版頁數相同，但PDF產製日期不同；部分頁首、頁尾或頁碼附近文字抽取位置不同，造成差異片段。&quot;}, {&quot;serial&quot;: &quot;44&quot;, &quot;file&quot;: &quot;02-BRM01標附錄A評選須知&quot;, &quot;section&quot;: &quot;文字比對統計&quot;, &quot;diff&quot;: &quot;PDF文字抽取後，舊版約20208字元，新版約20208字元；差異片段2個。差異主要集中於格式與表格呈現。&quot;}]}, {&quot;title&quot;: &quot;03 — 契約(稿)&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;45&quot;, &quot;file&quot;: &quot;03-契約(稿)&quot;, &quot;section&quot;: &quot;第3條 詳細價目表提送期限&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n廠商應於開工通知日起 90 日內，提出初步「詳細價目表(一)」及初步「詳細價目表(二)」送機關核定\n\n【新版 1150520】\n改為開工通知日起 180 日內（倍增），機電系統細部設計核定後 45 日內提送單價分析表&quot;}, {&quot;serial&quot;: &quot;46&quot;, &quot;file&quot;: &quot;03-契約(稿)&quot;, &quot;section&quot;: &quot;第3條 詳細價目表(二)調整限制&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（未有明文規定詳細價目表(二)不得調整）\n\n【新版 1150520】\n新增：「詳細價目表(二) 除經機關同意，其項目及內容不得調整」&quot;}, {&quot;serial&quot;: &quot;47&quot;, &quot;file&quot;: &quot;03-契約(稿)&quot;, &quot;section&quot;: &quot;第7條 天然因素定義&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「颱風等天然因素所導致之展延天數不得再請求外」\n\n【新版 1150520】\n改為「山崩、地震、海嘯等天然因素所導致之展延天數不得再請求外」（颱風不再列為不可抗力天然因素）&quot;}, {&quot;serial&quot;: &quot;48&quot;, &quot;file&quot;: &quot;03-契約(稿)&quot;, &quot;section&quot;: &quot;第7條 文字錯誤修正&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「經機關目試檢驗後，支付廠商工程價款」\n\n【新版 1150520】\n更正為「經機關目視檢驗後，支付廠商工程價款」&quot;}, {&quot;serial&quot;: &quot;49&quot;, &quot;file&quot;: &quot;03-契約(稿)&quot;, &quot;section&quot;: &quot;第5條 竣工驗收條件&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「工程驗收合格及繳納保固保證金後，付清本項工程費尾款10%」；「完成驗收合格後且無待解決事項」\n\n【新版 1150520】\n新增竣工圖審定要求：「工程驗收合格(含竣工圖審定)及繳納保固保證金後」；「完成驗收合格(含竣工圖審定)後且無待解決事項」&quot;}, {&quot;serial&quot;: &quot;50&quot;, &quot;file&quot;: &quot;03-契約(稿)&quot;, &quot;section&quot;: &quot;第9條 保險程序&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「廠商於接獲開工通知日後，應立即向保險公司投保本條規定之保險，並於開工通知日起90日內提送審核」\n\n【新版 1150520】\n改為「廠商於接獲開工通知日後，應立即向保險公司啟動投保契約約定之保險程序，並於開工通知日起90日內提送審核」（強調程序啟動，開工90日期限不變）&quot;}, {&quot;serial&quot;: &quot;51&quot;, &quot;file&quot;: &quot;03-BRM01標契約(稿)&quot;, &quot;section&quot;: &quot;第3條　契約價金之給付&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n軌道工程、土建及其他機電設施工程：廠商應於開工通知日起 90 日內提出初步詳細價目表(一)及(二)送機關核定\n\n【新版 1150520】\n期限延長為開工通知日起 180 日內；機電系統工程同樣增訂於開工通知日起 180 日內提出初步詳細價目表(一)及(二)&quot;}, {&quot;serial&quot;: &quot;52&quot;, &quot;file&quot;: &quot;03-BRM01標契約(稿)&quot;, &quot;section&quot;: &quot;第3條　契約價金之給付&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（未有相關限制條款）\n\n【新版 1150520】\n新增：「詳細價目表(二) 除經機關同意，其項目及內容不得調整」&quot;}, {&quot;serial&quot;: &quot;53&quot;, &quot;file&quot;: &quot;03-BRM01標契約(稿)&quot;, &quot;section&quot;: &quot;第5條　契約價金之給付條件&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n設備抵工地後「經機關目試檢驗後」支付設備費 85%\n\n【新版 1150520】\n修正為「經機關目視檢驗後」（「試」改為「視」，文字勘誤修正）&quot;}, {&quot;serial&quot;: &quot;54&quot;, &quot;file&quot;: &quot;03-BRM01標契約(稿)&quot;, &quot;section&quot;: &quot;第5條　契約價金之給付條件&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n軌道工程竣工驗收合格及繳納保固保證金後，付清尾款 10%\n\n【新版 1150520】\n新增條件：軌道工程竣工「驗收合格(含竣工圖審定)」及繳納保固保證金後，付清尾款 10%（多處付款條款同步新增竣工圖審定要求）&quot;}, {&quot;serial&quot;: &quot;55&quot;, &quot;file&quot;: &quot;03-BRM01標契約(稿)&quot;, &quot;section&quot;: &quot;第7條　履約期限&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「颱風等天然因素」所導致之展延天數不得再請求補償\n\n【新版 1150520】\n改為「山崩、地震、海嘯等天然因素」（調整不可歸責天然因素之例示範圍，刪颱風、改列地震類災害）&quot;}, {&quot;serial&quot;: &quot;56&quot;, &quot;file&quot;: &quot;03-BRM01標契約(稿)&quot;, &quot;section&quot;: &quot;第9條　履約管理&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「另應就其分包項目單項超過 2 億元金額部分，提送分包廠商資格，於機關審查同意後，方得進行該部分相關工作。如廠商未依規定提報，機關得按第5條(一)6暫停給付估驗計價款規定處理。」\n\n【新版 1150520】\n整段刪除；分包廠商資格審查程序規定移除&quot;}, {&quot;serial&quot;: &quot;57&quot;, &quot;file&quot;: &quot;03-BRM01標契約(稿)&quot;, &quot;section&quot;: &quot;第13條　保險&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n每一事故之廠商「非天災自負額」不超過新臺幣 200 萬元正；「天災自負額」不超過損失金額之 20%\n\n【新版 1150520】\n改為按損失金額 20% 分級計算：\n・機電安裝及高架工程：最高不超過 800 萬元，最低不少於 30 萬元\n・地面工程及其他工程：最高不超過 200 萬元，最低不少於 20 萬元\n（取消天災/非天災分類，改採工程類別分級）&quot;}, {&quot;serial&quot;: &quot;58&quot;, &quot;file&quot;: &quot;03-BRM01標契約(稿)&quot;, &quot;section&quot;: &quot;第13條　保險&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「廠商於接獲開工通知日後，應立即向保險公司投保本條規定之保險」\n\n【新版 1150520】\n改為「廠商於接獲開工通知日後，應立即向保險公司啟動投保契約約定之保險程序」（「投保本條規定之保險」→「啟動投保契約約定之保險程序」）&quot;}]}, {&quot;title&quot;: &quot;04-1 — 業主需求書(一)  整體服務需求及規定&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;59&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;文件日期&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n中華民國一一五年一月\n\n【新版 1150520】\n中華民國一一五年五月&quot;}, {&quot;serial&quot;: &quot;60&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;工程範圍 — 橫渡線/避車軌&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「BR04站與BR02車站間里程約4K+500~4K+700處設置之橫渡線位置變更至里程約3K+400~3K+600處」\n\n【新版 1150520】\n改為「側式避車軌位置變更至里程約3K+400~3K+600處」（術語由「橫渡線」改為「側式避車軌」）&quot;}, {&quot;serial&quot;: &quot;61&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;工程範圍 — 新增F、G項&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（無此兩項）\n\n【新版 1150520】\n新增F項：「本工程位於BR01站與BR02站間之橫渡線，將配合萬大線之變更一併調整位置；後續應俟新北捷運局定案後，再據以辦理後續設計」\n新增G項：「本案須提送施工環境監測計畫書，並經業主核可後始得執行；相關費用均已包含於本工程契約價金內，不另給付」&quot;}, {&quot;serial&quot;: &quot;62&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章 廠商主要人員&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n主要人員包含：計畫經理、施工經理、設計經理、各子系統經理、系統保證經理、系統整合經理、時程經理、界面經理、測試經理、系統安全經理（共10項）；「系統保證經理、系統RAM經理及系統安全經理得在業主/機關及專管之同意下由具備足夠資歷人員兼任」\n\n【新版 1150520】\n刪除「系統安全經理」及主要人員列表第(j)項（共縮減至9項）；文字改為「系統保證經理得在業主/機關及專管之同意下由具備足夠資歷及能力之人員兼任」（刪除系統RAM經理兼任條款）&quot;}, {&quot;serial&quot;: &quot;63&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章 型態管理計畫提送期限&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「廠商應於NTP+90日內，提出型態管理計畫送業主審查」；型態管理作業應符合 ISO10007、CNS14238或業主/機關同意之標準辦理\n\n【新版 1150520】\n改為「NTP+120日內提出」；型態管理作業標準改為「業主同意之標準辦理」（刪除/機關）&quot;}, {&quot;serial&quot;: &quot;64&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章 工程價目單及計價時程表提送&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「廠商應於NTP+90日內，提送初步詳細價目表(一)」；「廠商應於NTP+120日內，提送計價時程表」\n\n【新版 1150520】\n兩者均延長：「NTP+180日內提送詳細價目表(一)」；「NTP+180日內提送計價時程表」&quot;}, {&quot;serial&quot;: &quot;65&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;第1章 晨峰運量數據&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n表列各站進出站旅次（以原始數字）：BR08進站1,887、出站1,911、場站進出進站3,122、出站3,110等\n\n【新版 1150520】\n欄位標題由「場站進出」改為「廠站進出」；各站數字調整，如BR08進站1,887、出站1,000、廠站進出進站2,000、出站1,900（多站數值有更新）&quot;}, {&quot;serial&quot;: &quot;66&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;附錄C BIM需求&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\nBIM模型類別包含：(A)房屋建築類、(B)軌道與機電系統類、(C)整合模型、(D)都市景觀模型套疊、(E)虛擬實境模擬；含「房屋建築類模型」章節（含建築模型、結構模型、MEP模型等）\n\n【新版 1150520】\n移除「(A)房屋建築類」，模型類別改為：(A)軌道與機電系統類、(B)整合模型、(C)都市景觀模型套疊、(D)虛擬實境模擬；「房屋建築類模型」章節改為「機電系統類模型」，相關建模說明重新撰寫&quot;}, {&quot;serial&quot;: &quot;67&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;附錄H 機電系統參數 車輛長度&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n列車全長 35.5m\n\n【新版 1150520】\n列車全長不大於 40m&quot;}, {&quot;serial&quot;: &quot;68&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;附錄H 列車停靠月臺間隙&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「小於等於 75mm」\n\n【新版 1150520】\n改為「不大於 75mm」（表述統一，數值不變）&quot;}, {&quot;serial&quot;: &quot;69&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;第14章 軌道投入口尺寸&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「土建廠商原則上應配合機電廠商所提軌道投入口之需求，辦理結構體預留並提供軌道投入口」（未指定尺寸）\n\n【新版 1150520】\n新增明確尺寸規定：「軌道投入口之需求（尺寸為 26 公尺 x5 公尺），辦理結構體預留並提供軌道投入口」&quot;}, {&quot;serial&quot;: &quot;70&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;第14章 軌道銲接場地&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「明挖覆蓋隧道開口及高架橋梁之入口等軌道工程搬運鋼軌之施工需求」\n\n【新版 1150520】\n增加「及設置銲接場地及機具進出動線」之施工需求&quot;}, {&quot;serial&quot;: &quot;71&quot;, &quot;file&quot;: &quot;04-1-業主需求書(一)&quot;, &quot;section&quot;: &quot;附錄C ISA資格/獨立查證&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「並針對評估項目出具特定應用(Specific Application)廠商(統包層級及子系統層級)聘用之ISA須具備ISO17020 內 Type A 及 ISO17065 之資格」；「廠商應配合獨立查證與確證機構依契約權責分工表之審查與監督」\n\n【新版 1150520】\n評估項目增加「（須包含相關功能安全界面）」；新增 EN50716 規定：「上述EN50716已有明確規定，相容舊版EN50128或EN50657之條款，廠商依照EN50716內之相關規定辦理」；獨立查證改為「廠商應無條件配合接受獨立查證與確證機構之審查與監督」（加強配合義務）&quot;}, {&quot;serial&quot;: &quot;72&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第1章附錄C　BIM作業項目清單&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\nBIM作業項目列為5類，第一項為「A. 房屋建築類」，後接軌道與機電系統類、整合模型、都市景觀套疊、VR\n\n【新版 1150520】\n刪除「A. 房屋建築類」，改以「A. 軌道與機電系統類」為起點，共4類（刪除房屋建築類相關BIM作業範圍）&quot;}, {&quot;serial&quot;: &quot;73&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第1章附錄C　細部設計BIM模型內容&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n機電系統類模型區分為：「A. 軌道模型」（含軌道量體道岔等）及「B. 系統機電模型」（含車輛供電通訊等）二類，另有「房屋建築類模型」（建築模型、結構模型、MEP模型）\n\n【新版 1150520】\n整合簡化為單一「A. 機電系統模型(含車站與路線段)」，包含車輛、供電、行車監控、通訊、行控中心設備及自動收費等；刪除房屋建築類模型（建築/結構/MEP）全部章節&quot;}, {&quot;serial&quot;: &quot;74&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第1章附錄C　ISA評估範圍&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\nISA辦理獨立安全評估（含獨立軟體安全評估），針對評估項目出具特定應用(Specific Application)證明\n\n【新版 1150520】\n新增評估項目須「包含相關功能安全界面」；並增訂EN50716已明確規定相容舊版EN50128或EN50657，廠商應依EN50716辦理&quot;}, {&quot;serial&quot;: &quot;75&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第1章附錄C　ISA提送期限&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「廠商須於NTP+60日內提ISA單位送業主同意」\n\n【新版 1150520】\n延長為「廠商須於NTP+240日內提ISA送業主同意」（60日→240日；並刪除「單位」二字）&quot;}, {&quot;serial&quot;: &quot;76&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第1章附錄C　ISA資歷要求&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\nISA資格文件須有執行「鐵道全系統(統包層級的ISA)或相關子系統」的能力\n\n【新版 1150520】\n改為「鐵道全系統或相關子系統ISA的能力」（刪除括注「統包層級的ISA」，語意更簡潔）&quot;}, {&quot;serial&quot;: &quot;77&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第1章附錄C　IV&amp;V配合義務&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「廠商應配合獨立查證與確證機構依契約權責分工表之審查與監督」\n\n【新版 1150520】\n改為「廠商應無條件配合接受獨立查證與確證機構之審查與監督」（新增「無條件」及「接受」，刪除「依契約權責分工表」限制語）&quot;}, {&quot;serial&quot;: &quot;78&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第1章附錄H　機電系統參數表&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「列車全長35.5m」（固定值）\n\n【新版 1150520】\n改為「列車全長不大於40m」（由固定尺寸改為上限值，給予廠商較大設計彈性）&quot;}, {&quot;serial&quot;: &quot;79&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第1章附錄H　月臺停靠間隙&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「列車停靠月臺之間隙 小於等於75mm」\n\n【新版 1150520】\n改為「不大於75mm」（用語統一，實質意義相同）&quot;}, {&quot;serial&quot;: &quot;80&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第4章　電子票證相容性&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n廠商須驗證現存交通電子票證相容（A及B款）\n\n【新版 1150520】\n新增第C款：「廠商應辦理前述相容性之整合與協調工作，得由業主提供必要之資訊，詳參業主需求書(二)或相關規定辦理」&quot;}, {&quot;serial&quot;: &quot;81&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章　計畫關鍵人員清單&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n關鍵人員列10類，包含：a.計畫經理 b.施工經理 c.設計經理 d.各子系統經理 e.系統保證經理 f.系統整合經理 g.時程經理 h.界面經理 i.測試經理 j.系統安全經理\n\n【新版 1150520】\n刪除「j. 系統安全經理」，關鍵人員縮減為9類&quot;}, {&quot;serial&quot;: &quot;82&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章　系統保證人員兼任規定&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「系統保證經理、系統RAM經理及系統安全經理得在業主/機關及專管之同意下，由具備足夠資歷及能力之人員兼任」\n\n【新版 1150520】\n縮減為「系統保證經理得在業主/機關及專管之同意下，由具備足夠資歷及能力之人員兼任」（刪除RAM經理及系統安全經理的兼任授權）&quot;}, {&quot;serial&quot;: &quot;83&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章　詳細價目表提送期限&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n廠商應於NTP+90日內提送初步詳細價目表(一)及(二)\n\n【新版 1150520】\n延長為NTP+180日內提送（90日→180日）&quot;}, {&quot;serial&quot;: &quot;84&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章　計價時程表提送期限&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n廠商應於NTP+120日內提送契約期間內預估計價時程表\n\n【新版 1150520】\n延長為NTP+180日內提送（120日→180日）&quot;}, {&quot;serial&quot;: &quot;85&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章　型態管理計畫提送期限&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n廠商應於NTP+90日內提出型態管理計畫送業主審查\n\n【新版 1150520】\n延長為NTP+120日內提出（90日→120日）&quot;}, {&quot;serial&quot;: &quot;86&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章　型態管理作業標準&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「應符合ISO10007、CNS14238或業主/機關同意之標準辦理並執行細項拆分並追蹤，型態管理過程需專注在機關/業主對產品或系統的要求，並必須考量其執行時的環境狀況，型態管理過程須詳細低記載在型態管理計畫...」（含舊版(2)型態管理計畫整段詳細描述）\n\n【新版 1150520】\n精簡為「應依ISO10007、CNS14238或業主同意之標準辦理」；型態管理計畫改以結構化方式列明三大主要部分（A.文件組織及管控、B.實體型態管理、C.軟體型態管理）；刪除「/機關」，刪除冗長執行描述；條款項次(2)~(9)重新編號為(2)~(8)&quot;}, {&quot;serial&quot;: &quot;87&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第7章　BIM人員角色：新增「專業分包商BIM專業協調人」條款&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（舊版無此條款，直接列BIM各作業階段可提交成果）\n\n【新版 1150520】\n新增「專業分包商BIM專業協調人」完整章節：規定每一設計及施工專業須指定專人負責BIM整合，詳列責任包含：a.協助BIM管理經理、b.參與制定執行計畫書、c.指揮監督BIM執行、d.跨專業協調資料交換、e.準備衝突報告、f.出席BIM界面協調整合會議等&quot;}, {&quot;serial&quot;: &quot;88&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第14章　土建與機電界面條款&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（舊版無此聲明，直接列界面需求項目）\n\n【新版 1150520】\n新增第(5)款：「有關本案招標文件內圖說所標註之尺寸僅為參考，應於完成界面控制文件（ICD）交換後定案」（後續條款順序遞移）&quot;}, {&quot;serial&quot;: &quot;89&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第14章　軌道投入口施工需求&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「軌道投入口包含地下段出土段、明挖覆蓋隧道開口及高架橋梁之入口等軌道工程搬運鋼軌之施工需求」\n\n【新版 1150520】\n擴充為「搬運鋼軌及設置銲接場地及機具進出動線之施工需求」（新增銲接場地及機具進出動線需求）&quot;}, {&quot;serial&quot;: &quot;90&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第14章　軌道投入口尺寸規格&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（未明訂投入口尺寸）\n\n【新版 1150520】\n新增具體尺寸規格：「尺寸為 26 公尺 x5 公尺」&quot;}, {&quot;serial&quot;: &quot;91&quot;, &quot;file&quot;: &quot;04-1-BRM01標業主需求書(一)&quot;, &quot;section&quot;: &quot;第14章附錄A　晨峰運量表欄位與數據&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n欄位：「場站進出」及「轉乘」；晨峰合計：場站進出進站8,657、出站8,685；轉乘進站5,143、出站5,115\n\n【新版 1150520】\n欄位「轉乘」改為「廠站進出」；數據大幅更新：各站「廠站進出」欄數字全面修正（如BR08由3,122/3,110改為2,000/1,900；BR01由2,021/2,005改為3,700/1,800；合計廠站進出進站12,000、出站10,400）&quot;}]}, {&quot;title&quot;: &quot;04-2 — 業主需求書(二)  系統保證及系統安全需求&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;92&quot;, &quot;file&quot;: &quot;04-2-業主需求書(二)&quot;, &quot;section&quot;: &quot;文件日期 / 整體&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n中華民國一一五年一月；頁數 700 頁\n\n【新版 1150520】\n中華民國一一五年五月；頁數增至 711 頁（增加約11頁）&quot;}, {&quot;serial&quot;: &quot;93&quot;, &quot;file&quot;: &quot;04-2-業主需求書(二)&quot;, &quot;section&quot;: &quot;目次頁碼&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n各章節起始頁碼：機電系統一般規範 1-1~1-18（品質要求）、1-18（安全要求）、1-19（計畫管理要求）、1-20（系統保證）、1-32（機電系統工程管理）等\n\n【新版 1150520】\n各章節頁碼更新：品質要求 1-19、安全要求 1-20、計畫管理要求 1-22、系統保證 1-22、機電系統工程管理 1-34 等（整體後移）&quot;}, {&quot;serial&quot;: &quot;94&quot;, &quot;file&quot;: &quot;04-2-業主需求書(二)&quot;, &quot;section&quot;: &quot;格式重整&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n部分清單條文未加編號，以連續文字列出各項目\n\n【新版 1150520】\n清單條文加上(1)(2)(3)...等順序編號；各章節新增更多換行與段落間距（格式更清晰）&quot;}, {&quot;serial&quot;: &quot;95&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;文件基本資訊&quot;, &quot;diff&quot;: &quot;舊版為 260319(1150320) 版本、700頁、PDF產生工具 Microsoft Word 2019；新版為 260522-2 版本、711頁、PDF產生工具 ONLYOFFICE 9.2.1.43。新版頁數增加11頁且檔案體積由約33.7MB降至約9.38MB，除內容修訂外亦有重新轉檔/壓縮。&quot;}, {&quot;serial&quot;: &quot;96&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;封面/版本日期&quot;, &quot;diff&quot;: &quot;舊版封面日期為中華民國一一五年一月；新版封面日期改為中華民國一一五年五月。&quot;}, {&quot;serial&quot;: &quot;97&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;目次頁碼及章節編號&quot;, &quot;diff&quot;: &quot;新版因前段章節增補與排版重整，目次所列各章節起始頁碼整體後移；例如表1.8-1由1-19改為1-20、表1.11-1由1-30改為1-32、表1.20.1-1由1-67改為1-70，行車監控、供電、通訊、自動收費及SCADA等章節頁碼亦連動調整。&quot;}, {&quot;serial&quot;: &quot;98&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;目次異常&quot;, &quot;diff&quot;: &quot;新版目次第7章附近出現「7.5 安全管理要求 錯誤! 尚未定義書籤。」；舊版目次未見此未定義書籤訊息，屬新版轉檔/目次欄位更新異常，建議要求招標機關確認。&quot;}, {&quot;serial&quot;: &quot;99&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;格式/項次編排&quot;, &quot;diff&quot;: &quot;多處清單式條文由連續文字改為(1)(2)(3)等分項編號，段落換行及表格呈現也重整；此類多屬可讀性與版面調整，需與實質文字變更分開看。&quot;}, {&quot;serial&quot;: &quot;100&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第1章 縮寫/名詞勘誤&quot;, &quot;diff&quot;: &quot;新版修正多處英文縮寫或名詞空格錯誤，例如 DMSD 由「Dead Man Sys tem Device」修正為「Dead Man System Device」、HMI 由「Human-Machine Int erface」修正為「Human-Machine Interface」、IGBT 由「Bipol ar」修正為「Bipolar」、NFPA/PABX等英文名詞亦有空格修正。&quot;}, {&quot;serial&quot;: &quot;101&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第1.6節 EMI/EMC要求&quot;, &quot;diff&quot;: &quot;舊版列明所有設備及SCADA系統之EMI防制標準；新版除保留前述要求外，新增C款：「鐵路環境中電氣電子設備所產生的電磁場對於人體暴露應符合IEC 62597或EN 50500」，增加人體曝露/電磁場標準要求。&quot;}, {&quot;serial&quot;: &quot;102&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第1.8節 安全要求：SIL配當報告&quot;, &quot;diff&quot;: &quot;舊版明定統包廠商應於NTP+90日前依EN50126-2辦理SIL配當並提送「整體系統安全完整度等級配當報告」，且在機關/業主及專管同意下可單獨提送或併入系統安全管理計畫；新版本段改為「廠商應依照EN50126-2」辦理並提送報告，刪除本段之NTP+90日前與「機關/業主及專管同意下」文字。&quot;}, {&quot;serial&quot;: &quot;103&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第1.8節 安全要求：指定SIL項目&quot;, &quot;diff&quot;: &quot;舊版列出C款車輛煞車控制系統SIL 2(含)以上、D款車門控制系統SIL 2(含)以上、E款月臺門與號誌界面安全功能至少SIL 2(含)以上；新版文字抽取中此處直接接續為「其餘安全功能」與TCMS/SCACDA等SIL等級規定，舊版C/D/E款在新版同段未呈現，需以正式PDF版面複核確認是否刪除或移位。&quot;}, {&quot;serial&quot;: &quot;104&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第1.8節 ISA/ISwA聘用責任&quot;, &quot;diff&quot;: &quot;舊版規定SIL 1(含)以上之子系統/設備/功能由「機電廠商」聘用獨立第三方進行ISA/ISwA；新版改為「機電子系統廠商（包括但不限於車輛、號誌及月台門）」須聘用，責任主體由統包/機電廠商文字轉向相關子系統廠商，並具體列舉車輛、號誌、月台門。&quot;}, {&quot;serial&quot;: &quot;105&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第1.8節 ISA/ISwA審查及評估範圍&quot;, &quot;diff&quot;: &quot;舊版為NTP+240前提送ISA/ISwA計畫供「業主方」審查，且ISA報告提交前各階段「機關/業主/專管/IV&amp;V」得要求資料；新版改為供「業主」審查，新增「ISA評估工作應包含相關子系統功能安全界面評估」，並將可要求資料者改為「業主/專管/IV&amp;V」。&quot;}, {&quot;serial&quot;: &quot;106&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第1.9節 計畫管理/期初設計&quot;, &quot;diff&quot;: &quot;新版將計畫管理要求重新編成1.9，並以分項列示期初設計審查內容；供應商名單及實績、未經業主同意不得更換供應商、長前置期設備、界面項目定義等要求大致保留，主要為編排及頁碼重整。&quot;}, {&quot;serial&quot;: &quot;107&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第1.20節 備品、工具及測試設備&quot;, &quot;diff&quot;: &quot;新版將備品、一般工具、特殊工具及特殊測試設備章節由舊版約1-67頁移至新版約1-70頁，主要備品表及月臺門、SCADA、自動收費等主要備品項目基本沿用；文字改為分項編號呈現。&quot;}, {&quot;serial&quot;: &quot;108&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第2.23節 車輛系統備品/工具&quot;, &quot;diff&quot;: &quot;舊版規定廠商於設計時提送各階段通車所需備品清單，經業主審核後於各階段實質完工日30天前提供；新版保留同一義務並改以(1)(2)(3)分項，屬編排重整，未見期限或責任實質放寬。&quot;}, {&quot;serial&quot;: &quot;109&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第6.13.5節 自動收費系統備品&quot;, &quot;diff&quot;: &quot;舊版規定消耗性備品、替換性備品及詳細價目表所列主要備品應於實質完工日30天前提供；新版保留同一要求，改以(1)至(5)分項列示，並維持期末設計審查完成後提送清單核可之要求。&quot;}, {&quot;serial&quot;: &quot;110&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第7章 系統保證：設計安全證明/ISA報告&quot;, &quot;diff&quot;: &quot;舊版要求細部設計完成前提送設計安全證明及ISA/ISwA報告，以初步確認「全機電系統及各子系統」安全需求；新版改為確認「各子系統」安全需求，刪除「全機電系統及」字樣。&quot;}, {&quot;serial&quot;: &quot;111&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第7章 系統保證：ISA聘用主體&quot;, &quot;diff&quot;: &quot;舊版文字為ISA（含ISwA）由「統包廠商及相關子系統」聘用；新版改為由「相關子系統」聘用，刪除統包廠商字樣，與第1.8節改由機電子系統廠商負責之方向一致。&quot;}, {&quot;serial&quot;: &quot;112&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;第7.5.10節 系統安全文件&quot;, &quot;diff&quot;: &quot;舊版列明SSMP：NTP+90天、ISA/ISwA計畫：NTP+240天，並另敘明須包含全系統及各子系統ISA/ISwA計畫、ISA/ISwA報告於設計階段結束前及測試階段提送；新版仍列SSMP NTP+90天、ISA/ISwA計畫NTP+240天、PHA NTP+120天等，但清單文字更精簡，部分「全系統及各子系統」說明未在新版同段呈現。&quot;}, {&quot;serial&quot;: &quot;113&quot;, &quot;file&quot;: &quot;04-2-BRM01標業主需求書(二)&quot;, &quot;section&quot;: &quot;全文版面及資料抽取限制&quot;, &quot;diff&quot;: &quot;本文件含大量表格、頁首頁尾與重新排版內容；文字比對產生1,900個差異片段，其中不少為項次編號、換行、頁碼及字距差異。本表優先歸納明顯影響義務、標準、審查主體或文件品質的差異；完整文字差異片段另輸出於工作區文字報告。&quot;}]}, {&quot;title&quot;: &quot;04-3 — 業主需求書(三)  機電系統需求&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;114&quot;, &quot;file&quot;: &quot;04-3-業主需求書(三)&quot;, &quot;section&quot;: &quot;文件日期 / 整體&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n中華民國一一五年一月；頁數 328 頁\n\n【新版 1150520】\n中華民國一一五年五月（推測）；頁數減至 289 頁（減少39頁，但文字行數增加）&quot;}, {&quot;serial&quot;: &quot;115&quot;, &quot;file&quot;: &quot;04-3-業主需求書(三)&quot;, &quot;section&quot;: &quot;浮動式道床(FST) 道岔規定&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「FST處之道岔可依減振之考量改採可動式岔心」（允許改採）\n\n【新版 1150520】\n規定更嚴格：「FST處之道岔，廠商若擬依減振之考量改採可動式岔心道岔，須先提出相關分析文件證明設置可動式岔心確有其助益，且須與行車監控系統協調確認系統可靠度符合業主需求之要求，並經業主審查核可」&quot;}, {&quot;serial&quot;: &quot;116&quot;, &quot;file&quot;: &quot;04-3-業主需求書(三)&quot;, &quot;section&quot;: &quot;浮動式道床排水設計&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「配合土建標進行排水路徑檢討。排水路徑依據與土建標排水陰井協調成果於浮動式道床施作排水檢視孔及蓋板」\n\n【新版 1150520】\n改為「施作銜接排水陰井所需之延伸埋管或預埋件。浮動式道床預留排水孔、陰井」（排水方式更新）&quot;}, {&quot;serial&quot;: &quot;117&quot;, &quot;file&quot;: &quot;04-3-業主需求書(三)&quot;, &quot;section&quot;: &quot;新增章節/條文&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（無）\n\n【新版 1150520】\n新增：「負電迴流連軌線」規定（需銲接或以螺栓鎖固於鋼軌腹部）；「護軌固定組件包括混凝土內預埋件、錨碇螺栓、鋼軌墊板或墊片、扣夾」；高隔振無道碴軌道(NBHI)須具備「至少5年服務實證紀錄」等新增規格&quot;}, {&quot;serial&quot;: &quot;118&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;文件基本資訊&quot;, &quot;diff&quot;: &quot;舊版為260129版、328頁、檔案約27.8MB；新版為合併版、289頁、檔案約16.6MB。新版頁數減少39頁，且PDF產製/合併資訊不同，顯示除文字修訂外亦有版面或附件整併。&quot;}, {&quot;serial&quot;: &quot;119&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;文件整體規模&quot;, &quot;diff&quot;: &quot;舊版頁數較多；新版頁數減少但文字比對顯示多處條文重寫或段落重新編排。頁碼、章節位置與舊版不能直接一對一引用，後續引用應以新版頁碼重新確認。&quot;}, {&quot;serial&quot;: &quot;120&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;浮動式道床(FST)道岔規定&quot;, &quot;diff&quot;: &quot;舊版規定FST處之道岔若擬依減振考量改採可動式岔心道岔，須先提出分析文件證明設置確有助益，且須與行車監控系統協調確認系統可靠度符合業主需求，並經業主審查核可；新版改為「FST處之道岔可依減振之考量改採可動式岔心」。新版刪除分析證明、可靠度確認及業主審查核可等前置條件，規定較舊版放寬。&quot;}, {&quot;serial&quot;: &quot;121&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;浮動式道床排水設計&quot;, &quot;diff&quot;: &quot;舊版規定配合土建標檢討排水路徑，並依與土建標排水陰井協調成果於浮動式道床施作排水檢視孔及蓋板；新版改為施作銜接排水陰井所需之延伸埋管或預埋件，並於浮動式道床預留排水孔、陰井等，排水界面作法更具體。&quot;}, {&quot;serial&quot;: &quot;122&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;高隔振無道碴軌道(NBHI)服務實證&quot;, &quot;diff&quot;: &quot;舊版規定高隔振無道碴軌道應具有鐵路或捷運系統（類似或不低於本系統）至少10年服務實證紀錄；新版改為至少5年服務實證紀錄。新版將服務實證年限由10年降為5年，資格門檻降低。&quot;}, {&quot;serial&quot;: &quot;123&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;高隔振無道碴軌道(NBHI)設計要求&quot;, &quot;diff&quot;: &quot;新版保留高隔振無道碴軌道與相連接軌道間應設置適當長度緩衝段、設計應考量各種可能負荷及組合等要求；主要實質差異集中在服務實證年限由10年改為5年，其餘本段多為排版、換行或文字間距差異。&quot;}, {&quot;serial&quot;: &quot;124&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;無道碴道床鋼軌扣件：黏著劑材料&quot;, &quot;diff&quot;: &quot;舊版第2.1.12規定黏著劑（Bonding Agent）為環氧樹脂或其它化學膠結材料；新版改為環氧樹脂、無收縮水泥砂漿或其它化學膠結材料，新增「無收縮水泥砂漿」作為可用材料。&quot;}, {&quot;serial&quot;: &quot;125&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;軌道系統規格強化&quot;, &quot;diff&quot;: &quot;新版在軌道系統相關章節有多處施工/材料/界面文字調整，較明確者包括排水界面作法改寫、NBHI服務實證門檻降低、黏著劑材料選項增加，以及FST道岔改採可動式岔心之前置審查條件刪除。&quot;}, {&quot;serial&quot;: &quot;126&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;圖表/附錄重整&quot;, &quot;diff&quot;: &quot;新版頁數大幅減少，且檔名為「合併」，文字抽取顯示章節及圖表內容有重新整併；依使用者要求未針對圖檔進行逐圖比對，本項僅記錄PDF文字層級可見之整併差異。&quot;}, {&quot;serial&quot;: &quot;127&quot;, &quot;file&quot;: &quot;04-3-BRM01標業主需求書(三)&quot;, &quot;section&quot;: &quot;文字比對限制&quot;, &quot;diff&quot;: &quot;本文件含大量圖說、表格及工程規範版面，PDF文字抽取會產生頁首頁尾、換行與欄位順序差異；本表優先歸納具實質規範意義之差異，完整文字差異片段另輸出於工作區文字報告。&quot;}]}, {&quot;title&quot;: &quot;04-4 — 業主需求書(四)  軌道工程需求&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;128&quot;, &quot;file&quot;: &quot;04-4-業主需求書(四)&quot;, &quot;section&quot;: &quot;整體&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n頁數 515 頁；檔案大小 26MB\n\n【新版 1150520】\n頁數 515 頁（相同）；檔案大小 22MB（縮小）；推測有圖片壓縮或格式優化，文字內容無明顯實質變更（需進一步逐頁比對確認）&quot;}, {&quot;serial&quot;: &quot;129&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;文件基本資訊&quot;, &quot;diff&quot;: &quot;兩版頁數均為515頁；舊版檔案約26.30MB，新版約22.36MB。PDF中繼資料顯示舊版由PDF24產製、修訂時間為115/01/29；新版由GPL Ghostscript/PDF24 Creator產製，修訂時間為115/05/20。&quot;}, {&quot;serial&quot;: &quot;130&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;路線設計條件：最大坡度&quot;, &quot;diff&quot;: &quot;舊版頁10文字為「希望選用：最大坡度4.1%」；新版頁10改為「希望選用：最大坡度4%」。同頁另有「最小長度為50m」之空格/標點差異，內容未變。&quot;}, {&quot;serial&quot;: &quot;131&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;路線設計條件：主線最大坡度表&quot;, &quot;diff&quot;: &quot;舊版頁11表列「主線最大坡度 % 4.1 5」；新版頁11改為「主線最大坡度 % 3.5 4.5」。主線坡度控制值下修，屬實質設計條件變更。&quot;}, {&quot;serial&quot;: &quot;132&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;設備/系統清單：通訊與號誌範圍&quot;, &quot;diff&quot;: &quot;舊版頁448列示：供電系統為緊急跳脫站(ETS)；通訊系統為一般、直線電話、廣播喇叭及安全偵測系統；號誌系統含電驛聯鎖、自動列車保護、自動列車操作、乘客資訊顯示系統及設備故障顯示與維護工作台。新版頁448改列通訊系統為旅客資訊顯示系統、數位無線電、光纖傳輸、閉路電視、時鐘系統、直線電話及廣播喇叭；號誌系統刪除乘客資訊顯示系統，保留電驛聯鎖、自動列車保護、自動列車操作及設備故障顯示與維護工作台。&quot;}, {&quot;serial&quot;: &quot;133&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;供電系統清單：ETS位置&quot;, &quot;diff&quot;: &quot;舊版頁448列有「供電系統：緊急跳脫站(ETS)」；新版該項未在頁448同段出現，但於新版頁470插入「供電系統：緊急跳脫站(ETS)」。判斷為內容位置調整，而非刪除。&quot;}, {&quot;serial&quot;: &quot;134&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;供電系統設備名稱&quot;, &quot;diff&quot;: &quot;舊版頁470為「22.8kV開關設備AC配電盤、22.8kV/589V整流變壓器、直流開關盤、整流器等」；新版頁470改為「22.8kV開關設備交直流分電盤、22.8kV/589V整流變壓器、直流開關盤、整流器等」。其中配電盤名稱由AC配電盤改為交直流分電盤。&quot;}, {&quot;serial&quot;: &quot;135&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;161/22.8kV變壓器場型式&quot;, &quot;diff&quot;: &quot;舊版頁471及頁472將B.1A 161/22.8kV變壓器場標示為「室外」；新版改為「半開放室內」。B.1B仍為室內。此為空間/建築型式之實質變更。&quot;}, {&quot;serial&quot;: &quot;136&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;變壓器場排油/漏油處理設施&quot;, &quot;diff&quot;: &quot;舊版頁472列有「鵝卵石」及「變壓器四周之補捉漏油槽舖設砂礫」等內容；新版同頁未見該段，並將控制設備文字改為「控制用浮球開關，不銹鋼控制盤，油水分離設施，卸油槽」。新版新增油水分離設施與卸油槽，並調整原漏油槽/鋪面說明。&quot;}, {&quot;serial&quot;: &quot;137&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;綠建築標章目標&quot;, &quot;diff&quot;: &quot;舊版頁505規定本計畫全線車站以取得「銀級綠建築標章」為目標；新版頁505改為取得「合格級綠建築標章」為目標。綠建築標章等級目標由銀級降為合格級。&quot;}, {&quot;serial&quot;: &quot;138&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;智慧建築等級判定表位置&quot;, &quot;diff&quot;: &quot;舊版「表4.3-1 各智慧建築等級判定表」出現在頁511；新版移至頁512。此項為表格位置/分頁調整，表名本身未見實質變更。&quot;}, {&quot;serial&quot;: &quot;139&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;附表A文字層異常&quot;, &quot;diff&quot;: &quot;新版頁514-515抽取文字出現多處疑似字碼/內嵌字型轉換異常，例如「設備」抽為「設造」、「測試」抽為「郱試」、「提」抽為「邚」等；舊版同段可正常抽取為廠測、測試、提送等文字。此項可能是PDF文字層或字型編碼問題，未必代表視覺版面文字改錯，但會影響搜尋、複製及文字比對。&quot;}, {&quot;serial&quot;: &quot;140&quot;, &quot;file&quot;: &quot;04-4-BRM01標業主需求書(四)&quot;, &quot;section&quot;: &quot;文字比對統計&quot;, &quot;diff&quot;: &quot;以PDF文字抽取後比對，舊版文字字元數約335002，新版約335017；逐頁文字雜湊不同頁數為18頁，差異頁：10-11、448、470-472、480、483、487、501、505-506、509、511-515；篩選後差異片段為28個。除上述實質項目外，其餘多為空格、分頁、表格位置或PDF文字層差異。&quot;}]}, {&quot;title&quot;: &quot;04-5 — 業主需求書(五)  土建配合需求&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;141&quot;, &quot;file&quot;: &quot;04-5-業主需求書(五)&quot;, &quot;section&quot;: &quot;整體&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n頁數 2389 頁；檔案大小 33MB\n\n【新版 1150520】\n頁數 2389 頁（相同）；檔案大小 33MB（相同）；兩資料夾版本基本一致，內容無明顯差異&quot;}, {&quot;serial&quot;: &quot;142&quot;, &quot;file&quot;: &quot;04-5-BRM01標業主需求書(五)&quot;, &quot;section&quot;: &quot;檔案本體比對&quot;, &quot;diff&quot;: &quot;兩版PDF之SHA256雜湊值完全相同：f4ade27d6a0961251c46df43e3470c030cbf5462c80fef1eaf3a02246bc482a4。判定結果：檔案完全一致，未發現差異。&quot;}, {&quot;serial&quot;: &quot;143&quot;, &quot;file&quot;: &quot;04-5-BRM01標業主需求書(五)&quot;, &quot;section&quot;: &quot;頁數與檔案大小&quot;, &quot;diff&quot;: &quot;舊版頁數：2389頁，檔案大小：33915307 bytes；新版頁數：2389頁，檔案大小：33915307 bytes。兩者頁數及檔案大小完全相同。&quot;}, {&quot;serial&quot;: &quot;144&quot;, &quot;file&quot;: &quot;04-5-BRM01標業主需求書(五)&quot;, &quot;section&quot;: &quot;PDF中繼資料&quot;, &quot;diff&quot;: &quot;舊版中繼資料：{&#x27;/Producer&#x27;: &#x27;GPL Ghostscript 10.04.0&#x27;, &#x27;/CreationDate&#x27;: \&quot;D:20251219150147+08&#x27;00&#x27;\&quot;, &#x27;/ModDate&#x27;: \&quot;D:20251219150147+08&#x27;00&#x27;\&quot;, &#x27;/Creator&#x27;: &#x27;PDF24 Creator&#x27;}；新版中繼資料：{&#x27;/Producer&#x27;: &#x27;GPL Ghostscript 10.04.0&#x27;, &#x27;/CreationDate&#x27;: \&quot;D:20251219150147+08&#x27;00&#x27;\&quot;, &#x27;/ModDate&#x27;: \&quot;D:20251219150147+08&#x27;00&#x27;\&quot;, &#x27;/Creator&#x27;: &#x27;PDF24 Creator&#x27;}。兩者PDF產製資訊一致。&quot;}, {&quot;serial&quot;: &quot;145&quot;, &quot;file&quot;: &quot;04-5-BRM01標業主需求書(五)&quot;, &quot;section&quot;: &quot;綜合判斷&quot;, &quot;diff&quot;: &quot;因兩個PDF檔案雜湊值完全一致，代表檔案位元層級相同；故文字、版面、圖像物件及附件內容均為同一檔案，無需再列實質差異。&quot;}]}, {&quot;title&quot;: &quot;04-6 — 業主需求書(六)  附件與圖表&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;146&quot;, &quot;file&quot;: &quot;04-6-業主需求書(六)&quot;, &quot;section&quot;: &quot;整體規模&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n頁數較少；檔案大小 31MB；文字內容提取行數少（約713行前50頁）\n\n【新版 1150520】\n新增標題：「核定0版」；檔案大小增至 46MB（增加約48%）；文字內容大幅增加（前50頁即達9,108行）；工程圖核備章、基本設計顧問標記等資訊齊全；包含詳細里程、方位角等工程設計數據&quot;}, {&quot;serial&quot;: &quot;147&quot;, &quot;file&quot;: &quot;04-6-業主需求書(六)&quot;, &quot;section&quot;: &quot;站別資訊&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\nBRH04站（避車線）等站別資訊\n\n【新版 1150520】\n新增BR05站相關圖說；工程圖說更完整（含「工程圖核備章」、「基本設計顧問」等正式核定標記）&quot;}, {&quot;serial&quot;: &quot;148&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;文件基本資訊&quot;, &quot;diff&quot;: &quot;舊版為260129版，頁數92頁，檔案大小31474253 bytes；新版為核定0版_260519，頁數97頁，檔案大小48037847 bytes。新版增加5頁且檔案體積增加約16.56MB。&quot;}, {&quot;serial&quot;: &quot;149&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;PDF中繼資料&quot;, &quot;diff&quot;: &quot;舊版中繼資料：{&#x27;/CreationDate&#x27;: \&quot;D:20230923144522+08&#x27;00&#x27;\&quot;, &#x27;/Creator&#x27;: &#x27;PDFsam Basic v4.1.3&#x27;, &#x27;/ModDate&#x27;: \&quot;D:20260129171540+08&#x27;00&#x27;\&quot;, &#x27;/Producer&#x27;: &#x27;SAMBox 2.1.16&#x27;}；新版中繼資料：{&#x27;/CreationDate&#x27;: \&quot;D:20230923144522+08&#x27;00&#x27;\&quot;, &#x27;/Creator&#x27;: &#x27;PDFsam Basic v4.1.3&#x27;, &#x27;/ModDate&#x27;: \&quot;D:20260519153902+08&#x27;00&#x27;\&quot;, &#x27;/Producer&#x27;: &#x27;SAMBox 2.1.16&#x27;, &#x27;/Author&#x27;: &#x27;tylinuser&#x27;, &#x27;/Title&#x27;: &#x27;Model&#x27;, &#x27;/Keywords&#x27;: &#x27;DRAWING4.DWG&#x27;}。新版新增Author=tylinuser、Title=Model、Keywords=DRAWING4.DWG，且ModDate更新為115/05/19。&quot;}, {&quot;serial&quot;: &quot;150&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;文字可抽取內容規模&quot;, &quot;diff&quot;: &quot;舊版可抽取文字頁數8頁、文字約5049字元；新版可抽取文字頁數42頁、文字約75535字元。新版文字層大幅增加，表示新版圖說內嵌可搜尋文字、標題欄或核定資訊更完整。&quot;}, {&quot;serial&quot;: &quot;151&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;版本狀態&quot;, &quot;diff&quot;: &quot;新版檔名明確標示「核定0版」，舊版僅為260129版；新版屬正式核定版本標示，舊版未見同等檔名標記。&quot;}, {&quot;serial&quot;: &quot;152&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;圖說/工程資料完整度&quot;, &quot;diff&quot;: &quot;新版文字層顯示更多工程圖說資料與圖框資訊，例如工程圖核備章、基本設計顧問、圖名/圖號、里程、方位角等欄位；舊版文字層較少，部分資訊可能僅為影像或未完整嵌入文字。&quot;}, {&quot;serial&quot;: &quot;153&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;圖框欄位/CAD No.可搜尋性&quot;, &quot;diff&quot;: &quot;新版有37頁可抽到「CAD No.」或「電腦圖號」欄位，頁碼包含7、28-45、76-93；可辨識CAD No.共36個，例：24070051, 24070052, 24070053, 24070054, 24070055, 24070056, 24070057, 24070058；可辨識CIV圖號共37個，例：CIV00-CE1123, CIV00-CE2120, CIV00-CE2121, CIV00-CE2122, CIV00-CE2123, CIV00-CE2124, CIV00-CE2125, CIV00-CE2126。舊版文字層未抽到CAD No.或CIV圖號，顯示新版圖框資料可搜尋性大幅提升。&quot;}, {&quot;serial&quot;: &quot;154&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;平縱斷面圖資料&quot;, &quot;diff&quot;: &quot;新版可抽到上行線平面與縱斷面圖、鋼軌踏面高程、原地面高程、里程CHAINAGE、曲率HORIZONTAL CURVATURE等欄位，並含PVISTA、EL、LVC、K、MO等縱斷面參數；舊版相同區段多僅抽到零散數值，未形成完整圖框欄位。&quot;}, {&quot;serial&quot;: &quot;155&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;車站編碼對照表&quot;, &quot;diff&quot;: &quot;兩版首頁均含車站編碼修正對照表，列出BRH07→BR01、BRH04→BR05、BRH06→BR02、BRH03→BR06、BRH02→BR07、BRH05→BR04、BRH01→BR08等資訊；新版主要是換行與文字層呈現方式不同，未據此判定站名對照實質變更。&quot;}, {&quot;serial&quot;: &quot;156&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;頁數差異&quot;, &quot;diff&quot;: &quot;新版較舊版增加5頁。此差異可能包含新增圖說、核定章頁、圖框資訊或合併順序調整；本次以PDF文字層歸納，不對圖檔或線型內容做逐圖比對。&quot;}, {&quot;serial&quot;: &quot;157&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;綜合判斷&quot;, &quot;diff&quot;: &quot;04-6新版不是單純壓縮或重存檔；其頁數、檔案大小、文字層、版本標示與可搜尋圖框欄位均有明顯變動。主要差異為新版升級為核定0版、圖說文字資訊更完整、頁數增加，且新增/改善大量CAD No.、CIV圖號、里程與縱斷面參數的文字層。&quot;}, {&quot;serial&quot;: &quot;158&quot;, &quot;file&quot;: &quot;04-6-BRM01標業主需求書(六)&quot;, &quot;section&quot;: &quot;比對限制&quot;, &quot;diff&quot;: &quot;本文件主要為圖說PDF，許多差異可能存在於圖面、線條、圖框及影像物件；依使用者要求圖檔不比較，本表僅就PDF檔案層級、文字層、頁數、版本與可抽取工程資訊進行歸納。&quot;}]}, {&quot;title&quot;: &quot;06 — 標單&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;159&quot;, &quot;file&quot;: &quot;06-(標單)&quot;, &quot;section&quot;: &quot;管理費用加成比率&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n管理利潤、保險及稅什費加成比率：(壹.三~十二)*約15%\n\n【新版 1150520】\n加成比率改為：(壹.三~十二)*約20.75%（提高約5.75個百分點）&quot;}, {&quot;serial&quot;: &quot;160&quot;, &quot;file&quot;: &quot;06-(標單)&quot;, &quot;section&quot;: &quot;文件頁數&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n共 30 頁\n\n【新版 1150520】\n重組為 28 頁（減少2頁，原30頁內容重新排版整合）&quot;}, {&quot;serial&quot;: &quot;161&quot;, &quot;file&quot;: &quot;06-(標單)&quot;, &quot;section&quot;: &quot;詳細價目表(二)標示&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「詳細價目表(二)[空白標單]」\n\n【新版 1150520】\n改為「詳細價目表(二)[空白標單](參考用)」（加上「(參考用)」標示，表示非計價依據）&quot;}, {&quot;serial&quot;: &quot;162&quot;, &quot;file&quot;: &quot;06-(標單)&quot;, &quot;section&quot;: &quot;新增項目：主變電站BMS&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（無 壹.十一.2.2.(8) 及 壹.十一.3.2.(8) 項）\n\n【新版 1150520】\n新增「壹.十一.2.2.(8) 主變電站建物管理系統-BMS」（設備費）\n新增「壹.十一.3.2.(8) 主變電站建物管理系統-BMS」（安裝費）&quot;}, {&quot;serial&quot;: &quot;163&quot;, &quot;file&quot;: &quot;06-(標單)&quot;, &quot;section&quot;: &quot;附錄 — 場鑄結構混凝土模板&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n（無 壹.十一.1.1.(5)）\n\n【新版 1150520】\n新增：「壹.十一.1.1.(5) 場鑄結構混凝土用模板，F3級，垂直，10,001.00 M2」&quot;}, {&quot;serial&quot;: &quot;164&quot;, &quot;file&quot;: &quot;06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程&quot;, &quot;section&quot;: &quot;文件基本資訊&quot;, &quot;diff&quot;: &quot;舊版為1150209版，30頁，檔案大小637845 bytes；新版為1150520版，28頁，檔案大小625073 bytes。新版頁數減少2頁，仍為Microsoft Excel 2019匯出PDF。&quot;}, {&quot;serial&quot;: &quot;165&quot;, &quot;file&quot;: &quot;06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程&quot;, &quot;section&quot;: &quot;標單頁數/版面重組&quot;, &quot;diff&quot;: &quot;舊版共30頁，新版共28頁；新版內容重新排版整合，部分詳細價目表頁面與項目位置移動。&quot;}, {&quot;serial&quot;: &quot;166&quot;, &quot;file&quot;: &quot;06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程&quot;, &quot;section&quot;: &quot;管理利潤、保險及稅什費加成比率&quot;, &quot;diff&quot;: &quot;舊版管理利潤、保險及稅什費加成比率為「(壹.三~十二)*約15%」；新版改為「(壹.三~十二)*約20.75%」。加成比率提高約5.75個百分點。&quot;}, {&quot;serial&quot;: &quot;167&quot;, &quot;file&quot;: &quot;06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程&quot;, &quot;section&quot;: &quot;詳細價目表(二)標示&quot;, &quot;diff&quot;: &quot;舊版標示為「詳細價目表(二)[空白標單]」；新版改為「詳細價目表(二)[空白標單](參考用)」。新版明確將詳細價目表(二)標示為參考用。&quot;}, {&quot;serial&quot;: &quot;168&quot;, &quot;file&quot;: &quot;06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程&quot;, &quot;section&quot;: &quot;主變電站建物管理系統-BMS&quot;, &quot;diff&quot;: &quot;兩版均列有「壹.十一.3.2.(8) 主變電站建物管理系統-BMS 式1.00」；舊版位於第29頁，新版位於第27頁。此項不是新增項目，主要差異為新版頁碼及版面重排。&quot;}, {&quot;serial&quot;: &quot;169&quot;, &quot;file&quot;: &quot;06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程&quot;, &quot;section&quot;: &quot;場鑄結構混凝土用模板&quot;, &quot;diff&quot;: &quot;兩版均列有「壹.十一.1.1.(5) 場鑄結構混凝土用模板，F3級，垂直 M2 10,001.00」及「壹.十一.1.1.(6) 場鑄結構混凝土用模板，F3級，水平 M2 5,894.00」。舊版分布於第25至26頁，新版整併於第24頁，屬版面整合與頁碼移動。&quot;}, {&quot;serial&quot;: &quot;170&quot;, &quot;file&quot;: &quot;06-(標單)桃園都會區大眾捷運系統棕線系統機電統包工程&quot;, &quot;section&quot;: &quot;文字比對統計&quot;, &quot;diff&quot;: &quot;PDF文字抽取後，舊版約25179字元，新版約24749字元；篩選後差異片段106個。差異以費率、項目新增、表名標示及排版重組為主。&quot;}]}, {&quot;title&quot;: &quot;06 — 機電標成本建議書填製說明&quot;, &quot;items&quot;: [{&quot;serial&quot;: &quot;171&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;1.3 報價表格說明&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「本成本建議書之報價表格包含總表、詳細價目表(一)及機電系統工程之詳細價目表(二)」\n\n【新版 1150520】\n改為「報價表格包含「總表」、「詳細價目表(一)」及機電系統工程之「詳細價目表(二)(參考用)」」（加上「(參考用)」標示）&quot;}, {&quot;serial&quot;: &quot;172&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;1.7.1 詳細價目表(二)調整規定&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「詳細價目表(一)及「機電系統工程」詳細價目表(二)，除經機關同意，其項目及內容不得調整」\n\n【新版 1150520】\n改為「詳細價目表(一)，除經機關同意，其項目及內容不得調整」（刪除詳細價目表(二)的不得調整限制，與標單「參考用」標示一致）&quot;}, {&quot;serial&quot;: &quot;173&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;1.7.2 初步詳細價目表提送期限&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「廠商應依據契約書本文第3條(二)規定，應於開工通知日起 90 日內……」\n\n【新版 1150520】\n改為「應於開工通知日起 180 日內」（倍增）&quot;}, {&quot;serial&quot;: &quot;174&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;1.7.4 設計製作分階段規定&quot;, &quot;diff&quot;: &quot;【舊版 20260323】\n「廠商依上款規定辦理詳細價目表及單價分析表設計製作時，應拆分為第一、二階段」\n\n【新版 1150520】\n刪除此條款（1.7.4 整項移除）&quot;}, {&quot;serial&quot;: &quot;175&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;文件基本資訊&quot;, &quot;diff&quot;: &quot;兩版皆為5頁；舊版檔案大小133809 bytes，建立/修改時間為115/01/29；新版檔案大小134205 bytes，建立/修改時間為115/05/22。&quot;}, {&quot;serial&quot;: &quot;176&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;1.3 報價表格說明&quot;, &quot;diff&quot;: &quot;舊版說明報價表格包含總表、詳細價目表(一)及機電系統工程之詳細價目表(二)；新版改為包含「總表」、「詳細價目表(一)」及機電系統工程之「詳細價目表(二)(參考用)」。新版與標單一致，明確將詳細價目表(二)標示為參考用。&quot;}, {&quot;serial&quot;: &quot;177&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;1.7.1 詳細價目表調整限制&quot;, &quot;diff&quot;: &quot;舊版規定詳細價目表(一)及「機電系統工程」詳細價目表(二)，除經機關同意，其項目及內容不得調整；新版改為僅「詳細價目表(一)」不得調整，刪除詳細價目表(二)不得調整之限制。&quot;}, {&quot;serial&quot;: &quot;178&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;1.7.2 初步詳細價目表提送期限&quot;, &quot;diff&quot;: &quot;舊版規定廠商應於開工通知日起90日內提送初步詳細價目表；新版改為開工通知日起180日內提送。期限由90日延長為180日。&quot;}, {&quot;serial&quot;: &quot;179&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;1.7.4 設計製作分階段規定&quot;, &quot;diff&quot;: &quot;舊版有1.7.4條，規定廠商辦理詳細價目表及單價分析表設計製作時應拆分為第一、二階段；新版刪除此條，原1.7.5「不得拒絕提供資料」遞移為新版1.7.4。&quot;}, {&quot;serial&quot;: &quot;180&quot;, &quot;file&quot;: &quot;06-機電標成本建議書填製說明&quot;, &quot;section&quot;: &quot;文字比對統計&quot;, &quot;diff&quot;: &quot;PDF文字抽取後，舊版約5363字元，新版約5315字元；差異片段5個。主要差異集中於詳細價目表(二)參考用、提送期限與1.7.4刪除。&quot;}]}]</script>
+  <script>
+    const search = document.getElementById('search');
+    const groups = Array.from(document.querySelectorAll('[data-group]'));
+    const noResults = document.getElementById('noResults');
+    const normalize = (s) => (s || '').toLowerCase().trim();
+
+    function applySearch() {
+      const q = normalize(search.value);
+      let visibleCards = 0;
+      groups.forEach(group => {
+        let groupVisible = false;
+        const cards = Array.from(group.querySelectorAll('.card'));
+        cards.forEach(card => {
+          const ok = !q || card.dataset.search.includes(q);
+          card.classList.toggle('hidden', !ok);
+          if (ok) {
+            groupVisible = true;
+            visibleCards += 1;
+          }
+        });
+        group.classList.toggle('hidden', !groupVisible);
+        if (q && groupVisible) group.open = true;
+      });
+      noResults.style.display = visibleCards ? 'none' : 'block';
+    }
+
+    search.addEventListener('input', applySearch);
+    document.getElementById('expandAll').addEventListener('click', () => {
+      groups.forEach(g => { if (!g.classList.contains('hidden')) g.open = true; });
+    });
+    document.getElementById('collapseAll').addEventListener('click', () => {
+      groups.forEach(g => g.open = false);
+    });
+  </script>
+</body>
+</html>
